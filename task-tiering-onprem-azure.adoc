@@ -160,9 +160,9 @@ Wenn Sie über eine ExpressRoute oder eine VPN-Verbindung zwischen Ihrem ONTAP C
 
 Wenn Sie Tiering einrichten, müssen Sie die Ressourcengruppe, die Sie verwenden möchten, sowie das Storage-Konto und den Azure-Container identifizieren, die zur Ressourcengruppe gehören. Mithilfe eines Storage-Kontos kann Cloud Tiering den für Daten-Tiering verwendeten Blob-Container authentifizieren und auf diesen zugreifen.
 
-Cloud Tiering unterstützt nur die Storage-Konten der Typen General Purpose v2 und Premium Block Blob.
+Cloud Tiering unterstützt Tiering auf jedes Storage-Konto in jeder Region, auf die über den Connector zugegriffen werden kann.
 
-Der Blob-Container muss sich in einem befinden link:reference-azure-support.html#supported-azure-regions["Region, die Cloud Tiering unterstützt"].
+Cloud Tiering unterstützt nur die Storage-Konten der Typen General Purpose v2 und Premium Block Blob.
 
 
 NOTE: Falls Sie planen, Cloud Tiering zu konfigurieren, um eine kostengünstigere Zugriffsebene zu verwenden, auf der Ihre Tiered-Daten nach einer bestimmten Anzahl von Tagen übertragen werden, müssen Sie beim Einrichten des Containers in Ihrem Azure Konto keine Lebenszyklusregeln auswählen. Cloud Tiering managt Lebenszyklusphasen.

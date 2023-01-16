@@ -104,7 +104,7 @@ Vergewissern Sie sich, dass genügend Speicherplatz auf der Performance-Tier fü
 
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
 . Klicken Sie im *Cluster Dashboard* auf *Tier Volumes* für den Cluster.
-. Klicken Sie auf das image:screenshot_edit_icon.gif["Ein Screenshot des Bearbeiten-Symbols, der am Ende jeder Zeile in der Tabelle für das Tiering von Volumes angezeigt wird"] Symbol für das Volume, wählen Sie die gewünschte Abrufoption und klicken Sie auf *Anwenden*.
+. Klicken Sie auf das image:screenshot_edit_icon.gif["Bearbeitungssymbol, das am Ende jeder Zeile in der Tabelle für Tiering-Volumes angezeigt wird"] Symbol für das Volume, wählen Sie die gewünschte Abrufoption und klicken Sie auf *Anwenden*.
 +
 image:screenshot_tiering_policy_settings_with_retrieve.png["Ein Screenshot, der die konfigurierbaren Tiering-Richtlinieneinstellungen anzeigt."]
 
@@ -180,10 +180,7 @@ Ausfälle können auftreten. Ist dies der Fall, zeigt Cloud Tiering auf dem Clus
 
 .Schritte
 . Ermitteln Sie alle Cluster, deren Betriebszustand „ausgefallen“ ist.
-+
-image:screenshot_tiering_health.gif["Ein Screenshot, der einen fehlgeschlagenen Tiering-Systemzustand für ein Cluster anzeigt."]
-
-. Fahren Sie mit dem Mauszeiger auf image:screenshot_info_icon.gif["Ein Screenshot des i-Symbols, der den Fehlergrund anzeigt"] Symbol, um den Fehlergrund anzuzeigen.
+. Bewegen Sie den Mauszeiger über das Informationssymbol „i“, um den Fehlergrund anzuzeigen.
 . Korrigieren Sie das Problem:
 +
 .. Vergewissern Sie sich, dass das ONTAP-Cluster betriebsbereit ist und über eine ein- und ausgehende Verbindung zu Ihrem Objekt-Storage-Provider verfügt.
