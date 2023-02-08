@@ -144,8 +144,6 @@
   <block id="edc1bce516f0e4e5cb6bf57de68ce286" category="inline-image-macro">Ein Screenshot, in dem gezeigt wird, wie die Schaltfläche Tiering Volumes für ein Cluster ausgewählt wird.</block>
   <block id="7d5d486077d112d9f802c64eea1ab893" category="paragraph"><block ref="7d5d486077d112d9f802c64eea1ab893" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97c6279c799edb5b91946106e4bd7ead" category="list-text">Wählen Sie auf der Seite „_Tier Volumes_“ die Volumes aus, für die Sie Tiering konfigurieren möchten, und starten Sie die Seite „Tiering Policy“:</block>
-  <block id="a2c3063bd8f8a037bda26950fc2fa130" category="list-text">Um alle Volumes auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (<block ref="2b1190f90c2c717d2aa70aabd2fc4c36" category="inline-image-macro-rx" type="image"></block>) Und klicken Sie auf *Volumes konfigurieren*.</block>
-  <block id="7ede142e047a9c43e3ec4a50352f53b4" category="list-text">Wenn Sie mehrere Volumes auswählen möchten, aktivieren Sie das Kontrollkästchen für jedes Volume (<block ref="f3b0afa317fb06ade03449dd632d08e0" category="inline-image-macro-rx" type="image"></block>) Und klicken Sie auf *Volumes konfigurieren*.</block>
   <block id="27d7b10352920ea311d933853a157434" category="inline-image-macro">Bleistiftsymbol bearbeiten</block>
   <block id="df5e176205e9c59d302111a246c6358e" category="list-text">Um ein einzelnes Volume auszuwählen, klicken Sie auf die Zeile (oder) <block ref="8e860c5cca0144ac9d126d75205476b6" category="inline-image-macro-rx" type="image"></block> Symbol) für das Volume.</block>
   <block id="bf1af3fe2b2716f907d63473ff063165" category="inline-image-macro">Ein Screenshot, in dem die Auswahl eines einzelnen Volumes, mehrerer Volumes oder aller Volumes und die Schaltfläche Ausgewählte Volumes ändern angezeigt werden.</block>
@@ -344,8 +342,6 @@
   <block id="5b47faa45c60368d15dfdd5dfe93817e" category="list-text"><block ref="05e67941b6656a354bb250fa5965cbfe" category="inline-link-rx"></block>.</block>
   <block id="13b81562751bbcb9ff3beecfc691d73d" category="list-text">Der FQDN des S3-kompatiblen Objektspeicherservers und der Port, der für die HTTPS-Kommunikation verwendet wird.</block>
   <block id="d4087a3156960fb7d03ac9037d76ef8e" category="list-text">Zugriffsschlüssel und geheimer Schlüssel mit den erforderlichen S3-Berechtigungen.</block>
-  <block id="bf873eef8ea9c1247876739a70ed365a" category="list-text">Wählen Sie ein On-Premises-Cluster aus.</block>
-  <block id="8d43d9cd74de6ffefa944510fdac9def" category="list-text">Klicken Sie im rechten Fensterbereich für den Tiering-Dienst auf *Aktivieren*.</block>
   <block id="6676b3f6fd0aacd6a191518bb81aa206" category="inline-image-macro">Ein Screenshot, der die Tiering-Option auf der rechten Seite des Bildschirms zeigt, nachdem Sie eine lokale ONTAP-Arbeitsumgebung ausgewählt haben.</block>
   <block id="00daa784b7dee12cb2819fac0ab07fda" category="paragraph"><block ref="00daa784b7dee12cb2819fac0ab07fda" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d19eb194515260df12224a2bdb6ab14" category="list-text">*Objekt-Speichername definieren*: Geben Sie einen Namen für diesen Objekt-Speicher ein. Er muss von jedem anderen Objekt-Storage, den Sie mit Aggregaten auf diesem Cluster verwenden können, eindeutig sein.</block>
@@ -371,7 +367,6 @@
   <block id="d2f518b275848356f172ff6ae0c10fa8" category="list-text">Ein ONTAP-Cluster vor Ort, der ONTAP 9.4 oder höher ausführt und über eine HTTPS-Verbindung zum Azure Blob-Storage verfügt.<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>.</block>
   <block id="cd11b29aa1a96b5a94f154af73328fa6" category="list-text">Ein Connector, der in einer Azure vnet oder vor Ort installiert ist.</block>
   <block id="744a82b075da253af57b3e1dea73fa72" category="list-text">Networking für einen Connector, der eine ausgehende HTTPS-Verbindung zum ONTAP-Cluster in Ihrem Datacenter, zum Azure-Storage und zum Cloud-Tiering-Service ermöglicht.</block>
-  <block id="dbb7149740d936c40081fce28d4ee35c" category="paragraph">Wählen Sie in BlueXP eine lokale Arbeitsumgebung aus, klicken Sie für den Tiering Service auf *Aktivieren* und folgen Sie den Anweisungen zum Tiering von Daten auf Azure Blob Storage.</block>
   <block id="81290f6c22665f0b935cb3e892c415c5" category="paragraph">Nach Abschluss der kostenlosen Testversion können Sie Cloud Tiering über ein Pay-as-you-go-Abonnement, eine BYOL-Lizenz von ONTAP Cloud Tiering oder eine Kombination aus beiden Lizenzen bezahlen:</block>
   <block id="ea948bee686d48a6c63b5b43e33502bc" category="inline-image-macro">Ein Architekturbild, das den Cloud-Tiering-Service mit einer Verbindung zum Connector in Ihrem Cloud-Provider, dem Connector mit einer Verbindung zu Ihrem ONTAP Cluster und einer Verbindung zwischen dem ONTAP-Cluster und Objekt-Storage bei Ihrem Cloud-Provider zeigt. Aktive Daten befinden sich auf dem ONTAP Cluster, während sich inaktive Daten im Objekt-Storage befinden.</block>
   <block id="9c30fbbd51fe1498326f030ec26c084e" category="paragraph"><block ref="9c30fbbd51fe1498326f030ec26c084e" category="inline-image-macro-rx" type="image"></block></block>
@@ -385,12 +380,9 @@
   <block id="1530d1823861aa989d35b92ad0b2fd9e" category="list-text">Eine eingehende Verbindung ist über den Connector erforderlich, der in einem Azure vnet oder vor Ort residieren kann.</block>
   <block id="3cb09efd98df836314cbd254dcf63296" category="admonition">Cloud Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktioniert wie jedes andere Volume.</block>
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">Bevor Sie mit dem Tiering selten genutzter Daten beginnen können, müssen Sie eine lokale ONTAP-Arbeitsumgebung in BlueXP schaffen.</block>
-  <block id="b7f76e21e320bc5e90f575d84c38f775" category="paragraph">Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tiering von Daten in Azure Blob Storage können Sie einen Connector verwenden, der sich in einer Azure vnet-Umgebung oder vor Ort befinden kann. Entweder müssen Sie einen neuen Konnektor erstellen oder sicherstellen, dass der aktuell ausgewählte Connector in Azure oder On-Prem liegt.</block>
   <block id="bda2a863882afc8f61b71a756b1ea690" category="inline-link">Implementieren eines Connectors in Azure</block>
   <block id="1dacca07d9ba20ab896874ca3c68ea8d" category="list-text"><block ref="1dacca07d9ba20ab896874ca3c68ea8d" category="inline-link-rx"></block></block>
   <block id="b1e389999fc3500ff74c433071c6f3d0" category="section-title">Stellen Sie sicher, dass Sie über die erforderlichen Connector-Berechtigungen verfügen</block>
-  <block id="c591cadfaae2c0910945f6c26e696561" category="paragraph">Wenn Sie den Connector mit BlueXP Version 3.9.7 oder höher erstellt haben, sind Sie alle festgelegt.</block>
-  <block id="df8fa8381504770cbc85054471165786" category="paragraph">Wenn Sie den Connector mit einer früheren Version von BlueXP erstellt haben, müssen Sie die Berechtigungsliste bearbeiten, um 2 erforderliche Berechtigungen hinzuzufügen:</block>
   <block id="8d553e78e79ca1abdf2ffdd1714a7698" category="paragraph">Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindungen verfügt. Ein Connector kann lokal oder in Azure installiert werden.</block>
   <block id="bb1241e3a37748e608dbbde25c75ea25" category="list-text">Eine HTTPS-Verbindung über Port 443 zum Azure Blob Storage</block>
   <block id="400985d5d8ad47af48b13e9fe604a6fe" category="list-text">Aktivieren Sie bei Bedarf einen vnet-Service-Endpunkt zum Azure Storage.</block>
@@ -402,14 +394,10 @@
   <block id="30c0faff624015e8c8016427ebe986eb" category="admonition">Falls Sie planen, Cloud Tiering zu konfigurieren, um eine kostengünstigere Zugriffsebene zu verwenden, auf der Ihre Tiered-Daten nach einer bestimmten Anzahl von Tagen übertragen werden, müssen Sie beim Einrichten des Containers in Ihrem Azure Konto keine Lebenszyklusregeln auswählen. Cloud Tiering managt Lebenszyklusphasen.</block>
   <block id="0cff75f8a1ea859d852b43f30a5a65c5" category="section-title">Tiering inaktiver Daten von dem ersten Cluster zu Azure Blob Storage</block>
   <block id="eeee7c2206f30d34992557feb0d7900f" category="paragraph">Starten Sie nach der Vorbereitung der Azure Umgebung das Tiering inaktiver Daten aus dem ersten Cluster.</block>
-  <block id="6700c45eabe136b9fc9be1be1c2604d7" category="list-text">Klicken Sie für den Tiering-Dienst auf *Aktivieren*.</block>
   <block id="39cff02cd4c2bfac12f446d78e59e3ca" category="paragraph">Wenn das Tiering-Ziel für Azure Blob als eine Arbeitsumgebung auf dem Canvas existiert, können Sie das Cluster auf die Azure Blob Arbeitsumgebung ziehen, um den Setup-Assistenten zu starten.</block>
   <block id="b2a8895a08251e3a0ba8598464e85f4a" category="inline-image-macro">Ein Screenshot, der die Aktivieren-Option auf der rechten Seite des Bildschirms zeigt, nachdem Sie eine lokale ONTAP-Arbeitsumgebung ausgewählt haben.</block>
   <block id="b7507ffc73507c1071aa3369e64f9b02" category="paragraph"><block ref="b7507ffc73507c1071aa3369e64f9b02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="462a06b2a85bbbf735ba8fa3fc4dd871" category="list-text">*Anbieter auswählen*: Wählen Sie *Microsoft Azure* und klicken Sie auf *Weiter*.</block>
-  <block id="3ee477979f5c167102e6a5ac24838ded" category="list-text">*Ressourcengruppe*: Wählen Sie eine Ressourcengruppe aus, in der ein vorhandener Container verwaltet wird oder wo Sie einen neuen Container für Tiered-Daten erstellen möchten, und klicken Sie auf *Weiter*.</block>
-  <block id="942f0e4fa69f4641e5d7a36f624bfc71" category="list-text">*Azure Container*: Fügen Sie einen neuen Blob-Container zu einem Storage-Konto hinzu, oder wählen Sie einen vorhandenen Container aus, und klicken Sie auf *Weiter*.</block>
-  <block id="7c5961bc8d85d1e030c4394a4df65272" category="paragraph">Das Speicherkonto und die Container, die in diesem Schritt angezeigt werden, gehören zur Ressourcengruppe, die Sie im vorherigen Schritt ausgewählt haben.</block>
   <block id="9933a95d80335a087c29022e3e618660" category="list-text">*Access Tier Life Cycle*: Cloud Tiering managt die Lebenszyklus-Übergänge Ihrer Tiered-Daten. Daten beginnen in der Klasse _Hot_, Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in die Klasse _Cool_ zu verschieben.</block>
   <block id="f9ec0a0e3f7751a980419c9235987d65" category="paragraph">Wählen Sie die Zugriffsebene, in die Sie die gestaffelten Daten übertragen möchten, und die Anzahl der Tage vor dem Verschieben der Daten aus, und klicken Sie auf *Weiter*. Beispiel: Der Screenshot unten zeigt, dass Tiered Daten nach 45 Tagen im Objekt-Storage von der Klasse _Hot_ in die Klasse _Cool_ verschoben werden.</block>
   <block id="a6de011c08144280abbea085810f3465" category="inline-link-macro">Siehe Unterstützte Zugriffsebenen</block>
@@ -417,7 +405,6 @@
   <block id="68a83a6344da48ff48b7dfe970c4f766" category="inline-image-macro">Ein Screenshot zeigt, wie Sie eine andere Zugriffsebene auswählen, in der Daten nach einer bestimmten Anzahl von Tagen verschoben werden.</block>
   <block id="76ebfce4c2c67a5c80f5e3389cadd984" category="paragraph"><block ref="76ebfce4c2c67a5c80f5e3389cadd984" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d2f15cc1f6b52e91b3fa0f67c5683cc7" category="paragraph">Beachten Sie, dass die Lebenszyklusregel auf alle Blob-Container im ausgewählten Speicherkonto angewendet wird.</block>
-  <block id="b9c2da820a39ae715e453dbc44b9065a" category="paragraph"><block ref="b3f320eea54b95003707e5e870c0dfaf" category="inline-xref-macro-rx"></block> Für die Lebenszyklusmanagement-Funktion.</block>
   <block id="edb5302d21562d6e6d64d3bbe03d94b4" category="list-text">*Clusternetzwerk*: Wählen Sie den IPspace aus, den ONTAP verwenden soll, um eine Verbindung zum Objekt-Storage herzustellen, und klicken Sie auf *Weiter*.</block>
   <block id="3da4793f70832a1f06de77ca02441aed" category="paragraph">Durch die Auswahl des richtigen IPspaces wird sichergestellt, dass Cloud Tiering eine Verbindung von ONTAP mit dem Objekt-Storage Ihres Cloud-Providers einrichten kann.</block>
   <block id="207355fa06161fe61fe18f75db4c59d5" category="paragraph"><block ref="207355fa06161fe61fe18f75db4c59d5" category="inline-image-macro-rx" type="image"></block></block>
@@ -441,9 +428,7 @@
   <block id="5e7895e85d2a8ce94a95b1e2d63c9a62" category="section-title">Behalten meine Storage-Effizienzeinsparungen auf der Cloud-Tier bei Cloud Tiering?</block>
   <block id="ae3e415a4fc13a56be5e1868c9aa2a6e" category="paragraph">Ja, die ONTAP Storage-Effizienzfunktionen auf Volume-Ebene wie Komprimierung, Deduplizierung und Data-Compaction bleiben erhalten, wenn Daten auf die Cloud-Tier verschoben werden.</block>
   <block id="fe862e8407cd35832c11efb6a90397ff" category="section-title">Worin besteht der Unterschied zwischen FabricPool und Cloud Tiering?</block>
-  <block id="7f7e71c666ac6e3a63bc3a7132680d3e" category="paragraph">FabricPool ist die Tiering-Technologie von ONTAP, die selbst-gemanagt werden kann über die ONTAP CLI und System Manager, oder als-Service über Cloud Tiering. Cloud Tiering macht aus FabricPool einen Managed Service mit erweiterten Automatisierungsprozessen – sowohl in ONTAP als auch in der Cloud – für mehr Transparenz und Kontrolle über das Tiering in Hybrid- und Multi-Cloud-Implementierungen.</block>
   <block id="0dcf524393e05cee3deb3f046b007d6a" category="section-title">Können die Daten-Tiers in die Cloud für Disaster Recovery oder für Backup/Archivierung verwendet werden?</block>
-  <block id="11a0d2337d67ae21839695ee035fc0a0" category="paragraph">Nein Da die Metadaten des Volumes nie vom Performance-Tier gestaffelt sind, können die im Objekt-Storage gespeicherten Daten nicht direkt abgerufen werden.</block>
   <block id="ede19369ca5aebd79f174cfded223842" category="paragraph">Cloud Tiering kann jedoch eingesetzt werden, um kosteneffiziente Backups und DR zu erzielen, indem die Daten auf sekundären Systemen und in SnapMirror Ziel-Volumes (DP-Volumes) aktiviert werden. Auf diese Weise werden alle Daten (ausgeschlossene Metadaten) verschoben, wodurch der Datacenter-Platzbedarf und die TCO verringert werden.</block>
   <block id="889a2ba97a353c789347d312f006b7c8" category="section-title">Wird Cloud Tiering auf Volume- oder Aggregatebene angewendet?</block>
   <block id="20ff712f2c649ea611970e47fc3bb71d" category="paragraph">Cloud Tiering wird auf Volume-Ebene aktiviert, indem eine Tiering-Richtlinie mit jedem Volume verknüpft wird. Die Identifizierung kalter Daten erfolgt auf Blockebene.</block>
@@ -451,7 +436,6 @@
   <block id="339f31b903bd01f3382f7efda1a872be" category="inline-link-macro">Volume Tiering-Richtlinien</block>
   <block id="679627f92e200827a33b3bcdf0e0bb7f" category="paragraph">Die Tiering-Richtlinie des Volume ist der Mechanismus, der regelt, welche Blöcke wann Tier-Tiers sind. Die Richtlinie definiert die Art der Datenblöcke (Snapshots, Benutzerdaten oder beides) und den Kühlungszeitraum. Siehe <block ref="7c830597cf59636867131d9763d1dea8" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="6ace93b12d62dd3912b132e79298337d" category="section-title">Wie wirkt sich Cloud Tiering auf die Volume-Kapazität aus?</block>
-  <block id="9edbed19ba22406e2515654036d6d7af" category="paragraph">Cloud Tiering hat keine Auswirkung auf die Kapazität des Volumes, sondern auf die Performance-Tier-Nutzung des Aggregats.</block>
   <block id="4f138351e1daf377d2327bde6f6b16ce" category="section-title">Ermöglicht Cloud-Tiering die Berichterstellung inaktiver Daten?</block>
   <block id="5f7c4d8270cb1dd98f5c715afa143202" category="paragraph">Ja, Cloud-Tiering ermöglicht Inactive Data Reporting (IDR) auf jedem Aggregat. Durch diese Einstellung können wir die Menge inaktiver Daten ermitteln, die zu kostengünstigem Objekt-Storage verschoben werden können.</block>
   <block id="cd9a75b2f2fe179ebd8fccd8eeb8bb03" category="section-title">Wie lange dauert es, bis das IDR Informationen von Anfang an anzeigt?</block>
@@ -480,7 +464,6 @@
   <block id="c7fe1da619ea4dc60271978fef1e44fe" category="inline-link">Preise Für Block-Blob</block>
   <block id="f0597479b6555c19f89fc843f1c8d98c" category="inline-link">Preise Für Cloud Storage</block>
   <block id="80fb8aa8c4c5c3477d1c619e25dee21c" category="paragraph">Ja. Prüfen<block ref="134b76f780a567f977f9c0667960c527" category="inline-link-rx"></block>,<block ref="42cfb61355c94594363648e2439176bf" category="inline-link-rx"></block>, und<block ref="fb963a69fe55ff45676c36ad0b99dda1" category="inline-link-rx"></block> Für zusätzliche Preise, die beim Lesen/Abrufen von Daten anfallen.</block>
-  <block id="03a5e5708e2ca1e0ed97c088a2f866a3" category="section-title">Wie kann ich die Einsparungen meiner Volumes einschätzen und einen Cold Data Report erhalten, bevor ich Cloud Tiering aktivieren kann?</block>
   <block id="62b4885d3e4f3aa3a6da101753a59fd4" category="paragraph">Um Schätzung zu erhalten, fügen Sie einfach Ihren ONTAP Cluster zu BlueXP hinzu und inspizieren Sie ihn über das Cloud Tiering Cluster Dashboard, das sich auf der Registerkarte Tiering befindet. Wenn Inactive Data Reporting (IDR) deaktiviert ist oder noch nicht für einen langen Zeitraum aktiviert wurde, verwendet Cloud Tiering eine Branchenkonstante von 70 %, um die geschätzten Einsparungen zu berechnen. Sobald IDR-Daten verfügbar sind, aktualisiert Cloud Tiering die Einsparungen auf korrekte Zahlen.</block>
   <block id="253b40ae359ba25b56231803430c4873" category="section-title">ONTAP</block>
   <block id="f44f871d75a3f8fcde43750355e19ee9" category="paragraph">Die nachfolgenden Fragen betreffen ONTAP.</block>
@@ -552,9 +535,6 @@
   <block id="594e5f8f87d3f9aee64730282f1d9d11" category="inline-link-macro">So verschieben Sie Daten zurück auf die Performance-Tier</block>
   <block id="f8677b4c8b811cc562ebfa540cd716ff" category="paragraph">Zurückgeschriebene Daten werden im Allgemeinen von Lesezugriffen durchgeführt und hängen vom Typ der Tiering-Richtlinie ab. Vor ONTAP 9.8 kann das Schreiben des gesamten Volumes mit einem Vorgang _Volume Move_ durchgeführt werden. Ab ONTAP 9.8 hat die Tiering UI die Möglichkeit, *alle Daten zurück zu holen* oder *aktives Dateisystem*. <block ref="5fc989c9b1011f539a0df96bd559f635" category="inline-link-macro-rx"></block>.</block>
   <block id="5b9fbe75fbcd16763752424288950fad" category="section-title">Würden die Tiering-Daten zurück nach On-Premises migriert, wenn ein vorhandener All Flash FAS/FAS Controller durch einen neuen All Flash FAS Controller ersetzt wird?</block>
-  <block id="954ab271743046342c8c477272ccf1e2" category="paragraph">Nein Während des „Head Swap“-Verfahrens ist das einzige, was sich ändert, das Eigentum des Aggregates. In diesem Fall wird die Änderung in den neuen Controller vorgenommen, ohne Daten zu verschieben.</block>
-  <block id="be06043e635d6e3bb909d73510b44e3d" category="section-title">Kann ich die Data-Tiering-Architektur des Cloud-Providers oder Objekt-Storage-Explorers verwenden? Kann ich die im Objekt-Storage gespeicherten Daten direkt ohne ONTAP verwenden?</block>
-  <block id="d430f061b4da1d93d76a477eed713ad9" category="paragraph">Nein Die in die Cloud aufgebauten und abgestuften Objekte enthalten keine einzelne Datei, sondern bis zu 1,024 4-KB-Blöcke aus mehreren Dateien. Die Metadaten eines Volumes verbleiben immer auf dem lokalen Tier.</block>
   <block id="fe4a785cf549e843e958f443c4baf0fe" category="section-title">Anschlüsse</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">Die folgenden Fragen beziehen sich auf den BlueXP Connector.</block>
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">Was ist der Steckverbinder?</block>
@@ -581,7 +561,6 @@
   <block id="2719cad5460eb9108696993a4c233dc2" category="inline-link-macro">Weitere Informationen zu Tiering-Richtlinien</block>
   <block id="5ef61948a073dbcdfdb7d93caa1067ac" category="paragraph"><block ref="b9368c1c43c24f87d7a3626332a607af" category="inline-link-macro-rx"></block>.</block>
   <block id="d0252572656bbedd8e24eed72a5822ea" category="section-title">An welchem Punkt werden meine Daten als „kalt“ eingestuft?</block>
-  <block id="106e953d8d4bea7ebaea7ab2455cf23d" category="paragraph">Da Daten-Tiering auf Blockebene erfolgt, wird ein Datenblock als kalt betrachtet, nachdem er für einen bestimmten Zeitraum nicht aufgerufen wurde, was durch das Attribut Minimum-Cooling-days der Tiering-Richtlinie definiert wird. Der anwendbare Bereich beträgt 2-63 Tage mit ONTAP 9.7 und früher oder 2-183 Tage ab ONTAP 9.8.</block>
   <block id="aa3f449e50a7b69fa0c38b77d2315143" category="section-title">Wie lange erfolgt der standardmäßige Kühlzeitraum für Daten, bevor sie in die Cloud-Tier verschoben werden?</block>
   <block id="e72bc0c8a17dadf8e8ad885b9700456f" category="paragraph">Der standardmäßige Kühlzeitraum für die Cold-Snapshot-Richtlinie beträgt 2 Tage, während der standardmäßige Kühlzeitraum für Cold-User-Daten und Snapshots 31 Tage beträgt. Der Parameter „Abkühltage“ gilt nicht für die Richtlinie „Alle Tiering“.</block>
   <block id="4c8d66eef4460316cfa98d7ddb65f407" category="section-title">Sind alle Tiered Daten aus dem Objekt-Storage abgerufen, wenn ich ein volles Backup mache?</block>
@@ -638,7 +617,6 @@
   <block id="4b75686c0a14158ec6b99e93fbf1828b" category="doc">Lizenzierung für Cloud Tiering einrichten</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">Ein paar Notizen, bevor Sie weitere lesen:</block>
   <block id="1612cb846aef0cf7c32d67e2e37dac9f" category="list-text">Die BYOL Cloud Tiering Lizenz ist eine „_Floating_“-Lizenz, die Sie über mehrere ONTAP Cluster vor Ort in Ihrem BlueXP Konto hinweg verwenden können. Dies unterscheidet sich in der Vergangenheit, wo Sie für jeden Cluster eine _FabricPool_ Lizenz erworben haben.</block>
-  <block id="e206957e9be19dce9acce268f36b6b4d" category="list-text">Beim Tiering von Daten in StorageGRID fallen keine Gebühren an. Daher ist keine BYOL-Lizenz oder eine PAYGO-Registrierung erforderlich. Diese Tiered Daten zählen nicht gegen die Kapazität, die in Ihrer Lizenz erworben wurde.</block>
   <block id="d42e6c6c0bd600babc489630de73058f" category="inline-link-macro">Erfahren Sie mehr über die Funktionsweise der Lizenzierung für Cloud Tiering</block>
   <block id="6cba13359069adfeb75d96e433421999" category="paragraph"><block ref="4e584f79910f9a3a7129b23d958f91fd" category="inline-link-macro-rx"></block>.</block>
   <block id="2c747bf611c932e034372048fa569c80" category="section-title">Nutzen Sie ein Cloud Tiering PAYGO-Abonnement</block>
@@ -725,7 +703,6 @@
   <block id="ee1dc2f67f917d3027531c379ca162ea" category="paragraph">Sie können Ihre Cloud-Tiering-Lizenz vor Ablauf des Gültigkeitsdatums aktualisieren, damit Sie Ihre Daten-Tiering in die Cloud nicht unterbrechen können.</block>
   <block id="2a1a6ce6532bc43b546f90932dcc9018" category="list-text">Klicken Sie rechts unten auf BlueXP auf das Chat-Symbol, um eine Erweiterung Ihres Termins oder zusätzliche Kapazität Ihrer Cloud Tiering-Lizenz für die jeweilige Seriennummer anzufordern.</block>
   <block id="8061535eb5e8bab52c4a8a0fdc119d14" category="paragraph">Nach der Zahlung für die Lizenz und der Registrierung auf der NetApp Support-Website aktualisiert BlueXP automatisch die Lizenz im Digital Wallet. Auf der Seite „Data Services Licenses“ wird die Änderung in 5 bis 10 Minuten dargestellt.</block>
-  <block id="214cacc5f23c512f4926b241fbfd1544" category="list-text">Wenn BlueXP die Lizenz nicht automatisch aktualisieren kann, müssen Sie die Lizenzdatei manuell hochladen.</block>
   <block id="b2b168bd64a341a85c749cb61bba40cb" category="inline-xref">Beziehen Sie die Lizenzdatei über die NetApp Support-Website</block>
   <block id="dcb1cc98de5be5ebc848f6d527296548" category="list-text">Das können Sie <block ref="a628f2c6d1db91c5feff2141b635e1d6" category="inline-xref-macro-rx"></block>.</block>
   <block id="8f0a75d2d5a82f31f2cf069c3b0ee684" category="inline-image-macro">Weitere Symbole</block>
@@ -800,7 +777,6 @@
   <block id="442a5b2cd4109c0203483d91fc544ccf" category="list-text"><block ref="cbd838ab5a582921645cc152129d502d" category="inline-link-rx"></block>.</block>
   <block id="037f057bec36e168c4cbef4fb3d7baef" category="inline-link">GCP-Speichereinstellungen</block>
   <block id="53b7d7a30f51832e17a6116b67b1ed1b" category="list-text">Gehen Sie zu<block ref="68a5b209ce3843ce6d342e4d1299b53b" category="inline-link-rx"></block> Außerdem Zugriffsschlüssel für das Servicekonto erstellen:</block>
-  <block id="b1ca97074a9a438ddbe4b7a8de533728" category="list-text">Wählen Sie ein Projekt aus, und klicken Sie auf *Interoperabilität*. Falls Sie dies noch nicht getan haben, klicken Sie auf *Interoperabilitätszugriff aktivieren*.</block>
   <block id="2888f76ffbc5da2864448f44f9438096" category="list-text">Klicken Sie unter *Zugriffsschlüssel für Servicekonten* auf *Schlüssel für ein Servicekonto erstellen*, wählen Sie das gerade erstellte Servicekonto aus und klicken Sie auf *Schlüssel erstellen*.</block>
   <block id="630337f9212a0c34ec9f5d53517b1325" category="paragraph">Sie müssen die Schlüssel später eingeben, wenn Sie Cloud Tiering einrichten.</block>
   <block id="b409d90e9c9774952be98ddeac919772" category="section-title">Tiering inaktiver Daten vom ersten Cluster zu Google Cloud Storage</block>
@@ -951,7 +927,6 @@
   <block id="9cd38a30ef1c3ae6b31cfb50d4f1a25f" category="admonition">Die Kommunikation zwischen Connector und StorageGRID dient nur der Einrichtung des Objektspeichers.</block>
   <block id="d819d0403e81c7160cb438c3a5d9a3c4" category="paragraph">Ihre ONTAP-Cluster müssen beim Tiering von Daten zu StorageGRID die folgenden Anforderungen erfüllen.</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="list-text">Lizenzierung</block>
-  <block id="64f5a141e95a85b5c7adc328cad6065b" category="list-text">Eine Cloud-Tiering-Lizenz ist nicht erforderlich in Ihrem BlueXP-Konto, noch ist eine FabricPool-Lizenz auf dem ONTAP-Cluster erforderlich, wenn Tiering von Daten auf StorageGRID.</block>
   <block id="d356e706a5a76e1d07d019ae07df9f40" category="list-text">Der ONTAP-Cluster initiiert eine HTTPS-Verbindung über einen vom Benutzer angegebenen Port zum StorageGRID-Gateway-Node (der Port ist während des Tiering-Setups konfigurierbar).</block>
   <block id="6be12c1b6627a3a9bb2aa4cb185fc866" category="section-title">StorageGRID wird vorbereitet</block>
   <block id="36fe0b0906c418ae57a5a0bdc228ec2b" category="paragraph">StorageGRID muss folgende Anforderungen erfüllen:</block>
@@ -1223,13 +1198,11 @@
   <block id="51ae64fb3620d7b88a6fc20148f0e2d7" category="sidebar">Unterstützte Amazon S3-Storage-Klassen und Regionen</block>
   <block id="483b947377ff3a8f0bfe2df65d4f5292" category="sidebar">Unterstützte Azure-Zugriffsebenen und -Regionen</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Wissen und Support</block>
-  <block id="5fef629b836b60819e0c0ce49cd2b9d7" category="sidebar">Was ist neu</block>
   <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">Tiering von On-Premises-ONTAP-Daten in die Cloud</block>
   <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Tiering zu Azure Blob</block>
   <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Tiering in Google Cloud</block>
   <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">Tier zu generischem S3</block>
   <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">Tiering-Einstellungen verwalten</block>
-  <block id="2379913388089eb3bb86ea09ddd47c5c" category="sidebar">Ändern Sie die Tiering-Richtlinie eines Volumes</block>
   <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">Tiering-Informationen für ein Cluster prüfen</block>
   <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">Tiering von Daten aus zusätzlichen Volumes</block>
   <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">Verschieben Sie Daten aus der Cloud zurück in die Performance-Tier</block>
@@ -1240,7 +1213,6 @@
   <block id="500c3424a2151541a2d7783c7e308bb5" category="sidebar">Entfernen Sie einen Spiegelobjektspeicher</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs Community</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP-Blog</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Andere Ressourcen</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">Anwendungsfälle für BlueXP</block>
@@ -1253,7 +1225,6 @@
   <block id="8888d46d611948a30ba2c08d3adb6945" category="list-text">Für eine Anmeldung über den Azure Marketplace:<block ref="c7c84f194b790bd1614b3007104e1172" category="inline-link-rx"></block>Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.</block>
   <block id="a857c8adb9c1cde4acd264143a3e3ad1" category="paragraph">Wenn Sie eine Byol-Kapazitätsgrenze erreichen, wird das Tiering neuer „kalter“ Daten unterbrochen, während alle zuvor Tiered Daten verfügbar bleiben. Wenn Sie ein PAYGO-Abonnement für _BlueXP – Deploy &amp; Manage Cloud Data Services_ haben, werden neue kalte Daten weiterhin auf Objekt-Storage verschoben. Diese Kosten werden dann auf Nutzungsbasis bezahlt.</block>
   <block id="91a68e06c0ddb0dde07439f8f6bd8af6" category="list-text"><block ref="91a68e06c0ddb0dde07439f8f6bd8af6" category="inline-link-macro-rx"></block></block>
-  <block id="01bd12cba613f42e9ff6400f639a48dc" category="list-text">Wenn Sie bereits das BlueXP Abonnement (PAYGO) in Ihrem Cloud-Provider-Markt abonniert haben, haben Sie das Cloud Tiering automatisch auch von lokalen ONTAP Systemen abonniert. Im Reiter Cloud Tiering *Licensing* sehen Sie ein aktives Abonnement. Sie müssen sich nicht erneut anmelden.</block>
   <block id="a4106436d00150633e4b615291f0b5c4" category="list-text">Für die Anmeldung über den GCP Marketplace:<block ref="7e960c467ff9bbcd90615ea936733251" category="inline-link-rx"></block>Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.</block>
   <block id="bd25c3527b85ace964c6837242630a19" category="paragraph"><block ref="316080080631334cc8b0ad0316a8ebff" category="inline-link-rx"></block>.</block>
   <block id="be161e727970da45fa68901ea907f28e" category="list-text">Wenn Sie sich über den AWS Marketplace anmelden möchten,<block ref="39d4482f47ca47b562b106b1d8bbeae0" category="inline-link-rx"></block>Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.</block>
@@ -1292,7 +1263,6 @@
   <block id="b5aec059d3f0c191720983ba1eb05690" category="list-text">Durch die Anmeldung wird sichergestellt, dass nach der kostenlosen Testversion keine Serviceunterbrechung erfolgt.</block>
   <block id="121bc0fb41d07ce979966173203acae0" category="paragraph">Am Ende der Testphase liegen die Kosten für jede Stunde, je nachdem, wie viele Daten Sie speichern.</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">Bis 6. Dezember 2022</block>
-  <block id="73358bf2a9d2d2c32dbbab5b76681d7f" category="section-title">Erforderliche Änderungen am Endpunkt für ausgehende Internetzugriffe für Connector</block>
   <block id="c433416a8f427b90caab6f6eed1f6323" category="paragraph">Aufgrund einer Änderung des Cloud Tiering müssen Sie die folgenden Connector-Endpunkte für einen erfolgreichen Cloud Tiering-Betrieb ändern:</block>
   <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">Alter Endpunkt</block>
   <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">Neuer Endpunkt</block>
@@ -1314,4 +1284,41 @@
   <block id="79385e330c7175cb5887cc8f4befaed8" category="inline-image-macro">Bearbeitungssymbol, das am Ende jeder Zeile in der Tabelle für Tiering-Volumes angezeigt wird</block>
   <block id="58d8ea9b13cad2e6453367ec5718e38a" category="list-text">Klicken Sie auf das <block ref="53af160daf8754f7e9dcd6d07cc514b7" category="inline-image-macro-rx" type="image"></block> Symbol für das Volume, wählen Sie die gewünschte Abrufoption und klicken Sie auf *Anwenden*.</block>
   <block id="b151844c81732b344718260aa69943af" category="list-text">Bewegen Sie den Mauszeiger über das Informationssymbol „i“, um den Fehlergrund anzuzeigen.</block>
+  <block id="b2b5aa0c45edd9f1055e515a5bfde8eb" category="list-text">Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.</block>
+  <block id="57c0e1741966187a33a00eea2622a5ec" category="list-text">Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Unterstützung für Cloud-Provider-Lösungen</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">Technische Unterstützung für die folgenden Lösungen von Cloud-Providern, die Sie in BlueXP integriert haben, finden Sie in der BlueXP-Dokumentation zu diesem Produkt unter „Hilfe“.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX für ONTAP</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Dateien</block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service für Google Cloud</block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="67e8236f9873d4ba827069cbe6f40bcb" category="list-text">Eine Cloud-Tiering-Lizenz ist nicht für Ihr BlueXP-Konto erforderlich, und es ist auch keine FabricPool-Lizenz für den ONTAP Cluster erforderlich, wenn Sie Daten auf StorageGRID verschieben.</block>
+  <block id="6b97c869d129075dc99119cc6c266fd4" category="paragraph">Wählen Sie in BlueXP eine lokale ONTAP-Arbeitsumgebung aus, klicken Sie für den Tiering Service auf *Aktivieren* und folgen Sie den Aufforderungen zum Tiering von Daten auf Azure Blob Storage.</block>
+  <block id="8d69c6a87500bfb8cb04a6182b6d844b" category="paragraph">Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tiering von Daten in den Azure Blob Storage können Sie einen Connector verwenden, der sich in einer Azure vnet oder in Ihrem Standort befindet. Entweder müssen Sie einen neuen Konnektor erstellen oder sicherstellen, dass der aktuell ausgewählte Connector in Azure oder On-Prem liegt.</block>
+  <block id="5354529f47c862f65799910961248e94" category="inline-link">Erforderliche Berechtigungen für benutzerdefinierte Rollen</block>
+  <block id="83a989bd64e0e5885e1dec6274ea42ed" category="inline-link">Für Cloud Tiering sind spezifische Berechtigungen erforderlich</block>
+  <block id="01a5c8408150004575ed5198397b888a" category="paragraph">Wenn Sie den Connector mit BlueXP Version 3.9.25 oder höher erstellt haben, sind Sie alle festgelegt. Standardmäßig wird die benutzerdefinierte Rolle eingerichtet, die die Berechtigungen bereitstellt, die ein Connector zur Verwaltung von Ressourcen und Prozessen in Ihrem Azure-Netzwerk benötigt. Siehe<block ref="2e92f9b7c581d4f70c6be4a7886872e3" category="inline-link-rx"></block> Und das<block ref="11be4b468aa0767f9d6625c9158df171" category="inline-link-rx"></block>.</block>
+  <block id="93319d1fbdd154c5602c392140110702" category="paragraph">Wenn Sie den Connector mit einer früheren Version von BlueXP erstellt haben, müssen Sie die Berechtigungsliste für das Azure-Konto bearbeiten, um fehlende Berechtigungen hinzuzufügen.</block>
+  <block id="5fef57bc0c1b18c77c5be5c6d63bd96d" category="list-text">*Ressourcengruppe*: Wählen Sie eine Ressourcengruppe aus, in der ein vorhandener Container verwaltet wird oder wo Sie einen neuen Container für Tiered-Daten erstellen möchten, und klicken Sie auf *Weiter*.</block>
+  <block id="973273fb1ef1a057d43299c67a2fa0c2" category="list-text">*Azure Container*: Wählen Sie das Optionsfeld, um entweder einen neuen Blob-Container zu einem Speicherkonto hinzuzufügen oder einen bestehenden Container zu verwenden. Wählen Sie dann das Speicherkonto aus und wählen Sie den vorhandenen Container aus, oder geben Sie den Namen für den neuen Container ein. Klicken Sie dann auf *Weiter*.</block>
+  <block id="19a7b69e14b99b6d561b88afc3f34695" category="paragraph">Die in diesem Schritt angezeigten Speicherkonten und Container gehören zur Ressourcengruppe, die Sie im vorherigen Schritt ausgewählt haben.</block>
+  <block id="1b9cd9f1d110a19c8b1050fa1e561e7b" category="list-text">Wählen Sie ein Projekt aus, und klicken Sie auf *Interoperabilität*. Falls Sie dies noch nicht getan haben, klicken Sie auf *Interoperabilitätszugriff aktivieren*.</block>
+  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Änderungen an Endpunkten für ausgehenden Internetzugriff über den Anschluss</block>
+  <block id="0c1c6a391ae1d68d3507d3080a25b274" category="paragraph">FabricPool ist die ONTAP Tiering-Technologie, die sich über die ONTAP CLI und System Manager selbst managen oder als-Service über Cloud Tiering managen lässt. Cloud Tiering macht aus FabricPool einen Managed Service mit erweiterten Automatisierungsprozessen – sowohl in ONTAP als auch in der Cloud – für mehr Transparenz und Kontrolle über das Tiering in Hybrid- und Multi-Cloud-Implementierungen.</block>
+  <block id="09c40a36a20188e380186d68dab9075a" category="paragraph">Nein Da die Metadaten des Volume nie aus dem Performance-Tier verlagert werden, können die im Objekt-Storage gespeicherten Daten nicht direkt abgerufen werden.</block>
+  <block id="3986f01092f147c9d6cdec6e2d56ae9e" category="paragraph">Cloud-Tiering hat keine Auswirkungen auf die Kapazität des Volumes, sondern auf die Performance-Tier-Nutzung des Aggregats.</block>
+  <block id="de8fae09cd33447b4a5792798abb8a9b" category="section-title">Wie kann ich die Einsparungen meiner Volumes einschätzen und vor der Aktivierung von Cloud Tiering einen Bericht über kalte Daten erhalten?</block>
+  <block id="97649bd4040c0307cd57ff763d551780" category="paragraph">Nein Während des „Head Swap“-Verfahrens ist das einzige, was sich ändert, das Eigentum des Aggregats. In diesem Fall wird die Änderung in den neuen Controller vorgenommen, ohne Daten zu verschieben.</block>
+  <block id="32524986634cdd65eea18c94ba7aa138" category="section-title">Kann ich die Data-Tiering-Architektur des Cloud-Providers oder Objekt-Storage-Explorers verwenden? Kann ich die im Objekt-Storage gespeicherten Daten direkt ohne ONTAP verwenden?</block>
+  <block id="05278fe4264fa7714f2deb1dc83a1f0f" category="paragraph">Nein Die in die Cloud aufgebauten und abgestuften Objekte enthalten keine einzelne Datei, sondern bis zu 1,024 4-KB-Blöcke aus mehreren Dateien. Die Metadaten eines Volume verbleiben immer auf dem lokalen Tier.</block>
+  <block id="d8de974cae25c190e1656a12aae05ac0" category="paragraph">Da das Daten-Tiering auf Blockebene erfolgt, gilt ein Datenblock als „kalt“, nachdem er seit einem bestimmten Zeitraum nicht mehr zugegriffen wurde. Dies ist durch das Tiering-Attribut für minimale Kühltage definiert. Der anwendbare Bereich beträgt 2-63 Tage mit ONTAP 9.7 und früher oder 2-183 Tage ab ONTAP 9.8.</block>
+  <block id="997ad1f279c3ec4615df50788475bd1b" category="paragraph">Eine kostenlose 30-Tage-Testversion von Cloud Tiering wird gestartet, wenn Sie Tiering über den ersten Cluster einrichten. Nach Abschluss der kostenlosen Testversion müssen Sie für Cloud Tiering über ein Pay-as-you-go- oder ein Jahresabonnement vom Markt Ihres Cloud-Providers, eine BYOL-Lizenz von NetApp oder eine Kombination aus beiden Clouds bezahlen.</block>
+  <block id="c50ed19c37a3a0b4ff682e979d40e06a" category="list-text">Wenn Sie bereits das BlueXP Abonnement (PAYGO) in Ihrem Cloud-Provider-Markt abonniert haben, haben Sie das Cloud Tiering automatisch auch von lokalen ONTAP Systemen abonniert. Auf der Registerkarte Cloud Tiering *Licensing* sehen Sie ein aktives Abonnement. Sie müssen sich nicht erneut anmelden.</block>
+  <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">Beim Tiering von Daten in StorageGRID fallen keine Gebühren an. Daher ist keine BYOL-Lizenz oder eine PAYGO-Registrierung erforderlich. Diese Tiered Daten zählen nicht auf die in Ihrer Lizenz erworbene Kapazität.</block>
+  <block id="822f69d2e49d7da6f8c764e0680f2f75" category="list-text">Wenn BlueXP die Lizenz nicht automatisch aktualisieren kann, müssen Sie die Lizenzdatei manuell hochladen.</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Was ist neu</block>
+  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">Ändern Sie die Tiering-Richtlinie eines Volumes</block>
+  <block id="e7719a97642051ee358e5d15cf1ab284" category="sidebar">Cloud Tiering Blog</block>
 </blocks>

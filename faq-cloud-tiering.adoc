@@ -62,13 +62,13 @@ Ja, die ONTAP Storage-Effizienzfunktionen auf Volume-Ebene wie Komprimierung, De
 
 === Worin besteht der Unterschied zwischen FabricPool und Cloud Tiering?
 
-FabricPool ist die Tiering-Technologie von ONTAP, die selbst-gemanagt werden kann über die ONTAP CLI und System Manager, oder als-Service über Cloud Tiering. Cloud Tiering macht aus FabricPool einen Managed Service mit erweiterten Automatisierungsprozessen – sowohl in ONTAP als auch in der Cloud – für mehr Transparenz und Kontrolle über das Tiering in Hybrid- und Multi-Cloud-Implementierungen.
+FabricPool ist die ONTAP Tiering-Technologie, die sich über die ONTAP CLI und System Manager selbst managen oder als-Service über Cloud Tiering managen lässt. Cloud Tiering macht aus FabricPool einen Managed Service mit erweiterten Automatisierungsprozessen – sowohl in ONTAP als auch in der Cloud – für mehr Transparenz und Kontrolle über das Tiering in Hybrid- und Multi-Cloud-Implementierungen.
 
 
 
 === Können die Daten-Tiers in die Cloud für Disaster Recovery oder für Backup/Archivierung verwendet werden?
 
-Nein Da die Metadaten des Volumes nie vom Performance-Tier gestaffelt sind, können die im Objekt-Storage gespeicherten Daten nicht direkt abgerufen werden.
+Nein Da die Metadaten des Volume nie aus dem Performance-Tier verlagert werden, können die im Objekt-Storage gespeicherten Daten nicht direkt abgerufen werden.
 
 Cloud Tiering kann jedoch eingesetzt werden, um kosteneffiziente Backups und DR zu erzielen, indem die Daten auf sekundären Systemen und in SnapMirror Ziel-Volumes (DP-Volumes) aktiviert werden. Auf diese Weise werden alle Daten (ausgeschlossene Metadaten) verschoben, wodurch der Datacenter-Platzbedarf und die TCO verringert werden.
 
@@ -88,7 +88,7 @@ Die Tiering-Richtlinie des Volume ist der Mechanismus, der regelt, welche Blöck
 
 === Wie wirkt sich Cloud Tiering auf die Volume-Kapazität aus?
 
-Cloud Tiering hat keine Auswirkung auf die Kapazität des Volumes, sondern auf die Performance-Tier-Nutzung des Aggregats.
+Cloud-Tiering hat keine Auswirkungen auf die Kapazität des Volumes, sondern auf die Performance-Tier-Nutzung des Aggregats.
 
 
 
@@ -158,7 +158,7 @@ Ja. Prüfen https://aws.amazon.com/s3/pricing/["Amazon S3-Preise"], https://azur
 
 
 
-=== Wie kann ich die Einsparungen meiner Volumes einschätzen und einen Cold Data Report erhalten, bevor ich Cloud Tiering aktivieren kann?
+=== Wie kann ich die Einsparungen meiner Volumes einschätzen und vor der Aktivierung von Cloud Tiering einen Bericht über kalte Daten erhalten?
 
 Um Schätzung zu erhalten, fügen Sie einfach Ihren ONTAP Cluster zu BlueXP hinzu und inspizieren Sie ihn über das Cloud Tiering Cluster Dashboard, das sich auf der Registerkarte Tiering befindet. Wenn Inactive Data Reporting (IDR) deaktiviert ist oder noch nicht für einen langen Zeitraum aktiviert wurde, verwendet Cloud Tiering eine Branchenkonstante von 70 %, um die geschätzten Einsparungen zu berechnen. Sobald IDR-Daten verfügbar sind, aktualisiert Cloud Tiering die Einsparungen auf korrekte Zahlen.
 
@@ -324,13 +324,13 @@ Zurückgeschriebene Daten werden im Allgemeinen von Lesezugriffen durchgeführt 
 
 === Würden die Tiering-Daten zurück nach On-Premises migriert, wenn ein vorhandener All Flash FAS/FAS Controller durch einen neuen All Flash FAS Controller ersetzt wird?
 
-Nein Während des „Head Swap“-Verfahrens ist das einzige, was sich ändert, das Eigentum des Aggregates. In diesem Fall wird die Änderung in den neuen Controller vorgenommen, ohne Daten zu verschieben.
+Nein Während des „Head Swap“-Verfahrens ist das einzige, was sich ändert, das Eigentum des Aggregats. In diesem Fall wird die Änderung in den neuen Controller vorgenommen, ohne Daten zu verschieben.
 
 
 
 === Kann ich die Data-Tiering-Architektur des Cloud-Providers oder Objekt-Storage-Explorers verwenden? Kann ich die im Objekt-Storage gespeicherten Daten direkt ohne ONTAP verwenden?
 
-Nein Die in die Cloud aufgebauten und abgestuften Objekte enthalten keine einzelne Datei, sondern bis zu 1,024 4-KB-Blöcke aus mehreren Dateien. Die Metadaten eines Volumes verbleiben immer auf dem lokalen Tier.
+Nein Die in die Cloud aufgebauten und abgestuften Objekte enthalten keine einzelne Datei, sondern bis zu 1,024 4-KB-Blöcke aus mehreren Dateien. Die Metadaten eines Volume verbleiben immer auf dem lokalen Tier.
 
 
 
@@ -394,7 +394,7 @@ link:concept-cloud-tiering.html#volume-tiering-policies["Weitere Informationen z
 
 === An welchem Punkt werden meine Daten als „kalt“ eingestuft?
 
-Da Daten-Tiering auf Blockebene erfolgt, wird ein Datenblock als kalt betrachtet, nachdem er für einen bestimmten Zeitraum nicht aufgerufen wurde, was durch das Attribut Minimum-Cooling-days der Tiering-Richtlinie definiert wird. Der anwendbare Bereich beträgt 2-63 Tage mit ONTAP 9.7 und früher oder 2-183 Tage ab ONTAP 9.8.
+Da das Daten-Tiering auf Blockebene erfolgt, gilt ein Datenblock als „kalt“, nachdem er seit einem bestimmten Zeitraum nicht mehr zugegriffen wurde. Dies ist durch das Tiering-Attribut für minimale Kühltage definiert. Der anwendbare Bereich beträgt 2-63 Tage mit ONTAP 9.7 und früher oder 2-183 Tage ab ONTAP 9.8.
 
 
 

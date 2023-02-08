@@ -66,7 +66,7 @@ Unterstützte ONTAP Plattformen::
 --
 Unterstützte ONTAP Version:: ONTAP 9.4 oder höher
 Erforderlicher Zugriffsparameter für Anwendungen:: Der Cluster-Admin-Benutzer muss über „Konsole“-Anwendungszugriff verfügen. Sie können dies mit dem ONTAP-Befehl überprüfen `security login show`. „Konsole“ sollte in der Spalte _Application_ für den Benutzer „admin“ angezeigt werden. Verwenden Sie die `security login create` Befehl, um ggf. Zugriff auf Konsolenanwendung hinzuzufügen. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["Weitere Informationen finden Sie in den Befehlen „Security Login“"].
-Lizenzierung:: Eine Cloud-Tiering-Lizenz ist nicht erforderlich in Ihrem BlueXP-Konto, noch ist eine FabricPool-Lizenz auf dem ONTAP-Cluster erforderlich, wenn Tiering von Daten auf StorageGRID.
+Lizenzierung:: Eine Cloud-Tiering-Lizenz ist nicht für Ihr BlueXP-Konto erforderlich, und es ist auch keine FabricPool-Lizenz für den ONTAP Cluster erforderlich, wenn Sie Daten auf StorageGRID verschieben.
 Netzwerkanforderungen für Cluster::
 +
 --
@@ -164,8 +164,8 @@ Starten Sie nach der Vorbereitung der Umgebung das Tiering inaktiver Daten aus d
 
 
 .Schritte
-. Wählen Sie ein On-Premises-Cluster aus.
-. Klicken Sie für den Tiering-Dienst auf *Aktivieren*.
+. Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.
+. Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.
 +
 Wenn das StorageGRID Tiering-Ziel als eine Arbeitsumgebung auf dem Canvas existiert, können Sie den Cluster auf die StorageGRID Arbeitsumgebung ziehen, um den Setup-Assistenten zu starten.
 

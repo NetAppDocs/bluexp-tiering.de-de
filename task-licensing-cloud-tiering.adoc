@@ -14,13 +14,13 @@ summary: Eine kostenlose 30-Tage-Testversion von Cloud Tiering wird gestartet, w
 
 
 [role="lead"]
-Eine kostenlose 30-Tage-Testversion von Cloud Tiering wird gestartet, wenn Sie Tiering über den ersten Cluster einrichten. Nach Ablauf der kostenlosen Testversion müssen Sie für Cloud Tiering über ein Pay-as-you-go- oder ein Jahresabonnement vom Markt Ihres Cloud-Providers, eine BYOL-Lizenz von NetApp oder eine Kombination von beiden bezahlen.
+Eine kostenlose 30-Tage-Testversion von Cloud Tiering wird gestartet, wenn Sie Tiering über den ersten Cluster einrichten. Nach Abschluss der kostenlosen Testversion müssen Sie für Cloud Tiering über ein Pay-as-you-go- oder ein Jahresabonnement vom Markt Ihres Cloud-Providers, eine BYOL-Lizenz von NetApp oder eine Kombination aus beiden Clouds bezahlen.
 
 Ein paar Notizen, bevor Sie weitere lesen:
 
-* Wenn Sie bereits das BlueXP Abonnement (PAYGO) in Ihrem Cloud-Provider-Markt abonniert haben, haben Sie das Cloud Tiering automatisch auch von lokalen ONTAP Systemen abonniert. Im Reiter Cloud Tiering *Licensing* sehen Sie ein aktives Abonnement. Sie müssen sich nicht erneut anmelden.
+* Wenn Sie bereits das BlueXP Abonnement (PAYGO) in Ihrem Cloud-Provider-Markt abonniert haben, haben Sie das Cloud Tiering automatisch auch von lokalen ONTAP Systemen abonniert. Auf der Registerkarte Cloud Tiering *Licensing* sehen Sie ein aktives Abonnement. Sie müssen sich nicht erneut anmelden.
 * Die BYOL Cloud Tiering Lizenz ist eine „_Floating_“-Lizenz, die Sie über mehrere ONTAP Cluster vor Ort in Ihrem BlueXP Konto hinweg verwenden können. Dies unterscheidet sich in der Vergangenheit, wo Sie für jeden Cluster eine _FabricPool_ Lizenz erworben haben.
-* Beim Tiering von Daten in StorageGRID fallen keine Gebühren an. Daher ist keine BYOL-Lizenz oder eine PAYGO-Registrierung erforderlich. Diese Tiered Daten zählen nicht gegen die Kapazität, die in Ihrer Lizenz erworben wurde.
+* Beim Tiering von Daten in StorageGRID fallen keine Gebühren an. Daher ist keine BYOL-Lizenz oder eine PAYGO-Registrierung erforderlich. Diese Tiered Daten zählen nicht auf die in Ihrer Lizenz erworbene Kapazität.
 
 
 link:concept-cloud-tiering.html#pricing-and-licenses["Erfahren Sie mehr über die Funktionsweise der Lizenzierung für Cloud Tiering"].

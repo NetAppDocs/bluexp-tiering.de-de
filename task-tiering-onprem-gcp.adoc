@@ -177,8 +177,8 @@ Nach der Vorbereitung Ihrer Google Cloud Umgebung können Sie vom ersten Cluster
 
 
 .Schritte
-. Wählen Sie ein On-Premises-Cluster aus.
-. Klicken Sie für den Tiering-Dienst auf *Aktivieren*.
+. Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.
+. Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.
 +
 Wenn das Tiering-Ziel von Google Cloud Storage als Arbeitsumgebung auf dem Canvas existiert, können Sie den Cluster auf die Google Cloud Storage-Arbeitsumgebung ziehen, um den Setup-Assistenten zu starten.
 

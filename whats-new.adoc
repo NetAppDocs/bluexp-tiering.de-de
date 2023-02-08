@@ -22,7 +22,7 @@ Was ist neu in Cloud Tiering?
 
 
 
-=== Erforderliche Änderungen am Endpunkt für ausgehende Internetzugriffe für Connector
+=== Änderungen an Endpunkten für ausgehenden Internetzugriff über den Anschluss
 
 Aufgrund einer Änderung des Cloud Tiering müssen Sie die folgenden Connector-Endpunkte für einen erfolgreichen Cloud Tiering-Betrieb ändern:
 

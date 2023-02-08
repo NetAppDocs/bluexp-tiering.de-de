@@ -299,8 +299,8 @@ Nach der Vorbereitung der AWS Umgebung können Sie das Tiering inaktiver Daten v
 
 
 .Schritte
-. Wählen Sie ein On-Premises-Cluster aus.
-. Klicken Sie für den Tiering-Dienst auf *Aktivieren*.
+. Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.
+. Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.
 +
 Wenn das Tiering-Ziel Amazon S3 als Arbeitsumgebung auf dem Canvas existiert, können Sie den Cluster auf die Arbeitsumgebung ziehen, um den Setup-Assistenten zu starten.
 

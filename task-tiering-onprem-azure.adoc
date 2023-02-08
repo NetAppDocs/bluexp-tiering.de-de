@@ -34,7 +34,7 @@ Sie benötigen Folgendes:
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Tiering einrichten
 [role="quick-margin-para"]
-Wählen Sie in BlueXP eine lokale Arbeitsumgebung aus, klicken Sie für den Tiering Service auf *Aktivieren* und folgen Sie den Anweisungen zum Tiering von Daten auf Azure Blob Storage.
+Wählen Sie in BlueXP eine lokale ONTAP-Arbeitsumgebung aus, klicken Sie für den Tiering Service auf *Aktivieren* und folgen Sie den Aufforderungen zum Tiering von Daten auf Azure Blob Storage.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Lizenzierung einrichten
 [role="quick-margin-para"]
@@ -113,7 +113,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 === Erstellen oder Umschalten von Anschlüssen
 
-Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tiering von Daten in Azure Blob Storage können Sie einen Connector verwenden, der sich in einer Azure vnet-Umgebung oder vor Ort befinden kann. Entweder müssen Sie einen neuen Konnektor erstellen oder sicherstellen, dass der aktuell ausgewählte Connector in Azure oder On-Prem liegt.
+Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tiering von Daten in den Azure Blob Storage können Sie einen Connector verwenden, der sich in einer Azure vnet oder in Ihrem Standort befindet. Entweder müssen Sie einen neuen Konnektor erstellen oder sicherstellen, dass der aktuell ausgewählte Connector in Azure oder On-Prem liegt.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Implementieren eines Connectors in Azure"^]
@@ -125,15 +125,10 @@ Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tie
 
 === Stellen Sie sicher, dass Sie über die erforderlichen Connector-Berechtigungen verfügen
 
-Wenn Sie den Connector mit BlueXP Version 3.9.7 oder höher erstellt haben, sind Sie alle festgelegt.
+Wenn Sie den Connector mit BlueXP Version 3.9.25 oder höher erstellt haben, sind Sie alle festgelegt. Standardmäßig wird die benutzerdefinierte Rolle eingerichtet, die die Berechtigungen bereitstellt, die ein Connector zur Verwaltung von Ressourcen und Prozessen in Ihrem Azure-Netzwerk benötigt. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#custom-role-permissions["Erforderliche Berechtigungen für benutzerdefinierte Rollen"^] Und das https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#cloud-tiering["Für Cloud Tiering sind spezifische Berechtigungen erforderlich"^].
 
-Wenn Sie den Connector mit einer früheren Version von BlueXP erstellt haben, müssen Sie die Berechtigungsliste bearbeiten, um 2 erforderliche Berechtigungen hinzuzufügen:
+Wenn Sie den Connector mit einer früheren Version von BlueXP erstellt haben, müssen Sie die Berechtigungsliste für das Azure-Konto bearbeiten, um fehlende Berechtigungen hinzuzufügen.
 
-[source, json]
-----
-Microsoft.Storage/storageAccounts/managementPolicies/read
-Microsoft.Storage/storageAccounts/managementPolicies/write
-----
 
 
 === Vorbereiten der Vernetzung für den Connector
@@ -177,8 +172,8 @@ Starten Sie nach der Vorbereitung der Azure Umgebung das Tiering inaktiver Daten
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
 
 .Schritte
-. Wählen Sie ein On-Premises-Cluster aus.
-. Klicken Sie für den Tiering-Dienst auf *Aktivieren*.
+. Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.
+. Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.
 +
 Wenn das Tiering-Ziel für Azure Blob als eine Arbeitsumgebung auf dem Canvas existiert, können Sie das Cluster auf die Azure Blob Arbeitsumgebung ziehen, um den Setup-Assistenten zu starten.
 
@@ -193,9 +188,9 @@ image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Aktivieren-Op
 +
 Bei der Verwendung eines On-Prem-Connectors müssen Sie das Azure-Abonnement eingeben, das den Zugriff auf die Ressourcengruppe ermöglicht.
 
-.. *Azure Container*: Fügen Sie einen neuen Blob-Container zu einem Storage-Konto hinzu, oder wählen Sie einen vorhandenen Container aus, und klicken Sie auf *Weiter*.
+.. *Azure Container*: Wählen Sie das Optionsfeld, um entweder einen neuen Blob-Container zu einem Speicherkonto hinzuzufügen oder einen bestehenden Container zu verwenden. Wählen Sie dann das Speicherkonto aus und wählen Sie den vorhandenen Container aus, oder geben Sie den Namen für den neuen Container ein. Klicken Sie dann auf *Weiter*.
 +
-Das Speicherkonto und die Container, die in diesem Schritt angezeigt werden, gehören zur Ressourcengruppe, die Sie im vorherigen Schritt ausgewählt haben.
+Die in diesem Schritt angezeigten Speicherkonten und Container gehören zur Ressourcengruppe, die Sie im vorherigen Schritt ausgewählt haben.
 
 .. *Access Tier Life Cycle*: Cloud Tiering managt die Lebenszyklus-Übergänge Ihrer Tiered-Daten. Daten beginnen in der Klasse _Hot_, Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in die Klasse _Cool_ zu verschieben.
 +
@@ -209,9 +204,6 @@ image:screenshot_tiering_lifecycle_selection_azure.png["Ein Screenshot zeigt, wi
 
 +
 Beachten Sie, dass die Lebenszyklusregel auf alle Blob-Container im ausgewählten Speicherkonto angewendet wird.
-
-+
-<<Stellen Sie sicher, dass Sie über die erforderlichen Connector-Berechtigungen verfügen,Stellen Sie sicher, dass Sie über die erforderlichen Connector-Berechtigungen verfügen>> Für die Lebenszyklusmanagement-Funktion.
 
 .. *Clusternetzwerk*: Wählen Sie den IPspace aus, den ONTAP verwenden soll, um eine Verbindung zum Objekt-Storage herzustellen, und klicken Sie auf *Weiter*.
 +

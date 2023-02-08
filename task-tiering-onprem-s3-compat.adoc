@@ -170,8 +170,8 @@ Starten Sie nach der Vorbereitung der Umgebung das Tiering inaktiver Daten aus d
 
 
 .Schritte
-. Wählen Sie ein On-Premises-Cluster aus.
-. Klicken Sie im rechten Fensterbereich für den Tiering-Dienst auf *Aktivieren*.
+. Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.
+. Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.
 +
 image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Tiering-Option auf der rechten Seite des Bildschirms zeigt, nachdem Sie eine lokale ONTAP-Arbeitsumgebung ausgewählt haben."]
 
