@@ -95,7 +95,6 @@
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp bietet Unterstützung für BlueXP auf verschiedene Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Holen Sie sich Hilfe</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp bietet Unterstützung für BlueXP und seine Cloud-Services auf unterschiedliche Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">Self-Support</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Wissensdatenbank</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -107,14 +106,11 @@
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">Die BlueXP-Dokumentation, die Sie gerade anzeigen.</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Mailto:ng-cloudmanager-feedback@netapp.com[Feedback email]</block>
   <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Wir wissen Ihre Vorschläge zu schätzen. Senden Sie uns Ihr Feedback, um BlueXP zu verbessern.</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp Support</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">Erfahren Sie, wie Sie sich für Support registrieren</block>
   <block id="1012a287397c66025d7748edf06a36e2" category="paragraph">Um die * Case erstellen*-Fähigkeit zu verwenden, müssen Sie zuerst eine einmalige Registrierung Ihrer BlueXP Account ID-Seriennummer (dh 960xxxx) mit NetApp <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>.</block>
   <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">Klicken Sie in BlueXP auf *Hilfe &gt; Support*.</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">Wählen Sie eine der verfügbaren Optionen unter Technical Support:</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">Klicken Sie auf *Rufen Sie uns an*, wenn Sie mit jemandem am Telefon sprechen möchten. Sie werden zu einer Seite auf netapp.com weitergeleitet, auf der die Telefonnummern aufgeführt sind, die Sie anrufen können.</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">Klicken Sie auf *Case erstellen*, um ein Ticket mit einem NetApp Support-Experten zu öffnen:</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*NetApp Support Site Account*: Wählen Sie das entsprechende NSS-Konto für die Person aus, die den Support-Case eröffnet. Diese Person ist der primäre Ansprechpartner bei NetApp, der Sie sich zusätzlich zu den unten aufgeführten zusätzlichen E-Mails mit anderen Kunden in Verbindung setzen kann.</block>
   <block id="d950fb930d7f7e6bfdda1b91b4639a02" category="paragraph">Wenn Ihr NSS-Konto nicht angezeigt wird, können Sie im Support-Bereich von BlueXP zur Registerkarte *NSS Management* navigieren, um es dort hinzuzufügen.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*: Wählen Sie den Dienst aus, mit dem das Problem verknüpft ist. Beispiel: BlueXP, wenn es sich um ein Problem des technischen Supports mit Workflows oder Funktionen im Service handelt.</block>
@@ -1321,4 +1317,17 @@
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Was ist neu</block>
   <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">Ändern Sie die Tiering-Richtlinie eines Volumes</block>
   <block id="e7719a97642051ee358e5d15cf1ab284" category="sidebar">Cloud Tiering Blog</block>
+  <block id="1c573cd95f6407add05436f6ac05d6ec" category="section-title">Laden Sie einen Tiering-Bericht für Ihre Volumes herunter</block>
+  <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">Download</block>
+  <block id="1133c5d4d5ce8a369839f12ca5a07313" category="paragraph">Sie können einen Bericht der Seite „Tier Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. Klicken Sie einfach auf <block ref="d2e5c9ca6fcd7f605e1d5f7b4f6a6a99" category="inline-image-macro-rx" type="image"></block> Schaltfläche. Cloud Tiering erzeugt eine CSV-Datei, die Sie nach Bedarf prüfen und an andere Gruppen senden können. Die .CSV-Datei umfasst bis zu 10,000 Datenzeilen.</block>
+  <block id="fe8e7e0f08b18c3c012d94d74e8386ce" category="inline-image-macro">Ein Screenshot, der zeigt, wie eine CSV-Datei mit dem Tiering-Status aller Volumes generiert wird.</block>
+  <block id="da2d758c47ecb3eaa92541c9f800dcb9" category="paragraph"><block ref="da2d758c47ecb3eaa92541c9f800dcb9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Nutzen Sie Self-Support-Optionen</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Erstellen Sie einen Fall mit dem NetApp Support</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Wählen Sie auf der Seite *Ressourcen* eine der verfügbaren Optionen unter Technischer Support:</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">Klicken Sie auf *Fall erstellen*, um ein Ticket bei einem NetApp Support Spezialisten zu öffnen:</block>
+  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 März 2023</block>
+  <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Jetzt können Sie einen Tiering-Bericht für Ihre Volumes generieren</block>
+  <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Hier erfahren Sie, wie Sie den Tiering-Bericht herunterladen</block>
+  <block id="10607665fc9de51ae2bf29927d3673b9" category="paragraph">Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. Cloud Tiering erstellt eine CSV-Datei, die Sie nach Bedarf prüfen und an andere Personen in Ihrem Unternehmen senden können.<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>.</block>
 </blocks>

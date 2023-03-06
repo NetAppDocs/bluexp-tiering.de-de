@@ -78,6 +78,14 @@ Die Tiering-Richtlinie wird geändert und die Daten werden basierend auf der neu
 
 
 
+== Laden Sie einen Tiering-Bericht für Ihre Volumes herunter
+
+Sie können einen Bericht der Seite „Tier Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. Klicken Sie einfach auf image:button_download.png["Download"] Schaltfläche. Cloud Tiering erzeugt eine CSV-Datei, die Sie nach Bedarf prüfen und an andere Gruppen senden können. Die .CSV-Datei umfasst bis zu 10,000 Datenzeilen.
+
+image:screenshot_tiering_report_download.png["Ein Screenshot, der zeigt, wie eine CSV-Datei mit dem Tiering-Status aller Volumes generiert wird."]
+
+
+
 == Datenmigration von der Cloud-Tier zurück auf die Performance-Tier
 
 Daten-Tiering, auf die aus der Cloud zugegriffen wird, können „erneut erhitzt“ und zurück auf die Performance-Tier verschoben werden. Wenn Sie jedoch Daten proaktiv über das Cloud-Tier auf die Performance-Tier übertragen möchten, finden Sie dies im Dialogfeld „ _Tiering Policy_“. Diese Funktion ist bei Verwendung von ONTAP 9.8 und höher verfügbar.
