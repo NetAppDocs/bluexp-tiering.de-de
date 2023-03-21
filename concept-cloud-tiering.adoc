@@ -53,7 +53,7 @@ Inaktive Daten können von einem lokalen ONTAP System zu folgenden Objekt-Storag
 * Microsoft Azure Blob
 * Google Cloud Storage
 * NetApp StorageGRID
-* S3-kompatibler Objekt-Storage
+* S3-kompatibler Objekt-Storage (z. B. Mini)
 
 
 Cloud-Tiering-Lizenzen können auch für Cluster genutzt werden, die Daten-Tiering zu IBM Cloud-Objektspeicher sind. Die FabricPool-Konfiguration muss mit System Manager oder der ONTAP CLI eingerichtet werden, jedoch https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["Die Lizenzierung für diese Art von Konfiguration wird mit Cloud Tiering abgeschlossen."]
@@ -86,6 +86,8 @@ Sie bezahlen für Cloud Tiering mit einem Pay-as-you-go-Abonnement, einem jährl
 Beim Tiering von Daten zu StorageGRID fallen keine Kosten an. Es ist keine BYOL-Lizenz oder PAYGO-Registrierung erforderlich.
 
 https://bluexp.netapp.com/pricing#tiering["Preisdetails anzeigen"^].
+
+Da Cloud Tiering die Storage-Effizienz des Quell-Volumes bewahrt, bezahlen Sie für die Tiering-Daten die Objekt-Storage-Kosten des Cloud-Providers nach der Effizienz von ONTAP (für die kleinere Datenmenge nach Anwendung der Deduplizierung und Komprimierung).
 
 
 

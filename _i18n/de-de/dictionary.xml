@@ -62,10 +62,7 @@
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Geben Sie auf der Anmeldeseite die registrierte E-Mail-Adresse und das Kennwort Ihrer NetApp Support Site an, um den Authentifizierungsvorgang durchzuführen.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Mit diesen Aktionen kann BlueXP Ihr NSS-Konto für Dinge wie Lizenzdownloads, Softwareaktualisierungs-Verifizierung und zukünftige Support-Registrierungen verwenden.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Beachten Sie Folgendes:</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">Das Konto muss ein Kundenkonto auf Kundenebene sein (kein Gast- oder Temporkonto).</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Ein Symbol von drei horizontalen Punkten</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">Bei der erfolgreichen Anmeldung wird NetApp den NSS-Benutzernamen speichern. Dies ist eine vom System generierte ID, die Ihrer E-Mail zugeordnet wird. Auf der Seite *NSS Management* können Sie Ihre E-Mail über anzeigen <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> Menü.</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">Wenn Sie jemals Ihre Anmeldeinformationen aktualisieren müssen, gibt es im auch eine *Anmeldeinformationen aktualisieren*-Option <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> Menü. Wenn Sie diese Option verwenden, werden Sie aufgefordert, sich erneut anzumelden.</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">Mit NetApp registrieren</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">Wie Sie sich für den NetApp Support registrieren, hängt davon ab, ob Sie bereits über einen NSS Account (NetApp Support Site) verfügen.</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Bestandskunde mit NSS-Konto</block>
@@ -493,7 +490,6 @@
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Microsoft Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="list-text">Google Cloud Storage</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetApp StorageGRID</block>
-  <block id="29fc78ad7b30ceab82a6fad5327f5e05" category="list-text">S3-kompatibler Objekt-Storage</block>
   <block id="eeb240bdbe8975d674a61e517f39633f" category="list-text">IBM Cloud-Objektspeicher (die FabricPool-Konfiguration muss mit System Manager oder der ONTAP-CLI erfolgen)</block>
   <block id="aebd5d0546886eb95ec68319ef820add" category="section-title">Kann ich meinen eigenen Bucket/Container verwenden?</block>
   <block id="810cfe74648d752af199cb664dfa9bfe" category="paragraph">Ja, können Sie. Wenn Sie Daten-Tiering einrichten, können Sie einen neuen Bucket/Container hinzufügen oder einen vorhandenen Bucket/Container auswählen.</block>
@@ -506,7 +502,6 @@
   <block id="5599b78f1c4021d635a48942fd659db7" category="paragraph">Cloud Tiering unterstützt Daten-Tiering in die Storage-Klassen _Standard_, _Standard-infrequent Access_, _One Zone-infrequent Access_, _Intelligent Tiering_ und _Glacier Instant Retrieval_. Siehe <block ref="f693663c1e0f361f1f4405a9653a3c4b" category="inline-link-macro-rx"></block> Entnehmen.</block>
   <block id="2c08a1d27d6545c0ad01ad140562498b" category="section-title">Warum werden die flexiblen S3 Glacier und das S3 Glacier Deep Archive nicht durch Cloud Tiering unterstützt?</block>
   <block id="f69e1396e6ee64547d56719752b81f87" category="paragraph">Der Hauptgrund dafür, dass das flexible und S3 Glacier Deep Archive von Amazon S3 Glacier nicht unterstützt wird, ist die Tatsache, dass Cloud Tiering als hochperformante Tiering-Lösung konzipiert wurde. Die Daten müssen also kontinuierlich verfügbar und schnell abgerufen werden können. Mit dem flexiblen S3 Glacier und dem Deep Archive der S3 Glacier Daten können Daten beliebig zwischen wenigen Minuten und 48 Stunden abgerufen werden.</block>
-  <block id="af7dafa9f010fa91db93c80604be8582" category="section-title">Kann ich weitere S3-kompatible Objekt-Storage-Services wie Wasabi mit Cloud Tiering verwenden?</block>
   <block id="84a20b13e3ea8fe117cd487b10cafd14" category="inline-link-macro">Weitere Informationen finden Sie hier</block>
   <block id="de6d6c00be7f38cc0fb58e604e31efe9" category="paragraph">Ja, die Konfiguration von S3-kompatiblem Objekt-Storage über die Tiering-UI wird für Cluster mit ONTAP 9.8 und höher unterstützt. <block ref="dfc215f15d0188a75116c167a2fbbc9d" category="inline-link-macro-rx"></block>.</block>
   <block id="0bb4b033070227409733db8bfee0da13" category="section-title">Welche Azure Blob-Zugriffsebenen werden unterstützt?</block>
@@ -1330,4 +1325,47 @@
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Jetzt können Sie einen Tiering-Bericht für Ihre Volumes generieren</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Hier erfahren Sie, wie Sie den Tiering-Bericht herunterladen</block>
   <block id="10607665fc9de51ae2bf29927d3673b9" category="paragraph">Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. Cloud Tiering erstellt eine CSV-Datei, die Sie nach Bedarf prüfen und an andere Personen in Ihrem Unternehmen senden können.<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>.</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">Managen Ihrer Support-Cases (Vorschau)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">Sie können aktive und gelöste Support-Cases direkt über BlueXP anzeigen und managen. Sie können die mit Ihrem NSS-Konto und Ihrem Unternehmen verbundenen Fälle verwalten.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">Case Management ist als Vorschau verfügbar. Wir planen, diese Erfahrungen weiter zu verbessern und in zukünftigen Versionen Verbesserungen hinzuzufügen. Bitte senden Sie uns Ihr Feedback über den Product-Chat.</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">Das Case-Management-Dashboard oben auf der Seite bietet zwei Ansichten:</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">Die Ansicht auf der linken Seite zeigt die Gesamtzahl der Fälle, die in den letzten 3 Monaten durch das von Ihnen angegebene NSS-Benutzerkonto eröffnet wurden.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">Die Ansicht auf der rechten Seite zeigt die Gesamtzahl der in den letzten 3 Monaten auf Unternehmensebene eröffneten Fälle basierend auf Ihrem NSS-Benutzerkonto an.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">Die Ergebnisse in der Tabelle geben die Fälle in Bezug auf die ausgewählte Ansicht wieder.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Sie können interessante Spalten hinzufügen oder entfernen und den Inhalt von Spalten wie Priorität und Status filtern. Andere Spalten bieten nur Sortierfunktionen.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Weitere Informationen erhalten Sie in den Schritten unten.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Auf Fallebene bieten wir die Möglichkeit, Fallnotizen zu aktualisieren oder einen Fall zu schließen, der sich noch nicht im Status „Geschlossen“ oder „Geschlossen“ befindet.</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Klicken Sie auf *Case Management* und fügen Sie bei Aufforderung Ihr NSS-Konto zu BlueXP hinzu.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">Auf der Seite *Case Management* werden offene Fälle im Zusammenhang mit dem NSS-Konto angezeigt, das mit Ihrem BlueXP Benutzerkonto verknüpft ist. Dies ist das gleiche NSS-Konto, das oben auf der Seite *NSS Management* angezeigt wird.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Ändern Sie optional die in der Tabelle angezeigten Informationen:</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">Klicken Sie unter *Organizations-Fälle* auf *Ansicht*, um alle mit Ihrem Unternehmen verbundenen Fälle anzuzeigen.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">Ändern Sie den Datumsbereich, indem Sie einen genauen Datumsbereich oder einen anderen Zeitrahmen auswählen.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Ein Screenshot der Option über der Tabelle auf der Seite Case Management, mit der Sie einen genauen Datumsbereich oder die letzten 7 Tage, 30 Tage oder 3 Monate auswählen können.</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtern Sie den Inhalt der Spalten.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">Ein Screenshot der Filteroption in der Spalte Status, in dem Sie Fälle filtern können, die einem bestimmten Status entsprechen, z. B. aktiv oder Geschlossen.</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">Das Plus-Symbol, das in der Tabelle angezeigt wird</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">Ändern Sie die Spalten, die in der Tabelle angezeigt werden, indem Sie auf klicken <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> Und wählen Sie dann die Spalten, die Sie anzeigen möchten.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">Ein Screenshot mit den Spalten, die Sie in der Tabelle anzeigen können.</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Ein Symbol mit drei Punkten, das in der letzten Spalte der Tabelle angezeigt wird</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">Managen Sie einen bestehenden Fall, indem Sie auf klicken <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> Und eine der verfügbaren Optionen auswählen:</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Fall anzeigen*: Vollständige Details zu einem bestimmten Fall anzeigen.</block>
+  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*Aktennotizen aktualisieren*: Geben Sie zusätzliche Details zu Ihrem Problem an.</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Fall schließen*: Geben Sie Details darüber an, warum Sie den Fall schließen und klicken Sie auf *Fall schließen*.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Ein Screenshot, der die Aktionen zeigt, die Sie nach Auswahl des Menüs in der letzten Spalte der Tabelle durchführen können.</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">Das NSS-Konto muss ein Konto auf Kundenebene sein (kein Gast- oder Temporärkonto). Sie können mehrere NSS-Konten auf Kundenebene haben.</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Es kann nur ein NSS-Konto vorhanden sein, wenn es sich bei diesem Konto um ein Partner-Level-Konto handelt. Wenn Sie versuchen, NSS-Konten auf Kundenebene hinzuzufügen und ein Konto auf Partnerebene vorhanden ist, erhalten Sie die folgende Fehlermeldung:</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">„Der NSS-Kundentyp ist für dieses Konto nicht zulässig, da es bereits NSS-Benutzer unterschiedlichen Typs gibt.“</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Dasselbe gilt, wenn Sie bereits NSS-Konten auf Kundenebene haben und versuchen, ein Konto auf Partnerebene hinzuzufügen.</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Bei der erfolgreichen Anmeldung wird NetApp den NSS-Benutzernamen speichern.</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">Dies ist eine vom System generierte ID, die Ihrer E-Mail zugeordnet ist. Auf der Seite *NSS Management* können Sie Ihre E-Mail über anzeigen <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> Menü.</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">Wenn Sie jemals Ihre Anmeldeinformationen aktualisieren müssen, gibt es im auch eine *Anmeldeinformationen aktualisieren*-Option <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> Menü.</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">Wenn Sie diese Option verwenden, werden Sie aufgefordert, sich erneut anzumelden. Beachten Sie, dass das Token für diese Konten nach 90 Tagen abläuft. Eine Benachrichtigung wird gesendet, um Sie darüber zu informieren.</block>
+  <block id="ad8e06edf5256a509aa4b626821aded3" category="list-text">S3-kompatibler Objekt-Storage (z. B. Mini)</block>
+  <block id="0748730b16e2af0499abfb4f8fbcd91a" category="section-title">Kann ich andere S3-kompatible Objekt-Storage-Services wie Minio mit Cloud Tiering verwenden?</block>
+  <block id="5f25ca5749124089f38921fb40d73668" category="paragraph">Da Cloud Tiering die Storage-Effizienz des Quell-Volumes bewahrt, bezahlen Sie für die Tiering-Daten die Objekt-Storage-Kosten des Cloud-Providers nach der Effizienz von ONTAP (für die kleinere Datenmenge nach Anwendung der Deduplizierung und Komprimierung).</block>
+  <block id="ad54fbabce5f384433a02d947362a539" category="paragraph">Zur Zeit wurde Minio Objektspeicher qualifiziert.</block>
 </blocks>

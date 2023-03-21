@@ -227,7 +227,7 @@ Cloud-Tiering unterstützt die folgenden Objekt-Storage-Provider:
 * Microsoft Azure Blob
 * Google Cloud Storage
 * NetApp StorageGRID
-* S3-kompatibler Objekt-Storage
+* S3-kompatibler Objekt-Storage (z. B. Mini)
 * IBM Cloud-Objektspeicher (die FabricPool-Konfiguration muss mit System Manager oder der ONTAP-CLI erfolgen)
 
 
@@ -260,7 +260,7 @@ Der Hauptgrund dafür, dass das flexible und S3 Glacier Deep Archive von Amazon 
 
 
 
-=== Kann ich weitere S3-kompatible Objekt-Storage-Services wie Wasabi mit Cloud Tiering verwenden?
+=== Kann ich andere S3-kompatible Objekt-Storage-Services wie Minio mit Cloud Tiering verwenden?
 
 Ja, die Konfiguration von S3-kompatiblem Objekt-Storage über die Tiering-UI wird für Cluster mit ONTAP 9.8 und höher unterstützt. link:task-tiering-onprem-s3-compat.html["Weitere Informationen finden Sie hier"].
 
