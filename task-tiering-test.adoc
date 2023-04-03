@@ -18,14 +18,14 @@ Führen Sie einen Cloud-Performance-Test durch, um die Netzwerklatenz und die Du
 
 Die folgenden Beispiele führen zu Performance-Ergebnissen:
 
-image:screenshot_cloud_performance_test.gif["Screenshot der Cluster-Performance-Ergebnisse für einen Cloud-Performance-Test"]
+image:screenshot_cloud_performance_test.png["Screenshot der Cluster-Performance-Ergebnisse für einen Cloud-Performance-Test"]
 
 .Bevor Sie beginnen
 Am besten sollte dieser Check durchgeführt werden, wenn der Cluster unter 50 % der CPU-Auslastung liegt.
 
 .Schritte für ein Cluster, das nicht für das Tiering eingerichtet wurde
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie im *Cluster Dashboard* auf das Menüsymbol für einen Cluster und wählen Sie *Cloud Performance Test*.
+. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Cloud Performance Test*.
 . Überprüfen Sie die Details und klicken Sie auf *Weiter*.
 . Befolgen Sie die Anweisungen, um die erforderlichen Informationen bereitzustellen.
 +
@@ -36,7 +36,7 @@ Die Informationen, die Sie bereitstellen müssen, entsprechen denen, wenn Sie Ti
 
 .Schritte für einen Cluster, der für das Tiering eingerichtet wurde
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie im *Cluster Dashboard* auf das Menüsymbol für einen Cluster und wählen Sie *Cloud Performance Test*.
+. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Cloud Performance Test*.
 . Wählen Sie einen Knoten aus der Dropdown-Liste aus.
 . Die Ergebnisse anzeigen oder die Leistung erneut prüfen.
 

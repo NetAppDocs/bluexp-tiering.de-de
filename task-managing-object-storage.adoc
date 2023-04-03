@@ -23,7 +23,7 @@ Nachdem Ihre On-Premises-ONTAP-Cluster für das Tiering von Daten auf einen best
 Vielleicht möchten Sie alle Objektspeicher sehen, die für Ihren Cluster konfiguriert wurden und an die Aggregate angeschlossen sind. Cloud Tiering bietet diese Informationen für jeden Cluster.
 
 .Schritte
-. Klicken Sie im *Cluster Dashboard* auf das Menüsymbol für einen Cluster und wählen Sie *Object Store Info*.
+. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Object Store Info*.
 . Prüfen Sie Details zu den Objektspeichern.
 +
 Dieses Beispiel zeigt einen Amazon S3- und Azure Blob-Objektspeicher, der mit verschiedenen Aggregaten auf einem Cluster verbunden ist.
@@ -40,7 +40,7 @@ image:screenshot_tiering_object_store_view.png["Ein Screenshot, der die Objekt-S
 Sie können einen neuen Objektspeicher hinzufügen, der für Aggregate in Ihrem Cluster verfügbar ist. Nachdem Sie es erstellt haben, können Sie es an ein Aggregat anhängen.
 
 .Schritte
-. Klicken Sie im *Cluster Dashboard* auf das Menüsymbol für einen Cluster und wählen Sie *Object Store Info*.
+. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Object Store Info*.
 . Klicken Sie auf der Seite Object Store Information auf *Neuen Objektspeicher erstellen*.
 +
 image:screenshot_tiering_object_store_create_button.png["Ein Screenshot, in dem die Schaltfläche Neuen Objektspeicher erstellen angezeigt wird, um einen neuen Objektspeicher zu erstellen."]
@@ -96,11 +96,11 @@ Beim Einsatz einer MetroCluster Konfiguration empfiehlt es sich, Objektspeicher 
 Beachten Sie, dass bei Verwendung von StorageGRID als Objektspeicher in einer MetroCluster Konfiguration beide ONTAP Systeme FabricPool Tiering auf einem einzelnen StorageGRID System durchführen können. Für jedes ONTAP System müssen Daten in verschiedene Buckets verschoben werden.
 
 .Schritte
-. Klicken Sie im *Cluster Dashboard* auf *Erweitertes Setup* für den ausgewählten Cluster.
+. Klicken Sie auf der Seite *Cluster* auf *Erweiterte Einstellungen* für den ausgewählten Cluster.
 +
 image:screenshot_tiering_advanced_setup_button.png["Ein Screenshot, der die Schaltfläche „Advanced Setup“ für ein Cluster zeigt"]
 
-. Ziehen Sie auf der Seite Erweiterte Einrichtung den Objektspeicher, den Sie verwenden möchten, an den Speicherort für den Spiegelobjektspeicher.
+. Ziehen Sie auf der Seite Erweiterte Einstellungen den zu verwendenden Objektspeicher an den Speicherort für den Spiegelobjektspeicher.
 +
 image:screenshot_tiering_mirror_config.png["Ein Screenshot, der zeigt, wie ein zweiter Objektspeicher in ein Aggregat verschoben wird, um einen Tiering-Spiegel zu erstellen."]
 
@@ -119,11 +119,11 @@ Der Mirror-Status wird als „Sync in Progress“ angezeigt, während die 2 Obje
 Sie können den primären Objektspeicher und den gespiegelten Objektspeicher für ein Aggregat umtauschen. Die Objektspeicherspiegelung wird zum primären Volume und das ursprüngliche primäre Volume zum Spiegel.
 
 .Schritte
-. Klicken Sie im *Cluster Dashboard* auf *Erweitertes Setup* für den ausgewählten Cluster.
+. Klicken Sie auf der Seite *Cluster* auf *Erweiterte Einstellungen* für den ausgewählten Cluster.
 +
 image:screenshot_tiering_advanced_setup_button.png["Ein Screenshot, der die Schaltfläche „Advanced Setup“ für ein Cluster zeigt"]
 
-. Klicken Sie auf der Seite Erweiterte Einstellungen auf das Menüsymbol für das Aggregat und wählen Sie *Ziele tauschen* aus.
+. Klicken Sie auf der Seite Erweiterte Einstellungen auf das Menüsymbol für das Aggregat und wählen Sie *Reiseziele austauschen*.
 +
 image:screenshot_tiering_mirror_swap.png["Ein Screenshot mit der Option „Swap Destination“ für ein Aggregat."]
 
@@ -137,11 +137,11 @@ image:screenshot_tiering_mirror_swap.png["Ein Screenshot mit der Option „Swap 
 Sie können eine FabricPool-Spiegelung entfernen, wenn Sie nicht mehr auf einen zusätzlichen Objektspeicher replizieren müssen.
 
 .Schritte
-. Klicken Sie im *Cluster Dashboard* auf *Erweitertes Setup* für den ausgewählten Cluster.
+. Klicken Sie auf der Seite *Cluster* auf *Erweiterte Einstellungen* für den ausgewählten Cluster.
 +
 image:screenshot_tiering_advanced_setup_button.png["Ein Screenshot, der die Schaltfläche „Advanced Setup“ für ein Cluster zeigt"]
 
-. Klicken Sie auf der Seite Erweiterte Einstellungen auf das Menüsymbol für das Aggregat und wählen Sie *Unmirror Object Store* aus.
+. Klicken Sie auf der Seite Erweiterte Einstellungen auf das Menüsymbol für das Aggregat und wählen Sie *Unmirror Object Store*.
 +
 image:screenshot_tiering_mirror_delete.png["Ein Screenshot mit der Option Unmirror Object Store für ein Aggregat."]
 

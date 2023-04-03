@@ -27,7 +27,7 @@ TIP: Sie müssen den Objekt-Storage nicht konfigurieren, da er bereits bei der e
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie im *Cluster Dashboard* auf *Basic Tiering Setup* für den Cluster.
+. Klicken Sie auf der Seite *Cluster* auf *Basic Tiering Setup* für den Cluster.
 +
 image:screenshot_tiering_tier_volumes_button.png["Ein Screenshot, in dem gezeigt wird, wie die Schaltfläche Tiering Volumes für ein Cluster ausgewählt wird."]
 
@@ -61,7 +61,7 @@ Durch die Änderung der Tiering-Richtlinie für ein Volume wird die ONTAP Tierin
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie im *Cluster Dashboard* auf *Tier Volumes* für den Cluster.
+. Klicken Sie auf der Seite *Cluster* auf *Basic Tiering Setup* für den Cluster.
 . Klicken Sie auf die Zeile für ein Volume, wählen Sie eine Tiering-Richtlinie aus, passen Sie optional die Kühltage an und klicken Sie auf *Apply*.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["Erfahren Sie mehr über Volume Tiering-Richtlinien und Kühltage"].
@@ -111,7 +111,7 @@ NOTE: Ihr Cloud-Provider steht Ihnen auf der Grundlage dieser Datenmenge, die au
 Vergewissern Sie sich, dass genügend Speicherplatz auf der Performance-Tier für alle Daten vorhanden ist, die aus der Cloud verschoben werden.
 
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie im *Cluster Dashboard* auf *Tier Volumes* für den Cluster.
+. Klicken Sie auf der Seite *Cluster* auf *Basic Tiering Setup* für den Cluster.
 . Klicken Sie auf das image:screenshot_edit_icon.gif["Bearbeitungssymbol, das am Ende jeder Zeile in der Tabelle für Tiering-Volumes angezeigt wird"] Symbol für das Volume, wählen Sie die gewünschte Abrufoption und klicken Sie auf *Anwenden*.
 +
 image:screenshot_tiering_policy_settings_with_retrieve.png["Ein Screenshot, der die konfigurierbaren Tiering-Richtlinieneinstellungen anzeigt."]
@@ -143,11 +143,11 @@ TIP: Am besten lässt sich das IDR aktivieren, da es dabei hilft, Ihre inaktiven
 
 
 .Schritte
-. Klicken Sie im *Cluster Dashboard* auf *Erweitertes Setup* für den ausgewählten Cluster.
+. Klicken Sie auf der Seite *Cluster* auf *Erweiterte Einstellungen* für den ausgewählten Cluster.
 +
 image:screenshot_tiering_advanced_setup_button.png["Ein Screenshot, der die Schaltfläche „Advanced Setup“ für ein Cluster zeigt"]
 
-. Klicken Sie auf der Erweiterten Setup-Seite auf das Menüsymbol für das Aggregat und wählen Sie *Aggregat ändern*.
+. Klicken Sie auf der Seite Erweiterte Einstellungen auf das Menüsymbol für das Aggregat und wählen Sie *Aggregat ändern*.
 +
 image:screenshot_tiering_modify_aggr.png["Ein Screenshot mit der Option „Aggregat ändern“ für ein Aggregat."]
 
@@ -166,7 +166,7 @@ Es empfiehlt sich möglicherweise, zu sehen, wie viele Daten sich im Cloud-Tier 
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie im *Cluster Dashboard* auf das Menüsymbol für einen Cluster und wählen Sie *Cluster Info* aus.
+. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Cluster Info*.
 . Überprüfen Sie die Details zum Cluster.
 +
 Hier ein Beispiel:
@@ -201,13 +201,13 @@ Ausfälle können auftreten. Ist dies der Fall, zeigt Cloud Tiering auf dem Clus
 
 == Zusätzliche Cluster über Cloud Tiering erkennen
 
-Sie können über das Tiering _Cluster Dashboard_ Ihre nicht erkannten On-Prem ONTAP Cluster BlueXP hinzufügen, sodass Sie Tiering für den Cluster aktivieren können.
+Sie können noch nicht erkannte On-Premises-ONTAP-Cluster über die Seite Tiering _Cluster_ zu BlueXP hinzufügen, damit Sie Tiering für den Cluster aktivieren können.
 
-Beachten Sie, dass Schaltflächen auch auf der Seite Tiering_On-Prem Overview_ angezeigt werden, damit Sie weitere Cluster erkennen können.
+Beachten Sie, dass Schaltflächen auch auf der Seite Tiering _On-Premises Dashboard_ angezeigt werden, damit Sie zusätzliche Cluster erkennen können.
 
 .Schritte
-. Klicken Sie in Cloud Tiering auf die Registerkarte *Cluster Dashboard*.
-. Klicken Sie zum Anzeigen von nicht entdeckten Clustern auf *Unentdeckten Clustern anzeigen*.
+. Klicken Sie in Cloud Tiering auf die Registerkarte *Cluster*.
+. Um nicht erkannte Cluster zu sehen, klicken Sie auf *nicht erkannte Cluster anzeigen*.
 +
 image:screenshot_tiering_show_undiscovered_cluster.png["Ein Screenshot, in dem die Schaltfläche „nicht erkannte Cluster anzeigen“ im Tiering Dashboard angezeigt wird."]
 
@@ -217,17 +217,15 @@ Wenn Ihre NSS-Anmeldeinformationen in BlueXP gespeichert sind, werden die Cluste
 +
 Wenn Ihre NSS-Anmeldeinformationen nicht in BlueXP gespeichert sind, werden Sie zunächst aufgefordert, Ihre Anmeldeinformationen hinzuzufügen, bevor Sie die nicht erkannten Cluster sehen können.
 
-. Scrollen Sie auf der Seite nach unten, um die Cluster zu suchen.
 +
 image:screenshot_tiering_discover_cluster.png["Einen Screenshot, in dem gezeigt wird, wie ein vorhandenes Cluster zu BlueXP hinzugefügt wird, und das Tiering Dashboard."]
 
-. Klicken Sie auf *Discover Cluster* für den Cluster, den Sie mit BlueXP verwalten möchten, und implementieren Sie Daten-Tiering.
-. Auf der Seite _Location wählen_ Seite *On-Premise ONTAP* ist vorausgewählt, klicken Sie einfach auf *Weiter*.
-. Geben Sie auf der Seite _ONTAP Cluster Details_ das Passwort für das Admin-Benutzerkonto ein und klicken Sie auf *Hinzufügen*.
+. Klicken Sie für den Cluster, den Sie über BlueXP verwalten möchten, auf *Cluster hinzufügen* und implementieren Sie Daten-Tiering.
+. Geben Sie auf der Seite _Cluster Details_ das Passwort für das Admin-Benutzerkonto ein und klicken Sie auf *Discover*.
 +
 Beachten Sie, dass die Cluster-Management-IP-Adresse auf Grundlage von Informationen aus Ihrem NSS-Konto ausgefüllt wird.
 
-. Auf der Seite _Details & Credentials_ wird der Clustername als Umgebungsname hinzugefügt, also klicken Sie einfach auf *Go*.
+. Auf der Seite _Details & Anmeldeinformationen_ wird der Cluster-Name als Name der Arbeitsumgebung hinzugefügt. Klicken Sie also einfach auf *Go*.
 
 
 .Ergebnis

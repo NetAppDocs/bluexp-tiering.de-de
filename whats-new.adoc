@@ -18,6 +18,22 @@ Was ist neu in Cloud Tiering?
 
 
 
+== Bis 3. April 2023
+
+
+
+=== Die Registerkarte „Lizenzierung“ wurde entfernt
+
+Die Registerkarte Lizenzierung wurde aus der Cloud Tiering-Schnittstelle entfernt. Auf die gesamte Lizenzierung für PAYGO-Abonnements (Pay-as-you-go) kann jetzt über das Cloud Tiering On-Premises-Dashboard zugegriffen werden. Von dieser Seite aus besteht auch ein Link in das Digital Wallet, sodass Sie beliebige Cloud Tiering-Funktionen (BYOL, Bring-Your-Own-License) anzeigen und managen können.
+
+
+
+=== Die Registerkarten „Tiering“ wurden umbenannt und enthalten aktualisierte Inhalte
+
+Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und die Registerkarte „On-Premises-Übersicht“ in „On-Premises-Dashboard“ umbenannt. Auf diesen Seiten wurden einige Informationen hinzugefügt, die Ihnen helfen, zu bewerten, ob Sie Ihren Speicherplatz mit zusätzlicher Tiering-Konfiguration optimieren können.
+
+
+
 == 5 März 2023
 
 
