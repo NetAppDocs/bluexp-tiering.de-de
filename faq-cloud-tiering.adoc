@@ -118,6 +118,8 @@ Beim Tiering selten genutzter Daten in die Public Cloud:
 * Für das jährliche (BYOL) Laufzeitabonnement ab 0.033 US-Dollar pro GB/Monat
 
 
+https://bluexp.netapp.com/pricing["Siehe Preisdetails"].
+
 Beim Tiering selten genutzter Daten auf ein NetApp StorageGRID System (Private Cloud) entstehen keine Kosten.
 
 
@@ -130,7 +132,9 @@ Ja. Mit Cloud Tiering können Sie eine BYOL-Lizenz, ein PAYGO-Abonnement oder ei
 
 === Was geschieht, wenn ich das BYOL-Kapazitätslimit erreicht habe?
 
-Wenn Sie eine Byol-Kapazitätsgrenze erreichen, wird das Tiering neuer „kalter“ Daten unterbrochen, während alle zuvor Tiered Daten verfügbar bleiben. Wenn Sie ein PAYGO-Abonnement für _BlueXP – Deploy & Manage Cloud Data Services_ haben, werden neue kalte Daten weiterhin auf Objekt-Storage verschoben. Diese Kosten werden dann auf Nutzungsbasis bezahlt.
+Wenn Sie das BYOL-Kapazitätslimit erreichen, wird das Tiering neuer, weniger häufig genutzter Daten angehalten. Alle zuvor gestuften Daten bleiben zugänglich, was bedeutet, dass Sie diese Daten abrufen und verwenden können. Beim Abrufen werden diese Daten aus der Cloud zurück in die Performance-Tier verschoben.
+
+Wenn Sie jedoch über ein PAYGO Marketplace-Abonnement für die _BlueXP – Deploy & Manage Cloud Data Services_ verfügen, werden neue, kalte Daten weiterhin auf Objekt-Storage verschoben, und Sie zahlen für diese Gebühren auf Nutzungsbasis.
 
 
 
@@ -196,7 +200,7 @@ Ja. Cloud Tiering kann für die Tiering-Volumes konfiguriert werden, die auf jed
 
 === Wie sieht es mit Cloud Volumes ONTAP aus?
 
-Wenn Sie über Cloud Volumes ONTAP Systeme verfügen, finden Sie sie im Cloud Tiering Cluster Dashboard, sodass Sie in Ihrer Hybrid-Cloud-Infrastruktur einen umfassenden Überblick über Daten-Tiering erhalten. Cloud Volumes ONTAP Systeme sind jedoch schreibgeschützt aus Cloud Tiering. Sie können kein Daten-Tiering auf Cloud Volumes ONTAP über Cloud Tiering einrichten. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Sie richten Tiering für Cloud Volumes ONTAP aus der Arbeitsumgebung in BlueXP ein"^].
+Bei Cloud Volumes ONTAP Systemen finden Sie sie auf der Seite „Cloud Tiering Cluster“, sodass Sie eine vollständige Ansicht des Daten-Tiering in Ihrer Hybrid-Cloud-Infrastruktur erhalten. Cloud Volumes ONTAP Systeme sind jedoch schreibgeschützt aus Cloud Tiering. Sie können kein Daten-Tiering auf Cloud Volumes ONTAP über Cloud Tiering einrichten. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Sie richten Tiering für Cloud Volumes ONTAP aus der Arbeitsumgebung in BlueXP ein"^].
 
 
 

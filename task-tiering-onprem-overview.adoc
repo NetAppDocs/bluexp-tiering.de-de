@@ -19,7 +19,7 @@ summary: Cloud-Tiering bietet von jedem Ihrer On-Premises-Cluster eine aggregier
 [role="lead"]
 Cloud-Tiering bietet von jedem Ihrer On-Premises-Cluster eine aggregierte Ansicht des Daten-Tiering. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen.
 
-Klicken Sie einfach auf *Tiering > On-Premises-Dashboard*. Cloud Tiering bietet folgende Details über Ihre Umgebung.
+Klicken Sie einfach auf *Tiering > On-Prem Dashboard*. Cloud Tiering bietet folgende Details über Ihre Umgebung.
 
 image:screenshot_tiering_onprem_dashboard.png["Ein Screenshot der On-Premises-Dashboard-Seite"]
 

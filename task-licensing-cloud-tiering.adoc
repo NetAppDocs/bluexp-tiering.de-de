@@ -18,7 +18,7 @@ Eine kostenlose 30-Tage-Testversion von Cloud Tiering wird gestartet, wenn Sie T
 
 Ein paar Notizen, bevor Sie weitere lesen:
 
-* Wenn Sie das BlueXP Abonnement (PAYGO) bereits auf dem Marketplace Ihres Cloud-Providers abonniert haben, werden Sie Cloud Tiering auch für lokale ONTAP Systeme automatisch abonniert. Ein aktives Abonnement wird auf der Registerkarte „Cloud Tiering *On-Prem Dashboard*“ angezeigt. Sie müssen sich nicht erneut anmelden.
+* Wenn Sie das BlueXP Abonnement (PAYGO) bereits auf dem Marketplace Ihres Cloud-Providers abonniert haben, werden Sie Cloud Tiering auch für lokale ONTAP Systeme automatisch abonniert. Ein aktives Abonnement wird auf der Registerkarte „Cloud Tiering *On-Prem Dashboard*“ angezeigt. Sie müssen sich nicht erneut anmelden. Im Digital Wallet wird ein aktives Abonnement angezeigt.
 * Die BYOL Cloud Tiering Lizenz ist eine „_Floating_“-Lizenz, die Sie über mehrere ONTAP Cluster vor Ort in Ihrem BlueXP Konto hinweg verwenden können. Das ist anders (und viel einfacher) als in der Vergangenheit, wo Sie für jeden Cluster eine _FabricPool_ Lizenz gekauft haben.
 * Beim Tiering von Daten in StorageGRID fallen keine Gebühren an. Daher ist keine BYOL-Lizenz oder eine PAYGO-Registrierung erforderlich. Diese Tiered Daten zählen nicht auf die in Ihrer Lizenz erworbene Kapazität.
 
@@ -39,7 +39,7 @@ Abonnieren Sie über den AWS Marketplace ein Cloud-Tiering, um ein Pay-as-you-go
 
 [[subscribe-aws]]
 .Schritte
-. Klicken Sie in BlueXP auf *Mobilität > Tiering > On-Premises-Dashboard*.
+. Klicken Sie in BlueXP auf *Mobility > Tiering > On-Premises-Dashboard*.
 . Klicken Sie im Abschnitt _Marketplace Subscriptions_ unter Amazon Web Services auf *Abonnieren* und dann auf *Weiter*.
 . Melden Sie sich beim an https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^], Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.
 +
@@ -57,7 +57,7 @@ Abonnieren Sie Cloud Tiering über den Azure Marketplace, um ein Pay-as-you-go-A
 
 [[subscribe-azure]]
 .Schritte
-. Klicken Sie in BlueXP auf *Mobilität > Tiering > On-Premises-Dashboard*.
+. Klicken Sie in BlueXP auf *Mobility > Tiering > On-Premises-Dashboard*.
 . Klicken Sie im Abschnitt _Marketplace Subscriptions_ unter Microsoft Azure auf *Abonnieren* und dann auf *Weiter*.
 . Melden Sie sich beim an https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.
 +
@@ -75,7 +75,7 @@ video::video_subscribing_azure_tiering.mp4[width=848,height=480]
 
 [[subscribe-gcp]]
 .Schritte
-. Klicken Sie in BlueXP auf *Mobilität > Tiering > On-Premises-Dashboard*.
+. Klicken Sie in BlueXP auf *Mobility > Tiering > On-Premises-Dashboard*.
 . Klicken Sie im Abschnitt _Marketplace Subscriptions_ unter Google Cloud auf *Abonnieren* und dann auf *Weiter*.
 . Melden Sie sich beim an https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^], Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.
 +

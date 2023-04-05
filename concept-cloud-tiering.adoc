@@ -35,7 +35,7 @@ Cloud Tiering bietet Automatisierung, Monitoring, Berichte und eine zentrale Man
 * Dank einer einzigen Konsole muss FabricPool über mehrere Cluster hinweg unabhängig gemanagt werden
 * Berichte zeigen die Menge der aktiven und inaktiven Daten auf jedem Cluster an
 * Ein Tiering-Integritätsstatus unterstützt Sie dabei, Probleme zu identifizieren und zu korrigieren, sobald diese auftreten
-* Wenn Sie Cloud Volumes ONTAP Systeme verwenden, finden Sie sie im Cluster Dashboard, sodass Sie einen umfassenden Überblick über Daten-Tiering in Ihrer Hybrid-Cloud-Infrastruktur erhalten
+* Bei Cloud Volumes ONTAP Systemen finden Sie sie auf der Seite Cluster, sodass Sie eine vollständige Übersicht über Daten-Tiering in Ihrer Hybrid-Cloud-Infrastruktur erhalten
 
 
 Weitere Informationen zu dem Mehrwert von Cloud Tiering finden Sie im https://cloud.netapp.com/cloud-tiering["Sehen Sie sich die Seite Cloud Tiering auf der BlueXP Website an"^].
@@ -93,9 +93,9 @@ Da Cloud Tiering die Storage-Effizienz des Quell-Volumes bewahrt, bezahlen Sie f
 
 === 30 Tage kostenlos testen mit unserer
 
-Wenn Sie keine Cloud Tiering Lizenz haben, beginnt eine 30-Tage-kostenlose Testversion von Cloud Tiering, wenn Sie das Tiering auf Ihrem ersten Cluster einrichten. Nach Ablauf dieser 30-tägigen kostenlosen Testversion müssen Sie für Cloud Tiering bezahlen – über ein Pay-as-you-go-Abonnement, ein Jahresabonnement, eine BYOL-Lizenz oder eine Kombination aus diesen Optionen.
+Wenn Sie keine Cloud Tiering Lizenz haben, beginnt eine 30-Tage-kostenlose Testversion von Cloud Tiering, wenn Sie das Tiering auf Ihrem ersten Cluster einrichten. Nach Ablauf der 30-Tage-Testsoftware müssen Sie für Cloud Tiering zahlen, sei es über ein Pay-as-you-go-Abonnement, ein Jahresabonnement, eine BYOL-Lizenz oder eine Kombination daraus.
 
-Wenn Ihre kostenlose Testversion endet und Sie keine Lizenz abonniert oder hinzugefügt haben, stellt ONTAP keine „kalten“ Daten mehr in den Objekt-Storage bereit. Die bestehenden Daten stehen aber weiterhin für den Zugriff zur Verfügung.
+Wenn die kostenlose Testversion endet und Sie keine Lizenz abonniert oder hinzugefügt haben, werden selten genutzte Daten von ONTAP nicht mehr in den Objekt-Storage verschoben. Alle zuvor gestuften Daten bleiben zugänglich, was bedeutet, dass Sie diese Daten abrufen und verwenden können. Beim Abrufen werden diese Daten aus der Cloud zurück in die Performance-Tier verschoben.
 
 
 
