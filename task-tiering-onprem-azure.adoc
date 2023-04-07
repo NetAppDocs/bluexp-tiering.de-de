@@ -137,8 +137,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
 +
-** Eine ausgehende Internetverbindung zum Cloud Tiering-Service über Port 443 (HTTPS)
-** Eine HTTPS-Verbindung über Port 443 zum Azure Blob Storage
+** Eine HTTPS-Verbindung über Port 443 zum Cloud Tiering Service und zum Azure Blob Objekt-Storage (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
 

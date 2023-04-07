@@ -129,8 +129,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Sicherstellen, dass die VPC, an der der Connector installiert ist, die folgenden Verbindungen ermöglicht:
 +
-** Eine ausgehende Internetverbindung zum Cloud Tiering-Service über Port 443 (HTTPS)
-** Eine HTTPS-Verbindung über Port 443 zu Google Cloud Storage
+** Eine HTTPS-Verbindung über Port 443 zum Cloud Tiering Service und zu Ihrem Google Cloud Storage (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
 
