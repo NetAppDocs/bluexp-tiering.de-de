@@ -362,7 +362,7 @@ Der Connector ist eine Software, die auf einer Computing-Instanz entweder in Ihr
 
 === Kann ich den Connector vor Ort bereitstellen?
 
-Ja. Die Connector-Software kann heruntergeladen und manuell auf einem Linux-Host in Ihrem Netzwerk installiert werden. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Lesen Sie, wie Sie den Connector in Ihrem Haus installieren"].
+Ja. Die Connector-Software kann heruntergeladen und manuell auf einem Linux-Host in Ihrem Netzwerk installiert werden. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Lesen Sie, wie Sie den Connector in Ihrem Haus installieren"].
 
 
 
