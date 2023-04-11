@@ -164,7 +164,7 @@ Ja. Prüfen https://aws.amazon.com/s3/pricing/["Amazon S3-Preise"], https://azur
 
 === Wie kann ich die Einsparungen meiner Volumes einschätzen und vor der Aktivierung von Cloud Tiering einen Bericht über kalte Daten erhalten?
 
-Um Schätzung zu erhalten, fügen Sie einfach Ihren ONTAP Cluster zu BlueXP hinzu und inspizieren Sie ihn über das Cloud Tiering Cluster Dashboard, das sich auf der Registerkarte Tiering befindet. Wenn Inactive Data Reporting (IDR) deaktiviert ist oder noch nicht für einen langen Zeitraum aktiviert wurde, verwendet Cloud Tiering eine Branchenkonstante von 70 %, um die geschätzten Einsparungen zu berechnen. Sobald IDR-Daten verfügbar sind, aktualisiert Cloud Tiering die Einsparungen auf korrekte Zahlen.
+Wenn Sie eine Schätzung erhalten möchten, fügen Sie einfach Ihren ONTAP Cluster zu BlueXP hinzu und prüfen Sie ihn über die Seite zu Cloud Tiering-Clustern. Klicken Sie auf *Berechnen Sie mögliche Tiering-Einsparungen* für den Cluster, um den zu starten https://bluexp.netapp.com/cloud-tiering-service-tco["TCO-Rechner für Cloud Tiering"^] Um zu sehen, wie viel Geld Sie sparen können.
 
 
 
@@ -200,7 +200,7 @@ Ja. Cloud Tiering kann für die Tiering-Volumes konfiguriert werden, die auf jed
 
 === Wie sieht es mit Cloud Volumes ONTAP aus?
 
-Bei Cloud Volumes ONTAP Systemen finden Sie sie auf der Seite „Cloud Tiering Cluster“, sodass Sie eine vollständige Ansicht des Daten-Tiering in Ihrer Hybrid-Cloud-Infrastruktur erhalten. Cloud Volumes ONTAP Systeme sind jedoch schreibgeschützt aus Cloud Tiering. Sie können kein Daten-Tiering auf Cloud Volumes ONTAP über Cloud Tiering einrichten. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Sie richten Tiering für Cloud Volumes ONTAP aus der Arbeitsumgebung in BlueXP ein"^].
+Bei Cloud Volumes ONTAP Systemen finden Sie sie auf der Seite „Cloud Tiering Cluster“, sodass Sie eine vollständige Ansicht des Daten-Tiering in Ihrer Hybrid-Cloud-Infrastruktur erhalten. Cloud Volumes ONTAP Systeme sind jedoch schreibgeschützt aus Cloud Tiering. Sie können kein Daten-Tiering auf Cloud Volumes ONTAP über Cloud Tiering einrichten. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Sie richten Tiering für Cloud Volumes ONTAP-Systeme aus der Arbeitsumgebung in BlueXP ein"^].
 
 
 

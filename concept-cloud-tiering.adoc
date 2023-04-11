@@ -22,6 +22,8 @@ Ursprünglich werden AFF, FAS und ONTAP Select Systeme mit reinen SSD-Aggregaten
 
 Cloud-Tiering kann für Single-Node-Cluster, HA-konfigurierte Cluster, Cluster in Tiering Mirror-Konfigurationen und MetroCluster-Konfigurationen unter Verwendung von FabricPool Mirror konfiguriert werden. Cloud-Tiering-Lizenzen werden von allen Clustern geteilt.
 
+https://bluexp.netapp.com/cloud-tiering-service-tco["Mit dem Cloud Tiering TCO-Rechner erfahren Sie, wie viel Geld Sie sparen können"^].
+
 
 
 == Funktionen
@@ -38,10 +40,10 @@ Cloud Tiering bietet Automatisierung, Monitoring, Berichte und eine zentrale Man
 * Bei Cloud Volumes ONTAP Systemen finden Sie sie auf der Seite Cluster, sodass Sie eine vollständige Übersicht über Daten-Tiering in Ihrer Hybrid-Cloud-Infrastruktur erhalten
 
 
-Weitere Informationen zu dem Mehrwert von Cloud Tiering finden Sie im https://cloud.netapp.com/cloud-tiering["Sehen Sie sich die Seite Cloud Tiering auf der BlueXP Website an"^].
+Weitere Informationen zu dem Mehrwert von Cloud Tiering finden Sie im https://bluexp.netapp.com/cloud-tiering["Sehen Sie sich die Seite Cloud Tiering auf der BlueXP Website an"^].
 
 
-TIP: Cloud Volumes ONTAP Systeme sind schreibgeschützt aus Cloud Tiering. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Sie richten Tiering für Cloud Volumes ONTAP aus der Arbeitsumgebung in BlueXP ein"^].
+TIP: Cloud Volumes ONTAP Systeme sind schreibgeschützt aus Cloud Tiering. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Sie richten Tiering für Cloud Volumes ONTAP-Systeme aus der Arbeitsumgebung in BlueXP ein"^].
 
 
 
