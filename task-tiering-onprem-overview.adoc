@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-overview.html 
 keywords: overview, tiering overview, tiered clusters, clusters enabled for tiering, data tiering overview, cold data, hot data, tiered data, savings, savings opportunities, saving opportunity, policies, cold snapshots, all dp user data, cold user data & snapshots, cold user data and snapshots, all user data, no policy, marketplace subscriptions, clusters associated 
-summary: Cloud-Tiering bietet von jedem Ihrer On-Premises-Cluster eine aggregierte Ansicht des Daten-Tiering. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen. 
+summary: BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von jedem Ihrer On-Premises-Cluster. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen. 
 ---
 = Erhalten Sie einen Überblick über Daten-Tiering von Ihren Clustern
 :toc: macro
@@ -17,9 +17,9 @@ summary: Cloud-Tiering bietet von jedem Ihrer On-Premises-Cluster eine aggregier
 
 
 [role="lead"]
-Cloud-Tiering bietet von jedem Ihrer On-Premises-Cluster eine aggregierte Ansicht des Daten-Tiering. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen.
+BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von jedem Ihrer On-Premises-Cluster. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen.
 
-Klicken Sie einfach auf *Tiering > On-Prem Dashboard*. Cloud Tiering bietet folgende Details über Ihre Umgebung.
+Klicken Sie einfach auf *Tiering > On-Prem Dashboard*. BlueXP Tiering bietet folgende Details zu Ihrer Umgebung.
 
 image:screenshot_tiering_onprem_dashboard.png["Ein Screenshot der On-Premises-Dashboard-Seite"]
 

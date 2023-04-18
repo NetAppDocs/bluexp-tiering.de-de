@@ -20,7 +20,7 @@ Nachdem Ihre On-Premises-ONTAP-Cluster für das Tiering von Daten auf einen best
 
 == Anzeigen von für ein Cluster konfigurierten Objektspeichern
 
-Vielleicht möchten Sie alle Objektspeicher sehen, die für Ihren Cluster konfiguriert wurden und an die Aggregate angeschlossen sind. Cloud Tiering bietet diese Informationen für jeden Cluster.
+Vielleicht möchten Sie alle Objektspeicher sehen, die für Ihren Cluster konfiguriert wurden und an die Aggregate angeschlossen sind. BlueXP Tiering bietet diese Informationen für jedes Cluster.
 
 .Schritte
 . Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Object Store Info*.
@@ -56,7 +56,7 @@ Der Objektspeicherassistent wird gestartet. Das folgende Beispiel zeigt, wie ein
 +
 Das Präfix _Fabric-Pool_ ist erforderlich, da die IAM-Richtlinie für den Connector ermöglicht, S3-Aktionen auf Buckets auszuführen, die mit diesem exakten Präfix benannt sind. Sie könnten beispielsweise den S3-Bucket _Fabric-Pool-AFF1_ benennen, wobei AFF1 der Name des Clusters ist.
 
-.. *Storage Class Life Cycle*: Cloud Tiering managt die Lebenszyklus-Übergänge Ihrer Tiered Daten. Daten beginnen in der Klasse _Standard_. Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in eine andere Klasse zu verschieben.
+.. *Lebenszyklus der Storage-Klasse*: BlueXP Tiering managt die Lebenszyklusübergänge Ihrer Tiering-Daten. Daten beginnen in der Klasse _Standard_. Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in eine andere Klasse zu verschieben.
 +
 Wählen Sie die S3-Speicherklasse aus, in die die Tiered-Daten übertragen werden sollen, und die Anzahl der Tage vor dem Verschieben der Daten, und klicken Sie auf *Weiter*. Der Screenshot unten zeigt beispielsweise, dass Tiered Daten nach 45 Tagen im Objekt-Storage von der Klasse _Standard_ in die Klasse _Standard-IA_ verschoben werden.
 
@@ -75,7 +75,7 @@ Der IAM-Benutzer muss sich im gleichen AWS-Konto wie der Bucket befinden, den Si
 
 .. *Clusternetzwerk*: Wählen Sie den IPspace aus, den ONTAP verwenden soll, um eine Verbindung zum Objekt-Storage herzustellen, und klicken Sie auf *Weiter*.
 +
-Durch die Auswahl des richtigen IPspaces wird sichergestellt, dass Cloud Tiering eine Verbindung von ONTAP mit dem Objekt-Storage Ihres Cloud-Providers einrichten kann.
+Durch Auswahl des passenden IPspaces wird sichergestellt, dass BlueXP Tiering eine Verbindung von ONTAP zu dem Objekt-Storage Ihres Cloud-Providers herstellen kann.
 
 
 
@@ -156,7 +156,7 @@ NOTE: Wenn Sie den Mirror-Objektspeicher aus einer MetroCluster-Konfiguration en
 
 == Migration Ihrer Tiered Daten zu einem anderen Cloud-Provider
 
-Mit Cloud-Tiering migrieren Sie Ihre Tiering-Daten ganz einfach zu einem anderen Cloud-Provider. Wenn Sie beispielsweise von Amazon S3 zu Azure Blob verschieben möchten, führen Sie die oben aufgeführten Schritte in der folgenden Reihenfolge aus:
+Mit BlueXP Tiering können Sie Ihre Tiering-Daten einfach zu einem anderen Cloud-Provider migrieren. Wenn Sie beispielsweise von Amazon S3 zu Azure Blob verschieben möchten, führen Sie die oben aufgeführten Schritte in der folgenden Reihenfolge aus:
 
 . Fügen Sie einen Azure Blob-Objektspeicher hinzu.
 . Hängen Sie diesen neuen Objektspeicher als Spiegelung an das vorhandene Aggregat an.

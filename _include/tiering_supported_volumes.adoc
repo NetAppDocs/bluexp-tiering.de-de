@@ -2,5 +2,5 @@
 :allow-uri-read: 
 
 
-Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die in Cloud Tiering Tiers möglich sind, ist unter Umständen kleiner als die Anzahl der Volumes in Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
+Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die BlueXP Tiering durchführen kann, kann kleiner sein als die Anzahl der Volumes auf Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
 

@@ -39,7 +39,7 @@ Sie benötigen Folgendes:
 * Ein lokaler ONTAP-Quellcluster, der ONTAP 9.8 oder höher ausführt, sowie eine Verbindung über einen benutzerspezifischen Port zum S3-kompatiblen Ziel-Objekt-Storage. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 * Der FQDN, der Zugriffsschlüssel und der geheime Schlüssel für den Objekt-Speicherserver, sodass der ONTAP-Cluster auf den Bucket zugreifen kann.
 * Ein Connector, der auf Ihrem Gelände installiert ist.
-* Networking für den Connector, der eine ausgehende HTTPS-Verbindung zum Quell-ONTAP-Cluster, zum S3-kompatiblen Objekt-Storage und zum Cloud-Tiering-Service ermöglicht.
+* Networking des Connectors, der eine HTTPS-Verbindung zum Quell-ONTAP-Cluster, zum S3-kompatiblen Objekt-Storage und zum BlueXP Tiering-Service ermöglicht.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Tiering einrichten
@@ -48,11 +48,11 @@ Wählen Sie in BlueXP eine lokale Arbeitsumgebung aus, klicken Sie für den Tier
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Lizenzierung einrichten
 [role="quick-margin-para"]
-Bezahlen Sie für Cloud Tiering mit einem Pay-as-you-go-Abonnement Ihres Cloud-Providers, einer NetApp Cloud Tiering Bring-Your-Own-License oder einer Kombination aus den beiden Optionen:
+Bezahlen Sie für BlueXP Tiering über ein Pay-as-you-go-Abonnement von Ihrem Cloud-Provider, eine NetApp BlueXP Tiering-Lizenz von Ihrer eigenen Lizenz oder eine Kombination aus beiden:
 
 [role="quick-margin-list"]
 * Um das BlueXP PAYGO Angebot von zu abonnieren https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], Oder https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^]Klicken Sie auf *Abonnieren* und folgen Sie den Anweisungen.
-* Wenn Sie eine BYOL-Lizenz von Cloud Tiering nutzen möchten, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Kontaktieren Sie uns, wenn Sie eine Lizenz erwerben müssen], und dann link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Fügen Sie es über das BlueXP Digital Wallet Ihrem Konto hinzu"].
+* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Fügen Sie es über das BlueXP Digital Wallet Ihrem Konto hinzu"].
 
 
 
@@ -63,7 +63,7 @@ Bezahlen Sie für Cloud Tiering mit einem Pay-as-you-go-Abonnement Ihres Cloud-P
 
 Die folgende Abbildung zeigt die einzelnen Komponenten und die Verbindungen, die zwischen den Komponenten vorbereitet werden müssen:
 
-image:diagram_cloud_tiering_s3_compat.png["Ein Architekturbild, das den Cloud Tiering Service mit einer Verbindung zum Connector vor Ort, dem Connector mit einer Verbindung zu Ihrem ONTAP Cluster und einer Verbindung zwischen dem ONTAP Cluster und Objekt-Storage zeigt. Aktive Daten befinden sich auf dem ONTAP Cluster, während sich inaktive Daten im Objekt-Storage befinden."]
+image:diagram_cloud_tiering_s3_compat.png["Ein Architekturbild, das den BlueXP Tiering-Service mit einer Verbindung zum lokalen Connector, den Connector mit einer Verbindung zu Ihrem ONTAP-Cluster und eine Verbindung zwischen dem ONTAP-Cluster und Objekt-Storage zeigt. Aktive Daten befinden sich auf dem ONTAP Cluster, während sich inaktive Daten im Objekt-Storage befinden."]
 
 
 NOTE: Die Kommunikation zwischen dem Connector und dem S3-kompatiblen Objekt-Storage-Server dient ausschließlich der Einrichtung des Objekt-Storage.
@@ -86,20 +86,20 @@ Das ONTAP Quellsystem liest und schreibt Daten aus dem Objekt-Storage in und aus
 
 * Über den Konnektor ist eine eingehende Verbindung erforderlich, die sich in Ihrem Haus befinden muss.
 +
-Es ist keine Verbindung zwischen dem Cluster und dem Cloud Tiering Service erforderlich.
+Es ist keine Verbindung zwischen dem Cluster und dem BlueXP Tiering Service erforderlich.
 
 * Für jeden ONTAP Node ist eine Intercluster-LIF erforderlich, die die Volumes hostet, die Sie abstufen möchten. Die LIF muss dem _IPspace_ zugewiesen sein, den ONTAP zur Verbindung mit Objekt-Storage verwenden sollte.
 +
-Wenn Sie Daten-Tiering einrichten, werden Sie von Cloud Tiering aufgefordert, den IP-Speicherplatz zu verwenden. Sie sollten den IPspace auswählen, dem jede LIF zugeordnet ist. Dies kann der „Standard“-IPspace oder ein benutzerdefinierter IPspace sein, den Sie erstellt haben. Weitere Informationen zu https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIFs"^] Und https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspaces"^].
+Beim Einrichten von Daten-Tiering fordert BlueXP Tiering Sie zur Verwendung des IPspaces auf. Sie sollten den IPspace auswählen, dem jede LIF zugeordnet ist. Dies kann der „Standard“-IPspace oder ein benutzerdefinierter IPspace sein, den Sie erstellt haben. Weitere Informationen zu https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIFs"^] Und https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspaces"^].
 
 
 
 --
-Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die in Cloud Tiering Tiers möglich sind, ist unter Umständen kleiner als die Anzahl der Volumes in Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
+Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die BlueXP Tiering durchführen kann, kann kleiner sein als die Anzahl der Volumes auf Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
 
 
 
-TIP: Cloud-Tiering unterstützt sowohl FlexVol als auch FlexGroup Volumes.
+TIP: BlueXP Tiering unterstützt sowohl FlexVol als auch FlexGroup Volumes.
 
 
 
@@ -115,7 +115,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 S3-kompatibler Objekt-Storage muss die folgenden Anforderungen erfüllen.
 
-S3-Anmeldedaten:: Wenn Sie Tiering auf S3-kompatiblen Objekt-Storage einrichten, werden Sie aufgefordert, einen S3-Bucket zu erstellen oder einen vorhandenen S3-Bucket auszuwählen. Sie müssen Cloud Tiering mit einem S3-Zugriffsschlüssel und einem geheimen Schlüssel bereitstellen. Cloud Tiering verwendet die Schlüssel für den Zugriff auf Ihren Bucket.
+S3-Anmeldedaten:: Wenn Sie Tiering auf S3-kompatiblen Objekt-Storage einrichten, werden Sie aufgefordert, einen S3-Bucket zu erstellen oder einen vorhandenen S3-Bucket auszuwählen. Sie müssen BlueXP Tiering mit einem S3-Zugriffsschlüssel und einem geheimen Schlüssel bereitstellen. BlueXP Tiering verwendet die Schlüssel für den Zugriff auf Ihren Bucket.
 +
 --
 Diese Zugriffsschlüssel müssen einem Benutzer mit den folgenden Berechtigungen zugeordnet sein:
@@ -152,7 +152,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
 +
-** Eine HTTPS-Verbindung über Port 443 zum Cloud Tiering Service (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
+** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 zum S3-kompatiblen Objekt-Storage
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
@@ -185,7 +185,7 @@ image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Tiering-Optio
 .. *Bucket*: Fügen Sie einen neuen Eimer hinzu oder wählen Sie einen vorhandenen Eimer aus und klicken Sie auf *Weiter*.
 .. *Clusternetzwerk*: Wählen Sie den IPspace aus, den ONTAP verwenden soll, um eine Verbindung zum Objekt-Storage herzustellen, und klicken Sie auf *Weiter*.
 +
-Durch die Auswahl des korrekten IPspaces wird sichergestellt, dass Cloud Tiering eine Verbindung von ONTAP zu Ihrem S3-kompatiblen Objekt-Storage einrichten kann.
+Die Auswahl des korrekten IPspaces stellt sicher, dass BlueXP Tiering eine Verbindung von ONTAP zu Ihrem S3-kompatiblen Objekt-Storage einrichten kann.
 
 
 
@@ -213,7 +213,7 @@ image:screenshot_tiering_policy_settings.png["Ein Screenshot, der die konfigurie
 Sie haben Daten-Tiering von Volumes im Cluster erfolgreich in S3-kompatiblen Objekt-Storage eingerichtet.
 
 .Was kommt als Nächstes?
-link:task-licensing-cloud-tiering.html["Abonnieren Sie den Cloud Tiering Service"].
+link:task-licensing-cloud-tiering.html["Abonnieren Sie unbedingt den BlueXP Tiering Service"].
 
 Sie können Informationen zu den aktiven und inaktiven Daten auf dem Cluster anzeigen. link:task-managing-tiering.html["Erfahren Sie mehr über das Managen Ihrer Tiering-Einstellungen"].
 

@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Tiering
+  name: BlueXP tiering
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,13 +11,13 @@ settings:
   langs: de-de,us-en,ja-jp,ko-kr,zh-cn,zh-tw,es-es,fr-fr
 sidebar:
   entries:
-  - title: Dokumentation zu Cloud Tiering
+  - title: BlueXP Tiering-Dokumente
     url: "/index.html"
   - title: Versionshinweise
     url: "/whats-new.html"
   - title: Los geht's
     entries:
-    - title: Erfahren Sie mehr über Cloud Tiering
+    - title: Weitere Informationen zu BlueXP Tiering
       url: "/concept-cloud-tiering.html"
     - title: Tiering von On-Premises-Daten in die Cloud –
       entries:
@@ -35,7 +35,7 @@ sidebar:
       url: "/task-licensing-cloud-tiering.html"
     - title: Häufig gestellte Fragen
       url: "/faq-cloud-tiering.html"
-  - title: Nutzen Sie Cloud Tiering
+  - title: Einsatz von BlueXP Tiering
     entries:
     - title: Managen Sie Daten-Tiering
       url: "/task-managing-tiering.html"
@@ -65,7 +65,7 @@ homepage:
   tiles:
   - title: Los geht's
     links:
-    - title: Erfahren Sie mehr über Cloud Tiering
+    - title: Weitere Informationen zu BlueXP Tiering
       url: concept-cloud-tiering.html
     - title: Was ist neu
       url: whats-new.html
@@ -110,7 +110,7 @@ homepage:
     links:
     - title: NetApp Community
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: Cloud Tiering Blog
+    - title: BlueXP Tiering-Blog
       url: https://bluexp.netapp.com/blog/topic/cloud-tiering
     - title: Cloud-Webinare
       url: https://bluexp.netapp.com/events

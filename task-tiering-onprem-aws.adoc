@@ -50,7 +50,7 @@ Richten Sie Berechtigungen für den Connector ein, um den S3-Bucket zu erstellen
 [role="quick-margin-para"]
 <<Richten Sie S3-Berechtigungen ein,Lesen Sie, wie Sie Berechtigungen für den Connector und für Ihren On-Prem-Cluster einrichten.>>
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Fünf"] Aktivieren Sie Cloud Tiering auf dem System
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Fünf"] BlueXP Tiering auf dem System aktivieren
 [role="quick-margin-para"]
 Wählen Sie eine lokale Arbeitsumgebung aus, klicken Sie für den Tiering-Service auf *Aktivieren* und befolgen Sie die Anweisungen zum Tiering von Daten an Amazon S3.
 
@@ -59,11 +59,11 @@ Wählen Sie eine lokale Arbeitsumgebung aus, klicken Sie für den Tiering-Servic
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Sechs"] Lizenzierung einrichten
 [role="quick-margin-para"]
-Nach Abschluss der kostenlosen Testversion können Sie Cloud Tiering über ein Pay-as-you-go-Abonnement, eine BYOL-Lizenz von ONTAP Cloud Tiering oder eine Kombination aus beiden Lizenzen bezahlen:
+Nach Ablauf der kostenlosen Testversion können Sie für BlueXP Tiering über ein Pay-as-you-go-Abonnement, eine ONTAP BlueXP Tiering-BYOL-Lizenz oder eine Kombination aus beiden Optionen bezahlen:
 
 [role="quick-margin-list"]
 * Wenn Sie sich über den AWS Marketplace anmelden möchten, https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Rufen Sie das BlueXP Marketplace Angebot auf"^]Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.
-* Wenn Sie eine BYOL-Lizenz von Cloud Tiering nutzen möchten, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Kontaktieren Sie uns, wenn Sie eine Lizenz erwerben müssen], und dann link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Fügen Sie es über das BlueXP Digital Wallet Ihrem Konto hinzu"].
+* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Fügen Sie es über das BlueXP Digital Wallet Ihrem Konto hinzu"].
 
 
 
@@ -78,11 +78,11 @@ Es gibt zwei Verbindungsmethoden, die Sie bei der Konfiguration von Tiering von 
 
 Das folgende Diagramm zeigt die Methode *Public Connection* und die Verbindungen, die Sie zwischen den Komponenten vorbereiten müssen. Sie können einen Connector, den Sie an Ihrem Standort installiert haben, oder einen Connector verwenden, den Sie in der AWS VPC implementiert haben.
 
-image:diagram_cloud_tiering_aws_public.png["Eine Grafik zeigt, wie Cloud Tiering über eine öffentliche Verbindung mit den Volumes im Cluster und dem AWS S3 Storage kommuniziert, auf dem sich die inaktiven Daten befinden."]
+image:diagram_cloud_tiering_aws_public.png["Eine Abbildung zeigt, wie BlueXP Tiering über eine öffentliche Verbindung mit den Volumes im Cluster und dem AWS S3 Storage kommuniziert, in dem sich die inaktiven Daten befinden."]
 
 Das folgende Diagramm zeigt die Methode *private Verbindung* und die Verbindungen, die Sie zwischen den Komponenten vorbereiten müssen. Sie können einen Connector, den Sie an Ihrem Standort installiert haben, oder einen Connector verwenden, den Sie in der AWS VPC implementiert haben.
 
-image:diagram_cloud_tiering_aws_private.png["Eine Grafik zeigt, wie Cloud Tiering über eine private Verbindung mit den Volumes im Cluster und dem AWS S3 Storage kommuniziert, auf dem sich die inaktiven Daten befinden."]
+image:diagram_cloud_tiering_aws_private.png["Eine Abbildung zeigt, wie BlueXP Tiering über eine private Verbindung mit den Volumes im Cluster und dem AWS S3 Storage kommuniziert, in dem sich die inaktiven Daten befinden."]
 
 
 NOTE: Die Kommunikation zwischen einem Connector und S3 dient nur der Einrichtung von Objekt-Storage.
@@ -110,7 +110,7 @@ Wenn Sie bereits einen Connector in Ihrer AWS VPC oder Ihrem Standort implementi
 
 * Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
 +
-** Eine HTTPS-Verbindung über Port 443 zum Cloud Tiering Service und zu Ihrem S3 Objekt-Storage (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
+** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service und zu Ihrem S3 Objekt-Storage (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
 
@@ -144,11 +144,11 @@ Unterstützte ONTAP-Versionen::
 
 
 --
-Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die in Cloud Tiering Tiers möglich sind, ist unter Umständen kleiner als die Anzahl der Volumes in Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
+Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die BlueXP Tiering durchführen kann, kann kleiner sein als die Anzahl der Volumes auf Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
 
 
 
-NOTE: Cloud Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktioniert wie jedes andere Volume.
+NOTE: BlueXP Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktioniert wie jedes andere Volume.
 
 Erforderlicher Zugriffsparameter für Anwendungen:: Der Cluster-Admin-Benutzer muss über „Konsole“-Anwendungszugriff verfügen. Sie können dies mit dem ONTAP-Befehl überprüfen `security login show`. „Konsole“ sollte in der Spalte _Application_ für den Benutzer „admin“ angezeigt werden. Verwenden Sie die `security login create` Befehl, um ggf. Zugriff auf Konsolenanwendung hinzuzufügen. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["Weitere Informationen finden Sie in den Befehlen „Security Login“"].
 
@@ -159,7 +159,7 @@ Erforderlicher Zugriffsparameter für Anwendungen:: Der Cluster-Admin-Benutzer m
 
 * Das Cluster erfordert eine eingehende HTTPS-Verbindung vom Connector zur Cluster-Management-LIF.
 +
-Es ist keine Verbindung zwischen dem Cluster und dem Cloud Tiering Service erforderlich.
+Es ist keine Verbindung zwischen dem Cluster und dem BlueXP Tiering Service erforderlich.
 
 * Für jeden ONTAP Node ist eine Intercluster-LIF erforderlich, die die Volumes hostet, die Sie abstufen möchten. Diese Intercluster LIFs müssen in der Lage sein, auf den Objektspeicher zuzugreifen.
 +
@@ -167,7 +167,7 @@ Das Cluster initiiert eine ausgehende HTTPS-Verbindung über Port 443 von den In
 
 * Die Intercluster-LIFs müssen dem _IPspace_ zugewiesen werden, den ONTAP für die Verbindung mit dem Objekt-Storage verwenden sollte. https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["Erfahren Sie mehr über IPspaces"^].
 +
-Wenn Sie Cloud-Tiering einrichten, werden Sie aufgefordert, den IPspace zu verwenden. Sie sollten den IPspace auswählen, dem diese LIFs zugeordnet sind. Dies kann der „Standard“-IPspace oder ein benutzerdefinierter IPspace sein, den Sie erstellt haben.
+Wenn Sie BlueXP Tiering einrichten, werden Sie aufgefordert, den IPspace zu verwenden. Sie sollten den IPspace auswählen, dem diese LIFs zugeordnet sind. Dies kann der „Standard“-IPspace oder ein benutzerdefinierter IPspace sein, den Sie erstellt haben.
 
 +
 Wenn Sie einen anderen IPspace als „Standard“ verwenden, müssen Sie möglicherweise eine statische Route erstellen, um Zugriff auf den Objekt-Storage zu erhalten.
@@ -191,12 +191,12 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 == Bereiten Sie die AWS-Umgebung vor
 
-Wenn Sie Daten-Tiering auf einem neuen Cluster einrichten, werden Sie aufgefordert, einen S3-Bucket zu erstellen oder einen vorhandenen S3-Bucket im AWS-Konto auszuwählen, wo der Connector eingerichtet ist. Das AWS-Konto muss über Berechtigungen und einen Zugriffsschlüssel verfügen, den Sie in Cloud Tiering eingeben können. Das ONTAP-Cluster verwendet den Zugriffsschlüssel für das Tiering von Daten in und aus S3.
+Wenn Sie Daten-Tiering auf einem neuen Cluster einrichten, werden Sie aufgefordert, einen S3-Bucket zu erstellen oder einen vorhandenen S3-Bucket im AWS-Konto auszuwählen, wo der Connector eingerichtet ist. Das AWS Konto muss über Berechtigungen und einen Zugriffsschlüssel verfügen, den Sie in BlueXP Tiering eingeben können. Das ONTAP-Cluster verwendet den Zugriffsschlüssel für das Tiering von Daten in und aus S3.
 
-Der S3-Bucket muss sich in einem enthalten sein link:reference-aws-support.html#supported-aws-regions["Region, die Cloud Tiering unterstützt"].
+Der S3-Bucket muss sich in einem enthalten sein link:reference-aws-support.html#supported-aws-regions["Region, die BlueXP Tiering unterstützt"].
 
 
-NOTE: Wenn Sie planen, Cloud Tiering für eine kostengünstigere Storage-Klasse zu konfigurieren, in der Ihre Tiered Data nach einer bestimmten Anzahl von Tagen verschoben werden, müssen Sie beim Einrichten des Buckets in Ihrem AWS Konto keine Lebenszyklusregeln auswählen. Cloud Tiering managt Lebenszyklusphasen.
+NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere Storage-Klasse zu verwenden, auf die Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Buckets in Ihrem AWS-Konto keine Lebenszyklusregeln auswählen. BlueXP Tiering managt die Lebenszyklusumstellungen.
 
 
 
@@ -226,7 +226,7 @@ Siehe https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.
 
 . Erstellen oder suchen Sie den Zugriffsschlüssel.
 +
-Cloud Tiering leitet den Zugriffsschlüssel an den ONTAP Cluster weiter. Die Anmeldedaten werden im Cloud Tiering Service nicht gespeichert.
+BlueXP Tiering gibt den Zugriffsschlüssel an den ONTAP Cluster weiter. Die Zugangsdaten werden nicht im BlueXP Tiering-Service gespeichert.
 
 +
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html["AWS Dokumentation: Management von Zugriffsschlüsseln für IAM-Benutzer"^]
@@ -247,7 +247,7 @@ Wenn Sie eine sicherere Verbindung über das Internet von Ihrem On-Prem-Rechenze
 image:screenshot_tiering_aws_sec_group.png["Einen Screenshot der AWS Sicherheitsgruppe, die dem Connector zugeordnet ist."]
 
 +
-Wenn Sie Port 80 (HTTP) für die Kommunikation mit dem privaten Endpunkt verwenden, sind Sie alle festgelegt. Sie können jetzt Cloud-Tiering auf dem Cluster aktivieren.
+Wenn Sie Port 80 (HTTP) für die Kommunikation mit dem privaten Endpunkt verwenden, sind Sie alle festgelegt. BlueXP Tiering kann jetzt auf dem Cluster aktiviert werden.
 
 +
 Wenn Sie Port 443 (HTTPS) für die Kommunikation zum privaten Endpunkt verwenden, müssen Sie das Zertifikat aus dem VPC S3-Endpunkt kopieren und zum ONTAP-Cluster hinzufügen, wie in den nächsten 4 Schritten dargestellt.
@@ -319,7 +319,7 @@ Bei Verwendung eines On-Prem Connectors müssen Sie die AWS Konto-ID eingeben, d
 +
 Das Präfix _Fabric-Pool_ ist erforderlich, da die IAM-Richtlinie für den Connector ermöglicht, S3-Aktionen auf Buckets auszuführen, die mit diesem exakten Präfix benannt sind. Sie könnten beispielsweise den S3-Bucket _Fabric-Pool-AFF1_ benennen, wobei AFF1 der Name des Clusters ist.
 
-.. *Storage Class*: Cloud Tiering managt die Lebenszyklus-Übergänge Ihrer Tiered Daten. Daten beginnen in der Klasse _Standard_. Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in eine andere Klasse zu verschieben.
+.. *Storage-Klasse*: BlueXP Tiering managt die Lebenszyklusübergänge Ihrer Tiering-Daten. Daten beginnen in der Klasse _Standard_. Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in eine andere Klasse zu verschieben.
 +
 Wählen Sie die S3-Speicherklasse aus, in die die Tiered-Daten übertragen werden sollen, und die Anzahl der Tage vor dem Verschieben der Daten, und klicken Sie auf *Weiter*. Der Screenshot unten zeigt beispielsweise, dass Tiered Daten nach 45 Tagen im Objekt-Storage von der Klasse _Standard_ in die Klasse _Standard-IA_ verschoben werden.
 
@@ -371,7 +371,7 @@ image:screenshot_tiering_policy_settings.png["Ein Screenshot, der die konfigurie
 Sie haben Daten-Tiering von Volumes im Cluster erfolgreich in den S3-Objekt-Storage eingerichtet.
 
 .Was kommt als Nächstes?
-link:task-licensing-cloud-tiering.html["Abonnieren Sie den Cloud Tiering Service"].
+link:task-licensing-cloud-tiering.html["Abonnieren Sie unbedingt den BlueXP Tiering Service"].
 
 Sie können Informationen zu den aktiven und inaktiven Daten auf dem Cluster anzeigen. link:task-managing-tiering.html["Erfahren Sie mehr über das Managen Ihrer Tiering-Einstellungen"].
 

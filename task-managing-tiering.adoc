@@ -80,7 +80,7 @@ Die Tiering-Richtlinie wird geändert und die Daten werden basierend auf der neu
 
 == Laden Sie einen Tiering-Bericht für Ihre Volumes herunter
 
-Sie können einen Bericht der Seite „Tier Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. Klicken Sie einfach auf image:button_download.png["Download"] Schaltfläche. Cloud Tiering erzeugt eine CSV-Datei, die Sie nach Bedarf prüfen und an andere Gruppen senden können. Die .CSV-Datei umfasst bis zu 10,000 Datenzeilen.
+Sie können einen Bericht der Seite „Tier Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. Klicken Sie einfach auf image:button_download.png["Download"] Schaltfläche. BlueXP Tiering generiert eine CSV-Datei, die Sie nach Bedarf prüfen und an andere Gruppen senden können. Die .CSV-Datei umfasst bis zu 10,000 Datenzeilen.
 
 image:screenshot_tiering_report_download.png["Ein Screenshot, der zeigt, wie eine CSV-Datei mit dem Tiering-Status aller Volumes generiert wird."]
 
@@ -162,7 +162,7 @@ image:screenshot_tiering_modify_aggregate.png["Ein Screenshot mit einem Schieber
 
 == Überprüfen von Tiering-Informationen für ein Cluster
 
-Es empfiehlt sich möglicherweise, zu sehen, wie viele Daten sich im Cloud-Tier befinden und wie viele Daten auf Festplatten gespeichert sind. Außerdem ist es möglich, die Menge der „heißen“ und „kalten“ Daten auf den Festplatten des Clusters anzuzeigen. Cloud Tiering bietet diese Informationen für jeden Cluster.
+Es empfiehlt sich möglicherweise, zu sehen, wie viele Daten sich im Cloud-Tier befinden und wie viele Daten auf Festplatten gespeichert sind. Außerdem ist es möglich, die Menge der „heißen“ und „kalten“ Daten auf den Festplatten des Clusters anzuzeigen. BlueXP Tiering bietet diese Informationen für jedes Cluster.
 
 .Schritte
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
@@ -184,7 +184,7 @@ image:screenshot_tiering_aiq_fabricpool_info.png["Ein Screenshot, der die Fabric
 
 == Korrektur des Betriebszustands
 
-Ausfälle können auftreten. Ist dies der Fall, zeigt Cloud Tiering auf dem Cluster Dashboard einen „ausgefallenen“ Betriebszustand an. Der Systemzustand gibt den Status des ONTAP Systems und BlueXP wieder.
+Ausfälle können auftreten. Wenn ja, zeigt BlueXP Tiering im Cluster Dashboard einen „ausgefallenen“ Betriebszustand an. Der Systemzustand gibt den Status des ONTAP Systems und BlueXP wieder.
 
 .Schritte
 . Ermitteln Sie alle Cluster, deren Betriebszustand „ausgefallen“ ist.
@@ -192,21 +192,21 @@ Ausfälle können auftreten. Ist dies der Fall, zeigt Cloud Tiering auf dem Clus
 . Korrigieren Sie das Problem:
 +
 .. Vergewissern Sie sich, dass das ONTAP-Cluster betriebsbereit ist und über eine ein- und ausgehende Verbindung zu Ihrem Objekt-Storage-Provider verfügt.
-.. Stellen Sie sicher, dass BlueXP ausgehende Verbindungen zum Cloud Tiering Service, zum Objektspeicher und zu den erkannte ONTAP-Clustern hat.
+.. Überprüfen Sie, ob BlueXP über ausgehende Verbindungen zum BlueXP Tiering Service, zum Objektspeicher und zu den erkannten ONTAP Clustern verfügt.
 
 
 
 
 
 
-== Zusätzliche Cluster über Cloud Tiering erkennen
+== Zusätzliche Cluster über BlueXP Tiering ermitteln
 
 Sie können noch nicht erkannte On-Premises-ONTAP-Cluster über die Seite Tiering _Cluster_ zu BlueXP hinzufügen, damit Sie Tiering für den Cluster aktivieren können.
 
 Beachten Sie, dass Schaltflächen auch auf der Seite Tiering _On-Premises Dashboard_ angezeigt werden, damit Sie zusätzliche Cluster erkennen können.
 
 .Schritte
-. Klicken Sie in Cloud Tiering auf die Registerkarte *Cluster*.
+. Klicken Sie in BlueXP Tiering auf die Registerkarte *Cluster*.
 . Um nicht erkannte Cluster zu sehen, klicken Sie auf *nicht erkannte Cluster anzeigen*.
 +
 image:screenshot_tiering_show_undiscovered_cluster.png["Ein Screenshot, in dem die Schaltfläche „nicht erkannte Cluster anzeigen“ im Tiering Dashboard angezeigt wird."]

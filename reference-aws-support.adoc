@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-aws-support.html 
 keywords: aws, amazon, s3, support, regions, storage classes 
-summary: Cloud Tiering unterstützt mehrere S3-Storage-Klassen und meisten Regionen. 
+summary: BlueXP Tiering unterstützt mehrere S3 Storage-Klassen und die meisten Regionen. 
 ---
 = Unterstützte S3-Storage-Klassen und Regionen
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: Cloud Tiering unterstützt mehrere S3-Storage-Klassen und meisten Regio
 
 
 [role="lead"]
-Cloud Tiering unterstützt mehrere S3-Storage-Klassen und meisten Regionen.
+BlueXP Tiering unterstützt mehrere S3 Storage-Klassen und die meisten Regionen.
 
 
 
 == Unterstützte S3-Storage-Klassen
 
-Wenn Sie Daten-Tiering in AWS einrichten, verwendet Cloud Tiering automatisch die Storage-Klasse _Standard_ für Ihre inaktiven Daten. Cloud Tiering kann eine Lifecycle-Regel anwenden, sodass die Daten nach einer bestimmten Anzahl von Tagen von der _Standard_ Storage-Klasse zu einer anderen Storage-Klasse wechseln. Sie können aus folgenden Speicherklassen wählen:
+Wenn Sie das Daten-Tiering auf AWS einrichten, verwendet BlueXP Tiering für Ihre inaktiven Daten automatisch die Storage-Klasse _Standard_. BlueXP Tiering kann eine Lebenszyklusregel anwenden, sodass Daten nach einer bestimmten Anzahl von Tagen von der _Standard_ Storage-Klasse zu einer anderen Storage-Klasse überführt werden. Sie können aus folgenden Speicherklassen wählen:
 
 * Standardzugriff
 * Ein einmaliger Zugriff
@@ -30,7 +30,7 @@ Wenn Sie Daten-Tiering in AWS einrichten, verwendet Cloud Tiering automatisch di
 
 Wenn Sie keine andere Storage-Klasse wählen, verbleiben die Daten in der Storage-Klasse _Standard_, und es werden keine Regeln angewendet.
 
-Wenn Sie eine Cloud-Tiering-Lebenszyklusregel konfigurieren, dürfen beim Einrichten des Bucket in Ihrem AWS Konto keine Lebenszyklusregeln konfiguriert werden.
+Wenn Sie eine Tiering-Lebenszyklusregel für BlueXP konfigurieren, dürfen Sie beim Einrichten des Buckets in Ihrem AWS-Konto keine Lebenszyklusregeln konfigurieren.
 
 https://aws.amazon.com/s3/storage-classes/["Erfahren Sie mehr über S3-Storage-Klassen"^].
 
@@ -38,7 +38,7 @@ https://aws.amazon.com/s3/storage-classes/["Erfahren Sie mehr über S3-Storage-K
 
 == Unterstützte AWS-Regionen
 
-Cloud-Tiering unterstützt die folgenden AWS Regionen.
+BlueXP Tiering unterstützt folgende AWS Regionen.
 
 
 

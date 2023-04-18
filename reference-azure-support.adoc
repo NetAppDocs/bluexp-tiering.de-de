@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-azure-support.html 
 keywords: microsoft azure, azure, hot, access tier, cold, regions 
-summary: Cloud-Tiering unterstützt zwei Zugriffsebenen und die meisten Regionen. 
+summary: BlueXP Tiering unterstützt zwei Zugriffs-Tiers und die meisten Regionen. 
 ---
 = Unterstützte Azure Blob-Zugriffsebenen und Regionen
 :hardbreaks:
@@ -14,17 +14,17 @@ summary: Cloud-Tiering unterstützt zwei Zugriffsebenen und die meisten Regionen
 
 
 [role="lead"]
-Cloud-Tiering unterstützt zwei Zugriffsebenen und die meisten Regionen.
+BlueXP Tiering unterstützt zwei Zugriffs-Tiers und die meisten Regionen.
 
 
 
 == Unterstützte Azure Blob-Zugriffsebenen
 
-Wenn Sie Daten-Tiering zu Azure einrichten, verwendet Cloud Tiering automatisch die Zugriffsebene „_Hot_“ für Ihre inaktiven Daten. Cloud Tiering kann eine Lebenszyklusregel anwenden, sodass die Daten nach einer bestimmten Anzahl von Tagen von der Zugriffsebene _Hot_ auf die Zugriffsebene _Cool_ umgestellt werden.
+Beim Einrichten des Daten-Tiering auf Azure verwendet BlueXP Tiering für Ihre inaktiven Daten automatisch die Hot-Access-Tier. BlueXP Tiering kann eine Lebenszyklusregel anwenden, sodass die Daten nach einer bestimmten Anzahl von Tagen von der _Hot_ Zugriffs-Tier auf die _Cool_ Zugriffs-Tier verschoben werden.
 
 Wenn Sie die Zugriffsebene _Cool_ nicht wählen, verbleiben die Daten in der Zugriffsebene _Hot_ und es werden keine Regeln angewendet.
 
-Wenn Sie eine Cloud-Tiering-Lebenszyklusregel konfigurieren, dürfen Sie beim Einrichten des Containers in Ihrem Azure-Konto keine Lebenszyklusregeln konfigurieren.
+Wenn Sie eine Tiering-Lebenszyklusregel für BlueXP konfigurieren, dürfen Sie beim Einrichten des Containers in Ihrem Azure-Konto keine Lebenszyklusregeln konfigurieren.
 
 https://docs.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview["Erfahren Sie mehr über Azure Blob Zugriffsebenen"^].
 
@@ -32,4 +32,4 @@ https://docs.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview["Erfa
 
 == Unterstützte Azure Regionen
 
-Cloud Tiering unterstützt Tiering auf jedes Storage-Konto in jeder Region, auf die über den Connector zugegriffen werden kann.
+BlueXP Tiering unterstützt Tiering zu jedem Storage-Konto in einer Region, auf das über den Connector zugegriffen werden kann.

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, tiering' 
-summary: Was ist neu in Cloud Tiering? 
+summary: Erfahren Sie mehr über die Neuerungen bei BlueXP Tiering. 
 ---
-= Was ist neu bei Cloud Tiering
+= Neuerungen bei BlueXP Tiering
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Was ist neu in Cloud Tiering?
 
 
 [role="lead"]
-Was ist neu in Cloud Tiering?
+Erfahren Sie mehr über die Neuerungen bei BlueXP Tiering.
 
 
 
@@ -24,7 +24,7 @@ Was ist neu in Cloud Tiering?
 
 === Die Registerkarte „Lizenzierung“ wurde entfernt
 
-Die Registerkarte Lizenzierung wurde aus der Cloud Tiering-Schnittstelle entfernt. Auf die gesamte Lizenzierung für PAYGO-Abonnements (Pay-as-you-go) kann jetzt über das Cloud Tiering On-Premises-Dashboard zugegriffen werden. Von dieser Seite aus besteht auch ein Link in das Digital Wallet, sodass Sie beliebige Cloud Tiering-Funktionen (BYOL, Bring-Your-Own-License) anzeigen und managen können.
+Die Registerkarte Lizenzierung wurde aus der BlueXP Tiering-Schnittstelle entfernt. Auf alle Lizenzen für PAYGO-Abonnements (Pay-as-you-go) ist jetzt über das BlueXP Tiering On-Premises-Dashboard zugegriffen. Von dieser Seite aus besteht auch ein Link zum Digital Wallet, sodass Sie alle BlueXP Tiering-Lizenzen (BYOL, Bring-Your-Own-License) anzeigen und managen können.
 
 
 
@@ -40,7 +40,7 @@ Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und d
 
 === Jetzt können Sie einen Tiering-Bericht für Ihre Volumes generieren
 
-Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. Cloud Tiering erstellt eine CSV-Datei, die Sie nach Bedarf prüfen und an andere Personen in Ihrem Unternehmen senden können. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Hier erfahren Sie, wie Sie den Tiering-Bericht herunterladen"].
+Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. BlueXP Tiering generiert eine CSV-Datei, die Sie nach Bedarf anderen Personen in Ihrem Unternehmen senden und prüfen können. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Hier erfahren Sie, wie Sie den Tiering-Bericht herunterladen"].
 
 
 
@@ -50,7 +50,7 @@ Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, dam
 
 === Änderungen an Endpunkten für ausgehenden Internetzugriff über den Anschluss
 
-Aufgrund einer Änderung des Cloud Tiering müssen Sie die folgenden Connector-Endpunkte für einen erfolgreichen Cloud Tiering-Betrieb ändern:
+Aufgrund einer Änderung des BlueXP Tiering müssen Sie die folgenden Connector-Endpunkte für einen erfolgreichen BlueXP Tiering-Betrieb ändern:
 
 [cols="50,50"]
 |===
@@ -70,7 +70,7 @@ Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.neta
 
 
 
-=== Aktivieren Sie Cloud Tiering per Drag-and-Drop in Azure Blob, Google Cloud Storage und StorageGRID
+=== Drag-and-Drop für BlueXP Tiering zu Azure Blob, Google Cloud Storage und StorageGRID
 
 Wenn Azure Blob, Google Cloud Storage oder StorageGRID Tiering-Ziel als eine Arbeitsumgebung auf dem Canvas existiert, können Sie Ihre On-Prem ONTAP Arbeitsumgebung auf das Ziel ziehen, den Tiering Setup-Assistenten zu starten.
 
@@ -88,7 +88,7 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 
 
 
-=== Ziehen Sie Drag & Drop, um Cloud Tiering zu Amazon S3 zu aktivieren
+=== BlueXP Tiering zu Amazon S3 per Drag-and-Drop aktivieren
 
 Wenn das Amazon S3 Tiering-Ziel als eine Arbeitsumgebung auf dem Canvas existiert, können Sie Ihre On-Prem ONTAP-Arbeitsumgebung auf das Ziel ziehen, um den Tiering Setup-Assistenten zu starten.
 
@@ -112,7 +112,7 @@ Die Cloud Tiering UI hat einen neuen Satz von Seiten für die Objekt-Storage-Kon
 
 === Cloud-Tiering-Lizenzsupport für MetroCluster-Konfigurationen
 
-Lizenzen für Cloud-Tiering können jetzt von Ihren Clustern in MetroCluster Konfigurationen gemeinsam genutzt werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
+Lizenzen für Cloud-Tiering können jetzt von Ihren Clustern in MetroCluster Konfigurationen gemeinsam genutzt werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
 
 
 
@@ -122,7 +122,7 @@ Lizenzen für Cloud-Tiering können jetzt von Ihren Clustern in MetroCluster Kon
 
 === Cloud-Tiering-Lizenzunterstützung für zusätzliche Cluster-Konfigurationen
 
-Cloud-Tiering-Lizenzen können jetzt mit Clustern genutzt werden, die sich in Tiering-Spiegelkonfigurationen (nicht einschließlich MetroCluster-Konfigurationen) befinden, und mit Clustern, die zu IBM Cloud-Objektspeicher verschoben werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
+Cloud-Tiering-Lizenzen können jetzt mit Clustern genutzt werden, die sich in Tiering-Spiegelkonfigurationen (nicht einschließlich MetroCluster-Konfigurationen) befinden, und mit Clustern, die zu IBM Cloud-Objektspeicher verschoben werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
 
 
 

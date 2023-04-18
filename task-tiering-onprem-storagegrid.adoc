@@ -30,7 +30,7 @@ Sie benötigen Folgendes:
 * Ein ONTAP-Cluster vor Ort, auf dem ONTAP 9.4 oder höher ausgeführt wird, und eine Verbindung über einen vom Benutzer angegebenen Port zu StorageGRID. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 * StorageGRID 10.3 oder höher mit AWS-Zugriffsschlüsseln mit S3-Berechtigungen.
 * Ein Connector, der auf Ihrem Gelände installiert ist.
-* Networking für den Connector, der eine ausgehende HTTPS-Verbindung zum ONTAP-Cluster, zu StorageGRID und zum Cloud Tiering-Service ermöglicht.
+* Networking für den Connector, der eine ausgehende HTTPS-Verbindung zum ONTAP Cluster, zu StorageGRID und zum BlueXP Tiering Service ermöglicht.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Tiering einrichten
@@ -45,7 +45,7 @@ Wählen Sie in BlueXP eine lokale Arbeitsumgebung aus, klicken Sie für den Tier
 
 Die folgende Abbildung zeigt die einzelnen Komponenten und die Verbindungen, die zwischen den Komponenten vorbereitet werden müssen:
 
-image:diagram_cloud_tiering_storagegrid.png["Ein Architekturbild, das den Cloud Tiering Service mit einer Verbindung zum Connector vor Ort, dem Connector mit einer Verbindung zu Ihrem ONTAP Cluster und einer Verbindung zwischen dem ONTAP Cluster und Objekt-Storage zeigt. Aktive Daten befinden sich auf dem ONTAP Cluster, während sich inaktive Daten im Objekt-Storage befinden."]
+image:diagram_cloud_tiering_storagegrid.png["Ein Architekturbild, das den BlueXP Tiering-Service mit einer Verbindung zum lokalen Connector, den Connector mit einer Verbindung zu Ihrem ONTAP-Cluster und eine Verbindung zwischen dem ONTAP-Cluster und Objekt-Storage zeigt. Aktive Daten befinden sich auf dem ONTAP Cluster, während sich inaktive Daten im Objekt-Storage befinden."]
 
 
 NOTE: Die Kommunikation zwischen Connector und StorageGRID dient nur der Einrichtung des Objektspeichers.
@@ -66,7 +66,7 @@ Unterstützte ONTAP Plattformen::
 --
 Unterstützte ONTAP Version:: ONTAP 9.4 oder höher
 Erforderlicher Zugriffsparameter für Anwendungen:: Der Cluster-Admin-Benutzer muss über „Konsole“-Anwendungszugriff verfügen. Sie können dies mit dem ONTAP-Befehl überprüfen `security login show`. „Konsole“ sollte in der Spalte _Application_ für den Benutzer „admin“ angezeigt werden. Verwenden Sie die `security login create` Befehl, um ggf. Zugriff auf Konsolenanwendung hinzuzufügen. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["Weitere Informationen finden Sie in den Befehlen „Security Login“"].
-Lizenzierung:: Eine Cloud-Tiering-Lizenz ist nicht für Ihr BlueXP-Konto erforderlich, und es ist auch keine FabricPool-Lizenz für den ONTAP Cluster erforderlich, wenn Sie Daten auf StorageGRID verschieben.
+Lizenzierung:: Für Ihr BlueXP Konto ist keine BlueXP Tiering-Lizenz erforderlich. Auch für das Daten-Tiering auf StorageGRID ist keine FabricPool Lizenz auf dem ONTAP Cluster erforderlich.
 Netzwerkanforderungen für Cluster::
 +
 --
@@ -76,20 +76,20 @@ ONTAP liest und schreibt Daten auf und aus dem Objekt-Storage. Objekt-Storage st
 
 * Über den Konnektor ist eine eingehende Verbindung erforderlich, die sich in Ihrem Haus befinden muss.
 +
-Es ist keine Verbindung zwischen dem Cluster und dem Cloud Tiering Service erforderlich.
+Es ist keine Verbindung zwischen dem Cluster und dem BlueXP Tiering Service erforderlich.
 
 * Für jeden ONTAP Node ist eine Intercluster-LIF erforderlich, die die Volumes hostet, die Sie abstufen möchten. Die LIF muss dem _IPspace_ zugewiesen sein, den ONTAP zur Verbindung mit Objekt-Storage verwenden sollte.
 +
-Wenn Sie Daten-Tiering einrichten, werden Sie von Cloud Tiering aufgefordert, den IP-Speicherplatz zu verwenden. Sie sollten den IPspace auswählen, dem jede LIF zugeordnet ist. Dies kann der „Standard“-IPspace oder ein benutzerdefinierter IPspace sein, den Sie erstellt haben. Weitere Informationen zu https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIFs"^] Und https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspaces"^].
+Beim Einrichten von Daten-Tiering fordert BlueXP Tiering Sie zur Verwendung des IPspaces auf. Sie sollten den IPspace auswählen, dem jede LIF zugeordnet ist. Dies kann der „Standard“-IPspace oder ein benutzerdefinierter IPspace sein, den Sie erstellt haben. Weitere Informationen zu https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIFs"^] Und https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspaces"^].
 
 
 
 --
-Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die in Cloud Tiering Tiers möglich sind, ist unter Umständen kleiner als die Anzahl der Volumes in Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
+Unterstützte Volumes und Aggregate:: Die Gesamtzahl der Volumes, die BlueXP Tiering durchführen kann, kann kleiner sein als die Anzahl der Volumes auf Ihrem ONTAP System. Das liegt daran, dass Volumes von einigen Aggregaten nicht abgestuft werden können. In der ONTAP-Dokumentation finden Sie Informationen zu https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funktionalität oder Funktionen, die nicht von FabricPool unterstützt werden"^].
 
 
 
-NOTE: Cloud Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktioniert wie jedes andere Volume.
+NOTE: BlueXP Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktioniert wie jedes andere Volume.
 
 
 
@@ -106,7 +106,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 StorageGRID muss folgende Anforderungen erfüllen:
 
 Unterstützte StorageGRID-Versionen:: StorageGRID 10.3 und höher wird unterstützt.
-S3-Anmeldedaten:: Wenn Sie Tiering in StorageGRID einrichten, müssen Sie Cloud Tiering mit einem S3-Zugriffsschlüssel und einem geheimen Schlüssel bereitstellen. Cloud Tiering verwendet die Schlüssel für den Zugriff auf Ihre Buckets.
+S3-Anmeldedaten:: Bei der Einrichtung von Tiering auf StorageGRID müssen Sie BlueXP Tiering mit einem S3-Zugriffsschlüssel und einem geheimen Schlüssel bereitstellen. BlueXP Tiering verwendet die Schlüssel für den Zugriff auf Ihre Buckets.
 +
 --
 Diese Zugriffsschlüssel müssen einem Benutzer mit den folgenden Berechtigungen zugeordnet sein:
@@ -144,7 +144,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
 +
-** Eine HTTPS-Verbindung über Port 443 zum Cloud Tiering Service (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
+** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 mit Ihrem StorageGRID-System
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
@@ -183,7 +183,7 @@ Das Präfix _Fabric-Pool_ ist erforderlich, da die IAM-Richtlinie für den Conne
 
 .. *Clusternetzwerk*: Wählen Sie den IPspace aus, den ONTAP verwenden soll, um eine Verbindung zum Objekt-Storage herzustellen, und klicken Sie auf *Weiter*.
 +
-Durch die Auswahl des richtigen IPspaces wird sichergestellt, dass Cloud Tiering eine Verbindung von ONTAP zu StorageGRID Objekt-Storage einrichten kann.
+Durch Auswahl des korrekten IPspaces wird sichergestellt, dass BlueXP Tiering eine Verbindung von ONTAP zu StorageGRID Objekt-Storage einrichten kann.
 
 
 
