@@ -135,7 +135,7 @@ Jahresverträge werden derzeit nicht unterstützt, wenn Tiering zu Azure oder GC
 
 Nutzen Sie Ihre eigene Lizenz durch den Kauf einer *BlueXP Tiering*-Lizenz von NetApp (ehemals „Cloud Tiering“-Lizenz). Sie können Lizenzen für 1-, 2- oder 3-Jahres-Laufzeit erwerben und eine beliebige Menge an Tiering-Kapazität angeben. Die BYOL BlueXP Tiering-Lizenz ist eine Floating_-Lizenz, die über mehrere lokale ONTAP Cluster hinweg verwendet werden kann. Die gesamte Tiering-Kapazität, die Sie in Ihrer BlueXP Tiering-Lizenz definieren, kann von allen Ihren On-Premises-Clustern genutzt werden.
 
-Nach dem Kauf einer BlueXP Tiering-Lizenz müssen Sie die Lizenz über das Digital Wallet in BlueXP hinzufügen. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["So verwenden Sie eine BlueXP Tiering-BYOL-Lizenz"].
+Nach dem Kauf einer BlueXP Tiering-Lizenz müssen Sie die Lizenz durch das Digital Wallet von BlueXP in BlueXP ergänzen. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["So verwenden Sie eine BlueXP Tiering-BYOL-Lizenz"].
 
 Wie oben erwähnt, empfehlen wir die Einrichtung eines Pay-as-you-go-Abonnements, auch wenn Sie eine BYOL-Lizenz erworben haben.
 
@@ -205,7 +205,7 @@ Berücksichtigen Sie vor der Auswahl dieser Tiering-Richtlinie folgende Punkte:
 +
 Da die Daten sofort in Tiers verschoben werden, liest SnapMirror die Daten nicht aus der Performance-Tier, sondern aus der Cloud-Tier. Dies führt zu langsameren SnapMirror Vorgängen – möglicherweise werden andere SnapMirror Vorgänge später in der Warteschlange verschoben, selbst wenn sie unterschiedliche Tiering-Richtlinien verwenden.
 
-* Cloud Backup wird ähnlich von Volumes beeinflusst, die mit einer Tiering-Richtlinie festgelegt wurden. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Bei BlueXP Backup und Recovery finden Sie Informationen zu Tiering-Richtlinien"^].
+* BlueXP Backup und Recovery wirkt sich auf ähnliche Weise auf Volumes aus, die über eine Tiering-Richtlinie festgelegt wurden. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Bei BlueXP Backup und Recovery finden Sie Informationen zu Tiering-Richtlinien"^].
 
 
 --

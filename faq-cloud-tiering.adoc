@@ -479,7 +479,7 @@ Weitere Informationen finden Sie unter:
 
 === Welche Tools kann ich für Monitoring und Berichterstellung verwenden, um kalte Daten, die in der Cloud gespeichert sind, zu managen?
 
-Abgesehen von BlueXP Tiering, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] Und https://docs.netapp.com/us-en/active-iq/index.html["Active IQ Digitalberater"^] Kann für Monitoring und Reporting verwendet werden.
+Abgesehen von BlueXP Tiering, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] Und https://docs.netapp.com/us-en/active-iq/index.html["BlueXP Digital Advisor"^] Kann für Monitoring und Reporting verwendet werden.
 
 
 
