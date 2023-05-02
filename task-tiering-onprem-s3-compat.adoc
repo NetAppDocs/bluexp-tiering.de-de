@@ -76,7 +76,6 @@ Ihre ONTAP-Quellcluster müssen bei dem Tiering von Daten auf S3-kompatiblen Obj
 
 Unterstützte ONTAP Plattformen:: Es können Daten von AFF Systemen oder FAS Systemen mit reinen SSD-Aggregaten oder rein HDD-basierten Aggregaten verschoben werden.
 Unterstützte ONTAP Version:: ONTAP 9.8 oder höher
-Erforderlicher Zugriffsparameter für Anwendungen:: Der Cluster-Admin-Benutzer muss über „Konsole“-Anwendungszugriff verfügen. Sie können dies mit dem ONTAP-Befehl überprüfen `security login show`. „Konsole“ sollte in der Spalte _Application_ für den Benutzer „admin“ angezeigt werden. Verwenden Sie die `security login create` Befehl, um ggf. Zugriff auf Konsolenanwendung hinzuzufügen. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["Weitere Informationen finden Sie in den Befehlen „Security Login“"].
 Netzwerkanforderungen für Cluster::
 +
 --

@@ -133,7 +133,7 @@ Jahresverträge werden derzeit nicht unterstützt, wenn Tiering zu Azure oder GC
 
 === Mit Ihrer eigenen Lizenz
 
-Nutzen Sie Ihre eigene Lizenz durch den Kauf einer *BlueXP Tiering*-Lizenz von NetApp (ehemals „Cloud Tiering“-Lizenz). Sie können Lizenzen für 1-, 2- oder 3-Jahres-Laufzeit erwerben und eine beliebige Menge an Tiering-Kapazität angeben. Die BYOL BlueXP Tiering-Lizenz ist eine Floating_-Lizenz, die über mehrere lokale ONTAP Cluster hinweg verwendet werden kann. Die gesamte Tiering-Kapazität, die Sie in Ihrer BlueXP Tiering-Lizenz definieren, kann von allen Ihren On-Premises-Clustern genutzt werden.
+Nutzen Sie Ihre eigene Lizenz durch den Kauf einer *BlueXP Tiering*-Lizenz von NetApp (ehemals „Cloud Tiering“-Lizenz). Sie können Lizenzen für 1, 2 oder 3 Jahre erwerben und eine beliebige Menge an Tiering-Kapazität angeben (ab einem Minimum von 10 tib). Die BYOL BlueXP Tiering-Lizenz ist eine Floating_-Lizenz, die über mehrere lokale ONTAP Cluster hinweg verwendet werden kann. Die gesamte Tiering-Kapazität, die Sie in Ihrer BlueXP Tiering-Lizenz definieren, kann von allen Ihren On-Premises-Clustern genutzt werden.
 
 Nach dem Kauf einer BlueXP Tiering-Lizenz müssen Sie die Lizenz durch das Digital Wallet von BlueXP in BlueXP ergänzen. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["So verwenden Sie eine BlueXP Tiering-BYOL-Lizenz"].
 

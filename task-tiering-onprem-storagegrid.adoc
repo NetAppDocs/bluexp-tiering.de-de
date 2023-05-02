@@ -65,7 +65,6 @@ Unterstützte ONTAP Plattformen::
 
 --
 Unterstützte ONTAP Version:: ONTAP 9.4 oder höher
-Erforderlicher Zugriffsparameter für Anwendungen:: Der Cluster-Admin-Benutzer muss über „Konsole“-Anwendungszugriff verfügen. Sie können dies mit dem ONTAP-Befehl überprüfen `security login show`. „Konsole“ sollte in der Spalte _Application_ für den Benutzer „admin“ angezeigt werden. Verwenden Sie die `security login create` Befehl, um ggf. Zugriff auf Konsolenanwendung hinzuzufügen. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["Weitere Informationen finden Sie in den Befehlen „Security Login“"].
 Lizenzierung:: Für Ihr BlueXP Konto ist keine BlueXP Tiering-Lizenz erforderlich. Auch für das Daten-Tiering auf StorageGRID ist keine FabricPool Lizenz auf dem ONTAP Cluster erforderlich.
 Netzwerkanforderungen für Cluster::
 +
