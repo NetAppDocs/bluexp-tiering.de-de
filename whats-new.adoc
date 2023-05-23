@@ -24,13 +24,13 @@ Erfahren Sie mehr über die Neuerungen bei BlueXP Tiering.
 
 === Die Registerkarte „Lizenzierung“ wurde entfernt
 
-Die Registerkarte Lizenzierung wurde aus der BlueXP Tiering-Schnittstelle entfernt. Auf alle Lizenzen für PAYGO-Abonnements (Pay-as-you-go) ist jetzt über das BlueXP Tiering On-Premises-Dashboard zugegriffen. Über diesen Link gelangen Sie auch zur Digital Wallet von BlueXP, sodass Sie beliebige BlueXP Tiering-Lizenzen (BYOL, Bring-Your-Own-License) anzeigen und managen können.
+Die Registerkarte Lizenzierung wurde aus der BlueXP Tiering-Schnittstelle entfernt. Auf alle Lizenzen für PAYGO-Abonnements (Pay-as-you-go) kann jetzt über das BlueXP Tiering On-Premises-Dashboard zugegriffen werden. Über diesen Link gelangen Sie auch zur Digital Wallet von BlueXP, sodass Sie beliebige BlueXP Tiering-Lizenzen (BYOL, Bring-Your-Own-License) anzeigen und managen können.
 
 
 
 === Die Registerkarten „Tiering“ wurden umbenannt und enthalten aktualisierte Inhalte
 
-Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und die Registerkarte „On-Premises-Übersicht“ in „On-Premises-Dashboard“ umbenannt. Auf diesen Seiten wurden einige Informationen hinzugefügt, die Ihnen helfen, zu bewerten, ob Sie Ihren Speicherplatz mit zusätzlicher Tiering-Konfiguration optimieren können.
+Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und die Registerkarte „On-Premises-Übersicht“ wurde in „On-Premises-Dashboard“ umbenannt. Auf diesen Seiten wurden einige Informationen hinzugefügt, die Ihnen helfen, zu bewerten, ob Sie Ihren Speicherplatz mit zusätzlicher Tiering-Konfiguration optimieren können.
 
 
 

@@ -19,13 +19,31 @@ summary: BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von je
 [role="lead"]
 BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von jedem Ihrer On-Premises-Cluster. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen.
 
-Klicken Sie einfach auf *Tiering > On-Prem Dashboard*. BlueXP Tiering bietet folgende Details zu Ihrer Umgebung.
+Klicken Sie einfach auf *Tiering > On-Premises Dashboard*. BlueXP Tiering bietet folgende Details zu Ihrer Umgebung.
 
-image:screenshot_tiering_onprem_dashboard.png["Ein Screenshot der On-Premises-Dashboard-Seite"]
+image:screenshot_tiering_onprem_dashboard.png["Ein Screenshot der On-Premises-Dashboard-Seite."]
 
-Erkannte Cluster:: Die Anzahl der Cluster, bei denen aktuell ein Tiering von Daten in die Cloud erfolgt, die Cluster, die keine Daten-Tiering-Daten in die Cloud sind, und die Anzahl der Cluster, die kein Daten-Tiering unterstützen.
-Datenübersicht:: Die Menge der in die Cloud abgestuften Daten sowie die Menge der „heißen“ und „kalten“ Daten im Cluster
-Tiering-Übersicht:: Die Menge der Daten, die derzeit verschoben werden, und die Menge der Daten, die potenziell verschoben werden können.
+Erkannte Cluster:: Die Anzahl der lokalen Cluster, die durch BlueXP Tiering ermittelt wurden. Das Diagramm bietet eine Übersicht über den Tiering-Status dieser Cluster.
++
+--
+* High Tiering – Cluster, die über 20 % ihrer kalten Daten Tiering
+* Low Tiering – Cluster, die weniger als 20 % ihrer kalten Daten Tiering
+* Kein Tiering – Cluster, bei denen keine Daten verschoben werden
+* Nicht qualifiziert – Cluster, die kein Daten-Tiering unterstützen
+
+
+--
+Datenübersicht:: Die Datenmenge, die von allen erkannten Clustern verwendet wird. Das Diagramm zeigt die Menge der Daten an, die für diese Cluster verschoben werden, und mehr.
++
+--
+* Tiering-Daten: Kalte Daten, die in die Cloud verschoben werden
+* Kalte Daten – Gesamtanzahl an kalten Daten, die nicht verschoben werden
+* Heiße Daten: Gesamtzahl der aktiven aktiven aktiven Daten
+* Nicht qualifiziert: Gesamtzahl nicht-Tiering-Daten, da das Cluster oder Volume kein Daten-Tiering unterstützt
+
+
+--
+Tiering-Übersicht:: Die Menge der Daten, die derzeit verschoben werden, und die Menge an kalten Daten, die potenziell verschoben werden könnten.
 Richtlinien:: Die Anzahl der Mal, die jede Tiering-Richtlinie auf ein Volume angewendet wurde.
 Marketplace-Abonnements:: Die Anzahl der Cluster, die mit jedem Typ des Marketplace-Abonnements verknüpft sind, und eine Angabe zum Status Ihres Abonnements.
 
