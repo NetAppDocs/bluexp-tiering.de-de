@@ -27,7 +27,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 Sie benötigen Folgendes:
 
 [role="quick-margin-list"]
-* Ein ONTAP-Cluster vor Ort, auf dem ONTAP 9.4 oder höher ausgeführt wird, und eine Verbindung über einen vom Benutzer angegebenen Port zu StorageGRID. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+* Ein ONTAP-Cluster vor Ort, auf dem ONTAP 9.4 oder höher ausgeführt wird, und eine Verbindung über einen vom Benutzer angegebenen Port zu StorageGRID. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 * StorageGRID 10.3 oder höher mit AWS-Zugriffsschlüsseln mit S3-Berechtigungen.
 * Ein Connector, der auf Ihrem Gelände installiert ist.
 * Networking für den Connector, der eine ausgehende HTTPS-Verbindung zum ONTAP Cluster, zu StorageGRID und zum BlueXP Tiering Service ermöglicht.
@@ -96,7 +96,7 @@ NOTE: BlueXP Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktion
 
 Sie müssen eine On-Prem-ONTAP-Arbeitsumgebung in BlueXP Canvas erstellen, bevor Sie mit dem Tiering kalter Daten beginnen können.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 
 
 
@@ -129,9 +129,9 @@ Objektversionierung:: Sie dürfen die StorageGRID Objektversionierung auf dem Ob
 
 Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tiering von Daten zu StorageGRID muss an Ihrem Standort ein Connector verfügbar sein. Sie müssen entweder einen neuen Konnektor installieren oder sicherstellen, dass sich der aktuell ausgewählte Connector auf der Prem befindet.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren eines Connectors auf einem Linux-Host"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Wechseln zwischen den Anschlüssen"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installieren eines Connectors auf einem Linux-Host"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Wechseln zwischen den Anschlüssen"^]
 
 
 
@@ -143,7 +143,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
 +
-** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
+** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 mit Ihrem StorageGRID-System
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
@@ -157,7 +157,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 Starten Sie nach der Vorbereitung der Umgebung das Tiering inaktiver Daten aus dem ersten Cluster.
 
 .Was Sie benötigen
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
 * Der FQDN des StorageGRID-Gateway-Knotens und der Port, der für die HTTPS-Kommunikation verwendet wird.
 * Einen AWS-Zugriffsschlüssel mit den erforderlichen S3-Berechtigungen.
 

@@ -40,7 +40,7 @@ Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und d
 
 === Jetzt können Sie einen Tiering-Bericht für Ihre Volumes generieren
 
-Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. BlueXP Tiering generiert eine CSV-Datei, die Sie nach Bedarf anderen Personen in Ihrem Unternehmen senden und prüfen können. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Hier erfahren Sie, wie Sie den Tiering-Bericht herunterladen"].
+Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. BlueXP Tiering generiert eine CSV-Datei, die Sie nach Bedarf anderen Personen in Ihrem Unternehmen senden und prüfen können. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Hier erfahren Sie, wie Sie den Tiering-Bericht herunterladen"].
 
 
 
@@ -62,7 +62,7 @@ Aufgrund einer Änderung des BlueXP Tiering müssen Sie die folgenden Connector-
 
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
-Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] Cloud-Umgebung.
+Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], Oder https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] Cloud-Umgebung.
 
 
 
@@ -82,9 +82,9 @@ Wenn Azure Blob, Google Cloud Storage oder StorageGRID Tiering-Ziel als eine Arb
 
 === Der Tiering-Assistent ermöglicht Ihnen die Konfiguration von AWS PrivateLink beim Tiering in S3-Speicher
 
-In vorherigen Versionen war es sehr zeitaufwendig, diese sichere Möglichkeit zu bieten, das Cluster über einen VPC-Endpunkt mit einem S3-Bucket zu verbinden. Nun können Sie die erforderlichen Schritte bis befolgen https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["Konfigurieren Sie Ihr System für eine private Verbindung mithilfe einer VPC-Endpunktschnittstelle"], Und dann können Sie den PrivateLink während des Tiering-Setup-Assistenten auf der Netzwerkseite auswählen.
+In vorherigen Versionen war es sehr zeitaufwendig, diese sichere Möglichkeit zu bieten, das Cluster über einen VPC-Endpunkt mit einem S3-Bucket zu verbinden. Nun können Sie die erforderlichen Schritte bis befolgen https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["Konfigurieren Sie Ihr System für eine private Verbindung mithilfe einer VPC-Endpunktschnittstelle"], Und dann können Sie den PrivateLink während des Tiering-Setup-Assistenten auf der Netzwerkseite auswählen.
 
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["Anforderungen und Schritte für das Tiering inaktiver Daten nach Amazon S3 prüfen"].
+https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["Anforderungen und Schritte für das Tiering inaktiver Daten nach Amazon S3 prüfen"].
 
 
 
@@ -106,13 +106,13 @@ Wenn Sie den Mirror-Objektspeicher aus einer MetroCluster-Konfiguration entferne
 
 === Möglichkeit der Konfiguration zusätzlicher Objektspeicher für andere Aggregate in Ihrem Cluster
 
-Die Cloud Tiering UI hat einen neuen Satz von Seiten für die Objekt-Storage-Konfiguration hinzugefügt. Sie können neue Objektspeicher hinzufügen, mehrere Objektspeicher mit einem Aggregat verbinden, um FabricPool Mirroring zu erstellen, die primären und gespiegelten Objektspeicher auszuwechseln, Objektspeicherverbindungen zu Aggregaten zu löschen. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-object-storage.html["Erfahren Sie mehr über die neue Objekt-Storage-Funktionalität."]
+Die Cloud Tiering UI hat einen neuen Satz von Seiten für die Objekt-Storage-Konfiguration hinzugefügt. Sie können neue Objektspeicher hinzufügen, mehrere Objektspeicher mit einem Aggregat verbinden, um FabricPool Mirroring zu erstellen, die primären und gespiegelten Objektspeicher auszuwechseln, Objektspeicherverbindungen zu Aggregaten zu löschen. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-object-storage.html["Erfahren Sie mehr über die neue Objekt-Storage-Funktionalität."]
 
 
 
 === Cloud-Tiering-Lizenzsupport für MetroCluster-Konfigurationen
 
-Lizenzen für Cloud-Tiering können jetzt von Ihren Clustern in MetroCluster Konfigurationen gemeinsam genutzt werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
+Lizenzen für Cloud-Tiering können jetzt von Ihren Clustern in MetroCluster Konfigurationen gemeinsam genutzt werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
 
 
 
@@ -122,7 +122,7 @@ Lizenzen für Cloud-Tiering können jetzt von Ihren Clustern in MetroCluster Kon
 
 === Cloud-Tiering-Lizenzunterstützung für zusätzliche Cluster-Konfigurationen
 
-Cloud-Tiering-Lizenzen können jetzt mit Clustern genutzt werden, die sich in Tiering-Spiegelkonfigurationen (nicht einschließlich MetroCluster-Konfigurationen) befinden, und mit Clustern, die zu IBM Cloud-Objektspeicher verschoben werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
+Cloud-Tiering-Lizenzen können jetzt mit Clustern genutzt werden, die sich in Tiering-Spiegelkonfigurationen (nicht einschließlich MetroCluster-Konfigurationen) befinden, und mit Clustern, die zu IBM Cloud-Objektspeicher verschoben werden. Sie müssen nicht mehr die veralteten FabricPool Lizenzen für diese Szenarien verwenden. Somit können Sie die „Floating“-Lizenzen für Cloud Tiering auf mehreren Ihrer Cluster einfacher verwenden. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Lesen Sie, wie diese Cluster-Typen lizenziert und konfiguriert werden."]
 
 
 
@@ -132,7 +132,7 @@ Cloud-Tiering-Lizenzen können jetzt mit Clustern genutzt werden, die sich in Ti
 
 === Die Instant Retrieval Storage-Klasse von Amazon S3 Glacier ist jetzt verfügbar
 
-Beim Einrichten von Cloud Tiering können Sie jetzt eine Lifecycle-Regel konfigurieren, sodass Ihre inaktiven Daten nach einer bestimmten Anzahl von Tagen von der _Standard_ Storage-Klasse zu _Glacier Instant Retrieval_ verschoben werden. Dies trägt zur Senkung der Kosten für die AWS-Infrastruktur bei. https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html["Siehe die unterstützten S3-Storage-Klassen"]
+Beim Einrichten von Cloud Tiering können Sie jetzt eine Lifecycle-Regel konfigurieren, sodass Ihre inaktiven Daten nach einer bestimmten Anzahl von Tagen von der _Standard_ Storage-Klasse zu _Glacier Instant Retrieval_ verschoben werden. Dies trägt zur Senkung der Kosten für die AWS-Infrastruktur bei. https://docs.netapp.com/us-en/bluexp-tiering/reference-aws-support.html["Siehe die unterstützten S3-Storage-Klassen"]
 
 
 

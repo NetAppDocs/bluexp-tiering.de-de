@@ -36,7 +36,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 Sie benötigen Folgendes:
 
 [role="quick-margin-list"]
-* Ein lokaler ONTAP-Quellcluster, der ONTAP 9.8 oder höher ausführt, sowie eine Verbindung über einen benutzerspezifischen Port zum S3-kompatiblen Ziel-Objekt-Storage. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+* Ein lokaler ONTAP-Quellcluster, der ONTAP 9.8 oder höher ausführt, sowie eine Verbindung über einen benutzerspezifischen Port zum S3-kompatiblen Ziel-Objekt-Storage. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 * Der FQDN, der Zugriffsschlüssel und der geheime Schlüssel für den Objekt-Speicherserver, sodass der ONTAP-Cluster auf den Bucket zugreifen kann.
 * Ein Connector, der auf Ihrem Gelände installiert ist.
 * Networking des Connectors, der eine HTTPS-Verbindung zum Quell-ONTAP-Cluster, zum S3-kompatiblen Objekt-Storage und zum BlueXP Tiering-Service ermöglicht.
@@ -52,7 +52,7 @@ Bezahlen Sie für BlueXP Tiering über ein Pay-as-you-go-Abonnement von Ihrem Cl
 
 [role="quick-margin-list"]
 * Um das BlueXP PAYGO Angebot von zu abonnieren https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], Oder https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^]Klicken Sie auf *Abonnieren* und folgen Sie den Anweisungen.
-* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Fügen Sie es über das BlueXP Digital Wallet Ihrem Konto hinzu"].
+* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Erweitern Sie Ihr Konto über das Digital Wallet von BlueXP"].
 
 
 
@@ -106,7 +106,7 @@ TIP: BlueXP Tiering unterstützt sowohl FlexVol als auch FlexGroup Volumes.
 
 Sie müssen eine On-Prem-ONTAP-Arbeitsumgebung in BlueXP Canvas erstellen, bevor Sie mit dem Tiering kalter Daten beginnen können.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 
 
 
@@ -137,9 +137,9 @@ Diese Zugriffsschlüssel müssen einem Benutzer mit den folgenden Berechtigungen
 
 Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tiering von Daten in S3-kompatiblen Objekt-Storage muss am Kundenstandort ein Connector verfügbar sein. Sie müssen entweder einen neuen Konnektor installieren oder sicherstellen, dass sich der aktuell ausgewählte Connector auf der Prem befindet.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren eines Connectors auf einem Linux-Host"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Wechseln zwischen den Anschlüssen"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installieren eines Connectors auf einem Linux-Host"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Wechseln zwischen den Anschlüssen"^]
 
 
 
@@ -151,7 +151,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
 +
-** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
+** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 zum S3-kompatiblen Objekt-Storage
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
@@ -165,7 +165,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 Starten Sie nach der Vorbereitung der Umgebung das Tiering inaktiver Daten aus dem ersten Cluster.
 
 .Was Sie benötigen
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
 * Der FQDN des S3-kompatiblen Objektspeicherservers und der Port, der für die HTTPS-Kommunikation verwendet wird.
 * Zugriffsschlüssel und geheimer Schlüssel mit den erforderlichen S3-Berechtigungen.
 

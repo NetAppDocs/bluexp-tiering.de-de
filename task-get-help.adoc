@@ -76,7 +76,7 @@ Anhänge sind auf 25 MB pro Datei begrenzt. Folgende Dateierweiterungen werden u
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-create-case.png["Screenshot aus dem Formular „Create a Case“, in dem Sie einen Case beim NetApp Support erstellen können"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-create-case.png["Screenshot aus dem Formular „Create a Case“, in dem Sie einen Case beim NetApp Support erstellen können"]
 
 
 
@@ -132,19 +132,19 @@ Auf der Seite *Case Management* werden offene Fälle im Zusammenhang mit dem NSS
 ** Klicken Sie unter *Organizations-Fälle* auf *Ansicht*, um alle mit Ihrem Unternehmen verbundenen Fälle anzuzeigen.
 ** Ändern Sie den Datumsbereich, indem Sie einen genauen Datumsbereich oder einen anderen Zeitrahmen auswählen.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["Ein Screenshot der Option über der Tabelle auf der Seite Case Management, mit der Sie einen genauen Datumsbereich oder die letzten 7 Tage, 30 Tage oder 3 Monate auswählen können."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-date-range.png["Ein Screenshot der Option über der Tabelle auf der Seite Case Management, mit der Sie einen genauen Datumsbereich oder die letzten 7 Tage, 30 Tage oder 3 Monate auswählen können."]
 
 ** Filtern Sie den Inhalt der Spalten.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["Ein Screenshot der Filteroption in der Spalte Status, in dem Sie Fälle filtern können, die einem bestimmten Status entsprechen, z. B. aktiv oder Geschlossen."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-filter.png["Ein Screenshot der Filteroption in der Spalte Status, in dem Sie Fälle filtern können, die einem bestimmten Status entsprechen, z. B. aktiv oder Geschlossen."]
 
-** Ändern Sie die Spalten, die in der Tabelle angezeigt werden, indem Sie auf klicken image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["Das Plus-Symbol, das in der Tabelle angezeigt wird"] Und wählen Sie dann die Spalten, die Sie anzeigen möchten.
+** Ändern Sie die Spalten, die in der Tabelle angezeigt werden, indem Sie auf klicken image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-columns.png["Das Plus-Symbol, das in der Tabelle angezeigt wird"] Und wählen Sie dann die Spalten, die Sie anzeigen möchten.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["Ein Screenshot mit den Spalten, die Sie in der Tabelle anzeigen können."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-columns.png["Ein Screenshot mit den Spalten, die Sie in der Tabelle anzeigen können."]
 
 
 
-. Managen Sie einen bestehenden Fall, indem Sie auf klicken image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["Ein Symbol mit drei Punkten, das in der letzten Spalte der Tabelle angezeigt wird"] Und eine der verfügbaren Optionen auswählen:
+. Managen Sie einen bestehenden Fall, indem Sie auf klicken image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-action.png["Ein Symbol mit drei Punkten, das in der letzten Spalte der Tabelle angezeigt wird"] Und eine der verfügbaren Optionen auswählen:
 +
 ** *Fall anzeigen*: Vollständige Details zu einem bestimmten Fall anzeigen.
 ** *Aktennotizen aktualisieren*: Geben Sie zusätzliche Details zu Ihrem Problem an oder wählen Sie *Dateien hochladen*, um maximal fünf Dateien anzuhängen.
@@ -155,6 +155,6 @@ Anhänge sind auf 25 MB pro Datei begrenzt. Folgende Dateierweiterungen werden u
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["Ein Screenshot, der die Aktionen zeigt, die Sie nach Auswahl des Menüs in der letzten Spalte der Tabelle durchführen können."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-actions.png["Ein Screenshot, der die Aktionen zeigt, die Sie nach Auswahl des Menüs in der letzten Spalte der Tabelle durchführen können."]
 
 

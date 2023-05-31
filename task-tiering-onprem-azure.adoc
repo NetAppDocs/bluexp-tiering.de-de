@@ -27,7 +27,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 Sie benötigen Folgendes:
 
 [role="quick-margin-list"]
-* Ein ONTAP-Cluster vor Ort, der ONTAP 9.4 oder höher ausführt und über eine HTTPS-Verbindung zum Azure Blob-Storage verfügt. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+* Ein ONTAP-Cluster vor Ort, der ONTAP 9.4 oder höher ausführt und über eine HTTPS-Verbindung zum Azure Blob-Storage verfügt. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 * Ein Connector, der in einer Azure vnet oder vor Ort installiert ist.
 * Networking eines Connectors, der eine HTTPS-ausgehende Verbindung zum ONTAP Cluster in Ihrem Datacenter, zum Azure Storage und zum BlueXP Tiering Service ermöglicht.
 
@@ -42,7 +42,7 @@ Nach Ablauf der kostenlosen Testversion können Sie für BlueXP Tiering über ei
 
 [role="quick-margin-list"]
 * Für eine Anmeldung über den Azure Marketplace: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Rufen Sie das BlueXP Marketplace Angebot auf"^]Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.
-* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Fügen Sie es über das BlueXP Digital Wallet Ihrem Konto hinzu"].
+* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Erweitern Sie Ihr Konto über das Digital Wallet von BlueXP"].
 
 
 
@@ -106,7 +106,7 @@ NOTE: BlueXP Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktion
 
 Bevor Sie mit dem Tiering selten genutzter Daten beginnen können, müssen Sie eine lokale ONTAP-Arbeitsumgebung in BlueXP schaffen.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 
 
 
@@ -114,16 +114,16 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Beim Tiering von Daten in den Azure Blob Storage können Sie einen Connector verwenden, der sich in einer Azure vnet oder in Ihrem Standort befindet. Entweder müssen Sie einen neuen Konnektor erstellen oder sicherstellen, dass der aktuell ausgewählte Connector in Azure oder On-Prem liegt.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Implementieren eines Connectors in Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren eines Connectors auf einem Linux-Host"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Implementieren eines Connectors in Azure"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installieren eines Connectors auf einem Linux-Host"^]
 
 
 
 
 === Stellen Sie sicher, dass Sie über die erforderlichen Connector-Berechtigungen verfügen
 
-Wenn Sie den Connector mit BlueXP Version 3.9.25 oder höher erstellt haben, sind Sie alle festgelegt. Standardmäßig wird die benutzerdefinierte Rolle eingerichtet, die die Berechtigungen bereitstellt, die ein Connector zur Verwaltung von Ressourcen und Prozessen in Ihrem Azure-Netzwerk benötigt. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#custom-role-permissions["Erforderliche Berechtigungen für benutzerdefinierte Rollen"^] Und das https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#cloud-tiering["Für BlueXP Tiering sind spezifische Berechtigungen erforderlich"^].
+Wenn Sie den Connector mit BlueXP Version 3.9.25 oder höher erstellt haben, sind Sie alle festgelegt. Standardmäßig wird die benutzerdefinierte Rolle eingerichtet, die die Berechtigungen bereitstellt, die ein Connector zur Verwaltung von Ressourcen und Prozessen in Ihrem Azure-Netzwerk benötigt. Siehe https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#custom-role-permissions["Erforderliche Berechtigungen für benutzerdefinierte Rollen"^] Und das https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#cloud-tiering["Für BlueXP Tiering sind spezifische Berechtigungen erforderlich"^].
 
 Wenn Sie den Connector mit einer früheren Version von BlueXP erstellt haben, müssen Sie die Berechtigungsliste für das Azure-Konto bearbeiten, um fehlende Berechtigungen hinzuzufügen.
 
@@ -136,7 +136,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
 +
-** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service und zu Ihrem Azure Blob Objekt-Storage (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
+** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service und zu Ihrem Azure Blob Objekt-Storage (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
 
@@ -166,7 +166,7 @@ NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere 
 Starten Sie nach der Vorbereitung der Azure Umgebung das Tiering inaktiver Daten aus dem ersten Cluster.
 
 .Was Sie benötigen
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
 
 .Schritte
 . Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.

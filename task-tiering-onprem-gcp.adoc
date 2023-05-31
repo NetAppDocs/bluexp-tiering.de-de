@@ -27,7 +27,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 Sie benötigen Folgendes:
 
 [role="quick-margin-list"]
-* Ein lokaler ONTAP-Cluster, der ONTAP 9.6 oder höher ausführt und über eine HTTPS-Verbindung zu Google Cloud Storage verfügt. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+* Ein lokaler ONTAP-Cluster, der ONTAP 9.6 oder höher ausführt und über eine HTTPS-Verbindung zu Google Cloud Storage verfügt. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 * Ein Servicekonto mit der vordefinierten Storage-Administratorrolle und Speicherzugriffsschlüsseln.
 * In einer Google Cloud Platform VPC wurde ein Connector installiert.
 * Networking für den Connector, der eine HTTPS-ausgehende Verbindung zum ONTAP Cluster in Ihrem Datacenter, zu Google Cloud Storage und zum BlueXP Tiering Service ermöglicht.
@@ -43,7 +43,7 @@ Nach Ablauf der kostenlosen Testversion können Sie für BlueXP Tiering über ei
 
 [role="quick-margin-list"]
 * Für die Anmeldung über den GCP Marketplace: https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Rufen Sie das BlueXP Marketplace Angebot auf"^]Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.
-* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Fügen Sie es über das BlueXP Digital Wallet Ihrem Konto hinzu"].
+* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Erweitern Sie Ihr Konto über das Digital Wallet von BlueXP"].
 
 
 
@@ -107,7 +107,7 @@ NOTE: BlueXP Tiering unterstützt FlexGroup Volumes. Setup funktioniert wie jede
 
 Bevor Sie mit dem Tiering selten genutzter Daten beginnen können, müssen Sie eine lokale ONTAP-Arbeitsumgebung in BlueXP schaffen.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 
 
 
@@ -115,8 +115,8 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 Für das Tiering von Daten in die Cloud ist ein Connector erforderlich. Bei einem Tiering von Daten zu Google Cloud Storage muss ein Connector in einer Google Cloud Platform VPC verfügbar sein. Entweder müssen Sie einen neuen Konnektor erstellen oder sicherstellen, dass der aktuell ausgewählte Connector in der GCP liegt.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Implementieren eines Connectors in GCP"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Implementieren eines Connectors in GCP"^]
 
 
 
@@ -128,7 +128,7 @@ Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindu
 .Schritte
 . Sicherstellen, dass die VPC, an der der Connector installiert ist, die folgenden Verbindungen ermöglicht:
 +
-** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service und zu Ihrem Google Cloud Storage (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
+** Eine HTTPS-Verbindung über Port 443 zum BlueXP Tiering Service und zu Ihrem Google Cloud Storage (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Siehe die Liste der Endpunkte"^])
 ** Eine HTTPS-Verbindung über Port 443 an Ihre ONTAP-Cluster-Management-LIF
 
 
@@ -169,7 +169,7 @@ Sie müssen die Schlüssel später eingeben, wenn Sie BlueXP Tiering einrichten.
 Nach der Vorbereitung Ihrer Google Cloud Umgebung können Sie vom ersten Cluster aus inaktive Daten per Tiering verschieben.
 
 .Was Sie benötigen
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
 * Speicherzugriffsschlüssel für ein Servicekonto, das die Rolle Storage Admin hat.
 
 
