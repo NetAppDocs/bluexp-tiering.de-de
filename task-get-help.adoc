@@ -18,6 +18,10 @@ NetApp bietet Unterstützung für BlueXP und seine Cloud-Services auf unterschie
 
 Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:
 
+* Dokumentation
++
+Die BlueXP-Dokumentation, die Sie gerade anzeigen.
+
 * https://kb.netapp.com/Cloud/BlueXP["Wissensdatenbank"^]
 +
 Suchen Sie in der BlueXP Knowledge Base nach hilfreichen Artikeln zur Fehlerbehebung.
@@ -25,10 +29,6 @@ Suchen Sie in der BlueXP Knowledge Base nach hilfreichen Artikeln zur Fehlerbehe
 * http://community.netapp.com/["Communitys"^]
 +
 Treten Sie der BlueXP Community bei, um laufende Diskussionen zu verfolgen oder neue zu erstellen.
-
-* Dokumentation
-+
-Die BlueXP-Dokumentation, die Sie gerade anzeigen.
 
 * Mailto:ng-cloudmanager-feedback@netapp.com[Feedback email]
 +
@@ -43,7 +43,9 @@ Wir wissen Ihre Vorschläge zu schätzen. Senden Sie uns Ihr Feedback, um BlueXP
 Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.
 
 .Bevor Sie beginnen
-Um die * Case erstellen*-Fähigkeit zu verwenden, müssen Sie zuerst eine einmalige Registrierung Ihrer BlueXP Account ID-Seriennummer (dh 960xxxx) mit NetApp link:task-support-registration.html["Erfahren Sie, wie Sie sich für Support registrieren"].
+* Um die Funktion *Fall erstellen* nutzen zu können, müssen Sie zunächst Ihre Anmeldedaten für die NetApp Support-Website mit Ihren BlueXP Anmeldedaten verknüpfen. https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html["Managen Sie Zugangsdaten für Ihre BlueXP Anmeldung"^].
+* Wenn Sie einen Fall für ein ONTAP System mit einer Seriennummer eröffnen, muss Ihr NSS-Konto mit der Seriennummer des Systems verknüpft sein.
+
 
 .Schritte
 . Klicken Sie in BlueXP auf *Hilfe > Support*.
@@ -52,10 +54,6 @@ Um die * Case erstellen*-Fähigkeit zu verwenden, müssen Sie zuerst eine einmal
 .. Klicken Sie auf *Rufen Sie uns an*, wenn Sie mit jemandem am Telefon sprechen möchten. Sie werden zu einer Seite auf netapp.com weitergeleitet, auf der die Telefonnummern aufgeführt sind, die Sie anrufen können.
 .. Klicken Sie auf *Fall erstellen*, um ein Ticket bei einem NetApp Support Spezialisten zu öffnen:
 +
-*** *NetApp Support Site Account*: Wählen Sie das entsprechende NSS-Konto für die Person aus, die den Support-Case eröffnet. Diese Person ist der primäre Ansprechpartner bei NetApp, der Sie sich zusätzlich zu den unten aufgeführten zusätzlichen E-Mails mit anderen Kunden in Verbindung setzen kann.
-+
-Wenn Ihr NSS-Konto nicht angezeigt wird, können Sie im Support-Bereich von BlueXP zur Registerkarte *NSS Management* navigieren, um es dort hinzuzufügen.
-
 *** *Service*: Wählen Sie den Dienst aus, mit dem das Problem verknüpft ist. Beispiel: BlueXP, wenn es sich um ein Problem des technischen Supports mit Workflows oder Funktionen im Service handelt.
 *** *Arbeitsumgebung*: Wählen Sie *Cloud Volumes ONTAP* oder *On-Prem* und anschließend die zugehörige Arbeitsumgebung aus.
 +
@@ -89,7 +87,7 @@ Es ist möglich, dass beim Versuch, einen Fall zu erstellen, möglicherweise die
 
 „Sie sind nicht berechtigt, einen Fall für den ausgewählten Service zu erstellen.“
 
-Dieser Fehler könnte bedeuten, dass das NSS-Konto und das Unternehmen des Datensatzes, mit dem es verbunden ist, nicht das gleiche Unternehmen des Eintrags für die BlueXP Account Seriennummer (dh 960xxxx) oder Seriennummer der Arbeitsumgebung. Sie können Ihre Liste der NSS-Konten oben im *Case erstellen*-Formular überprüfen, um die richtige Übereinstimmung zu finden, oder Sie können Hilfe mit einer der folgenden Optionen suchen:
+Dieser Fehler könnte bedeuten, dass das NSS-Konto und das Unternehmen des Datensatzes, mit dem es verbunden ist, nicht das gleiche Unternehmen des Eintrags für die BlueXP Account Seriennummer (dh 960xxxx) oder Seriennummer der Arbeitsumgebung. Sie können Hilfe mit einer der folgenden Optionen anfordern:
 
 * Verwenden Sie den Chat im Produkt
 * Übermitteln eines nicht-technischen Cases unter https://mysupport.netapp.com/site/help[]
