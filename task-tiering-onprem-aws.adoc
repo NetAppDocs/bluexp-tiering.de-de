@@ -206,7 +206,7 @@ Sie müssen zwei Berechtigungssätze konfigurieren:
 
 
 .Schritte
-. Bestätigen Sie das https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["Diese S3-Berechtigungen"^] Sind Teil der IAM-Rolle, die dem Connector Berechtigungen erteilt. Sie sollten bei der ersten Bereitstellung des Connectors standardmäßig enthalten sein. Falls nicht, müssen Sie die fehlenden Berechtigungen hinzufügen. Siehe https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS Dokumentation: Bearbeiten der IAM-Richtlinien"^].
+. Bestätigen Sie das https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Diese S3-Berechtigungen"^] Sind Teil der IAM-Rolle, die dem Connector Berechtigungen erteilt. Sie sollten bei der ersten Bereitstellung des Connectors standardmäßig enthalten sein. Falls nicht, müssen Sie die fehlenden Berechtigungen hinzufügen. Siehe https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS Dokumentation: Bearbeiten der IAM-Richtlinien"^].
 . Wenn Sie den Dienst aktivieren, werden Sie vom Tiering-Assistenten aufgefordert, einen Zugriffsschlüssel und einen geheimen Schlüssel einzugeben. Diese Anmeldedaten werden an den ONTAP Cluster weitergeleitet, sodass ONTAP Daten-Tiering in den S3-Bucket durchführen kann. Dazu müssen Sie einen IAM-Benutzer mit den folgenden Berechtigungen erstellen:
 +
 [source, json]
@@ -307,14 +307,14 @@ image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Aktivieren-Op
 +
 image:screenshot_tiering_aws_s3_bucket.png["Ein Screenshot, der die Daten zeigt, die für die Einrichtung eines Tiering in einen S3-Bucket bereitgestellt werden müssen"]
 
-. Füllen Sie die Abschnitte auf der Seite *Objektspeicherung erstellen* aus:
+. Füllen Sie die Abschnitte auf der Seite *Tiering Setup* aus:
 +
-.. *S3 Bucket*: Fügen Sie einen neuen S3-Bucket hinzu oder wählen Sie einen vorhandenen S3-Bucket aus, der mit dem Präfix _Fabric-Pool_ beginnt, wählen Sie den Bucket-Bereich aus und klicken Sie auf *Weiter*.
+.. *S3 Bucket*: Fügen Sie einen neuen S3-Bucket hinzu oder wählen Sie einen vorhandenen S3-Bucket aus, der mit dem definierten Präfix "Fabric-Pool" beginnt, wählen Sie die Bucket-Region aus und klicken Sie auf *Weiter*.
 +
 Bei Verwendung eines On-Prem Connectors müssen Sie die AWS Konto-ID eingeben, die den Zugriff auf den vorhandenen S3-Bucket oder den neuen S3-Bucket ermöglicht, der erstellt wird.
 
 +
-Das Präfix _Fabric-Pool_ ist erforderlich, da die IAM-Richtlinie für den Connector ermöglicht, S3-Aktionen auf Buckets auszuführen, die mit diesem exakten Präfix benannt sind. Sie könnten beispielsweise den S3-Bucket _Fabric-Pool-AFF1_ benennen, wobei AFF1 der Name des Clusters ist.
+Das Präfix _Fabric-Pool_ wird standardmäßig verwendet, da die IAM-Richtlinie für den Connector es der Instanz ermöglicht, S3-Aktionen für Buckets mit dem genauen Präfix auszuführen. Sie könnten beispielsweise den S3-Bucket _Fabric-Pool-AFF1_ benennen, wobei AFF1 der Name des Clusters ist.
 
 .. *Storage-Klasse*: BlueXP Tiering managt die Lebenszyklusübergänge Ihrer Tiering-Daten. Daten beginnen in der Klasse _Standard_. Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in eine andere Klasse zu verschieben.
 +
@@ -338,10 +338,10 @@ Der IAM-Benutzer muss sich im gleichen AWS-Konto wie der Bucket befinden, den Si
 Wählen Sie im ONTAP-Cluster den IPspace aus, in dem sich die Volumes befinden sollen, die Sie abstufen möchten. Die Intercluster-LIFs für diesen IPspace müssen über Outbound-Internetzugang verfügen, sodass sie eine Verbindung zum Objekt-Storage Ihres Cloud-Providers herstellen können.
 
 +
-Wählen Sie optional aus, ob Sie einen AWS PrivateLink verwenden möchten, den Sie zuvor konfiguriert haben. <<Konfigurieren Sie Ihr System für eine private Verbindung mithilfe einer VPC-Endpunktschnittstelle,Siehe Setup-Informationen oben.>>
+Wählen Sie optional aus, ob Sie einen AWS PrivateLink verwenden möchten, den Sie zuvor konfiguriert haben. <<Konfigurieren Sie Ihr System für eine private Verbindung mithilfe einer VPC-Endpunktschnittstelle,Siehe Setup-Informationen oben.>> Es wird ein Dialogfeld angezeigt, das Ihnen dabei hilft, die Endpunktkonfiguration zu durchlaufen.
 
 +
-Es wird ein Dialogfeld angezeigt, das Ihnen dabei hilft, die Endpunktkonfiguration zu durchlaufen.
+Sie können auch die verfügbare Netzwerkbandbreite zum Hochladen inaktiver Daten in den Objektspeicher festlegen, indem Sie die „maximale Übertragungsrate“ festlegen. Wählen Sie das Optionsfeld *begrenzt* und geben Sie die maximale Bandbreite ein, die verwendet werden kann, oder wählen Sie *unbegrenzt*, um anzuzeigen, dass keine Begrenzung vorhanden ist.
 
 
 

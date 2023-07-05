@@ -186,6 +186,9 @@ image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Tiering-Optio
 +
 Die Auswahl des korrekten IPspaces stellt sicher, dass BlueXP Tiering eine Verbindung von ONTAP zu Ihrem S3-kompatiblen Objekt-Storage einrichten kann.
 
++
+Sie können auch die verfügbare Netzwerkbandbreite zum Hochladen inaktiver Daten in den Objektspeicher festlegen, indem Sie die „maximale Übertragungsrate“ festlegen. Wählen Sie das Optionsfeld *begrenzt* und geben Sie die maximale Bandbreite ein, die verwendet werden kann, oder wählen Sie *unbegrenzt*, um anzuzeigen, dass keine Begrenzung vorhanden ist.
+
 
 
 . Klicken Sie auf der Seite _Success_ auf *Weiter*, um Ihre Volumes jetzt einzurichten.

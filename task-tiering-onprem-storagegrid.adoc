@@ -184,6 +184,9 @@ Das Präfix _Fabric-Pool_ ist erforderlich, da die IAM-Richtlinie für den Conne
 +
 Durch Auswahl des korrekten IPspaces wird sichergestellt, dass BlueXP Tiering eine Verbindung von ONTAP zu StorageGRID Objekt-Storage einrichten kann.
 
++
+Sie können auch die verfügbare Netzwerkbandbreite zum Hochladen inaktiver Daten in den Objektspeicher festlegen, indem Sie die „maximale Übertragungsrate“ festlegen. Wählen Sie das Optionsfeld *begrenzt* und geben Sie die maximale Bandbreite ein, die verwendet werden kann, oder wählen Sie *unbegrenzt*, um anzuzeigen, dass keine Begrenzung vorhanden ist.
+
 
 
 . Wählen Sie auf der Seite „_Tier Volumes_“ die Volumes aus, für die Sie Tiering konfigurieren möchten, und starten Sie die Seite „Tiering Policy“:

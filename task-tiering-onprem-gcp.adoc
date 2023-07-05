@@ -205,6 +205,9 @@ Beachten Sie, dass die Lebenszyklusregel auf alle Objekte im ausgewählten Bucke
 +
 Durch Auswahl des passenden IPspaces wird sichergestellt, dass BlueXP Tiering eine Verbindung von ONTAP zu dem Objekt-Storage Ihres Cloud-Providers herstellen kann.
 
++
+Sie können auch die verfügbare Netzwerkbandbreite zum Hochladen inaktiver Daten in den Objektspeicher festlegen, indem Sie die „maximale Übertragungsrate“ festlegen. Wählen Sie das Optionsfeld *begrenzt* und geben Sie die maximale Bandbreite ein, die verwendet werden kann, oder wählen Sie *unbegrenzt*, um anzuzeigen, dass keine Begrenzung vorhanden ist.
+
 
 
 . Klicken Sie auf *Weiter*, um die Volumes auszuwählen, die Sie abstufen möchten.

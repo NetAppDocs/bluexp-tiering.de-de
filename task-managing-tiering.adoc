@@ -4,7 +4,7 @@ permalink: task-managing-tiering.html
 keywords: discover, volumes, report, hot, cold, inactive, active, capacity, used capacity, savings, health, failed 
 summary: Nachdem Sie jetzt Daten-Tiering von Ihren lokalen ONTAP Clustern eingerichtet haben, können Sie Daten von zusätzlichen Volumes aus verschieben, die Tiering-Richtlinie eines Volumes ändern, zusätzliche Cluster entdecken und mehr. 
 ---
-= Managen von Daten-Tiering von Clustern
+= Management des Daten-Tiering für Ihre Cluster
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,6 +15,33 @@ summary: Nachdem Sie jetzt Daten-Tiering von Ihren lokalen ONTAP Clustern einger
 
 [role="lead"]
 Nachdem Sie jetzt Daten-Tiering von Ihren lokalen ONTAP Clustern eingerichtet haben, können Sie Daten von zusätzlichen Volumes aus verschieben, die Tiering-Richtlinie eines Volumes ändern, zusätzliche Cluster entdecken und mehr.
+
+
+
+== Überprüfen von Tiering-Informationen für ein Cluster
+
+Es empfiehlt sich möglicherweise, zu sehen, wie viele Daten sich im Cloud-Tier befinden und wie viele Daten auf Festplatten gespeichert sind. Außerdem ist es möglich, die Menge der „heißen“ und „kalten“ Daten auf den Festplatten des Clusters anzuzeigen. BlueXP Tiering bietet diese Informationen für jedes Cluster.
+
+.Schritte
+. Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
+. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol image:icon-action.png["Aktionssymbol"] Für einen Cluster und wählen Sie *Cluster info*.
++
+image:screenshot_tiering_cluster_info_button.png["Ein Screenshot, wie Sie auf der Seite Cluster die Schaltfläche Cluster Info auswählen."]
+
+. Überprüfen Sie die Details zum Cluster.
++
+Hier ein Beispiel:
+
++
+image:screenshot_tiering_cluster_info.png["Ein Screenshot, der die gesamte genutzte Datenkapazität des Clusters, die genutzte Cluster-Kapazität und Cluster-Informationen anzeigt"]
+
+
+
+Beachten Sie, dass die Anzeige für Cloud Volumes ONTAP-Systeme unterschiedlich ist. Bei Cloud Volumes ONTAP Volumes kann Daten-Tiering in die Cloud erfolgen, es wird jedoch nicht der BlueXP Tiering Service verwendet. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Erfahren Sie, wie Sie inaktive Daten von Cloud Volumes ONTAP Systemen auf kostengünstigen Objekt-Storage verschieben"^].
+
+Das können Sie auch https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Anzeigen von Tiering-Informationen für einen Cluster von Digital Advisor"^] Wenn Sie mit diesem NetApp Produkt vertraut sind. Wählen Sie einfach im linken Navigationsbereich *Cloud Recommendations* aus.
+
+image:screenshot_tiering_aiq_fabricpool_info.png["Ein Screenshot, der die FabricPool Informationen für ein Cluster mithilfe des FabricPool Advisor von Digital Advisor anzeigt"]
 
 
 
@@ -75,6 +102,25 @@ image:screenshot_tiering_policy_settings.png["Ein Screenshot, der die konfigurie
 
 .Ergebnis
 Die Tiering-Richtlinie wird geändert und die Daten werden basierend auf der neuen Richtlinie verschoben.
+
+
+
+== Ändern der verfügbaren Netzwerkbandbreite zum Hochladen inaktiver Daten in den Objektspeicher
+
+Wenn Sie BlueXP Tiering für ein Cluster aktivieren, kann ONTAP standardmäßig eine unbegrenzte Menge an Bandbreite verwenden, um die inaktiven Daten von den Volumes in der Arbeitsumgebung in den Objekt-Storage zu übertragen. Wenn Sie bemerken, dass der Tiering-Datenverkehr die normalen Benutzer-Workloads beeinträchtigt, können Sie die Netzwerkbandbreite, die während der Übertragung verwendet wird, drosseln. Sie können einen Wert zwischen 1 und 10,000 Mbit/s als maximale Übertragungsrate auswählen.
+
+. Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
+. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol image:icon-action.png["Aktionssymbol"] Für einen Cluster und wählen Sie *maximale Übertragungsrate*.
++
+image:screenshot_tiering_transfer_rate_button.png["Ein Screenshot der Auswahl der Schaltfläche maximale Übertragungsrate auf der Seite Cluster."]
+
+. Wählen Sie auf der Seite _Maximum Transfer Rate_ das Optionsfeld *Limited* aus und geben Sie die maximal verwendbare Bandbreite ein, oder wählen Sie *Unlimited* aus, um anzuzeigen, dass es keine Begrenzung gibt. Klicken Sie dann auf *Anwenden*.
++
+image:screenshot_tiering_transfer_rate.png["Ein Screenshot des Dialogfelds „maximale Übertragungsrate“ für ein Cluster."]
+
+
+
+Diese Einstellung wirkt sich nicht auf die Bandbreite aus, die anderen Clustern zugewiesen ist, die Daten-Tiering-Daten darstellen.
 
 
 
@@ -157,28 +203,6 @@ image:screenshot_tiering_modify_aggregate.png["Ein Screenshot mit einem Schieber
 
 . Klicken Sie Auf *Anwenden*.
 
-
-
-
-== Überprüfen von Tiering-Informationen für ein Cluster
-
-Es empfiehlt sich möglicherweise, zu sehen, wie viele Daten sich im Cloud-Tier befinden und wie viele Daten auf Festplatten gespeichert sind. Außerdem ist es möglich, die Menge der „heißen“ und „kalten“ Daten auf den Festplatten des Clusters anzuzeigen. BlueXP Tiering bietet diese Informationen für jedes Cluster.
-
-.Schritte
-. Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Cluster Info*.
-. Überprüfen Sie die Details zum Cluster.
-+
-Hier ein Beispiel:
-
-+
-image:screenshot_tiering_cluster_info.png["Ein Screenshot, der den Cluster-Bericht zeigt, der die insgesamt genutzte Kapazität, die genutzte Cluster-Kapazität, Cluster-Informationen und Objekt-Storage-Informationen detailliert enthält."]
-
-
-
-Das können Sie auch https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Anzeigen von Tiering-Informationen für einen Cluster von Digital Advisor"^] Wenn Sie mit diesem NetApp Produkt vertraut sind. Wählen Sie einfach im linken Navigationsbereich *Cloud Recommendations* aus.
-
-image:screenshot_tiering_aiq_fabricpool_info.png["Ein Screenshot, der die FabricPool Informationen für ein Cluster mithilfe des FabricPool Advisor von Digital Advisor anzeigt"]
 
 
 

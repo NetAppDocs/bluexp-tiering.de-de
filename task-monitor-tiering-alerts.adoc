@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task-monitor-tiering-alerts.html 
+keywords: tiering, status, monitor, alert, notification 
+summary: Sie können den Status von Tiering-Warnmeldungen im BlueXP Notification Center anzeigen. 
+---
+= Überwachen Sie den Status von Tiering-Warnmeldungen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können den Status von Tiering-Warnmeldungen im BlueXP Notification Center anzeigen.
+
+Das Benachrichtigungscenter verfolgt den Fortschritt von Tiering-Vorfällen, sodass Sie überprüfen können, ob diese behoben wurden oder nicht. Sie können die Benachrichtigungen anzeigen, indem Sie auf die Schaltfläche ( klickenimage:icon_bell.png["Benachrichtigungsglocke"]) In der BlueXP-Menüleiste.
+
+Derzeit gibt es ein Tiering-Ereignis, das als Benachrichtigung angezeigt wird:
+
+* Führen Sie das Tiering zusätzlicher Daten von Cluster <name> auf Objekt-Storage durch, um Ihre Storage-Effizienz zu steigern
+
+
+Diese Mitteilung ist eine „Empfehlung“, mit der Sie Ihre Systeme effizienter gestalten und Storage-Kosten einsparen können. Es zeigt, dass ein Cluster weniger als 20 % seiner kalten Daten Tiering ermöglicht - einschließlich Clustern, die keine Daten per Tiering verschieben. Sie enthält einen Link zum https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP Tiering-Rechner für Gesamtbetriebskosten und Einsparungen"^] Zur Berechnung Ihrer Kosteneinsparungen.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Erfahren Sie mehr über das Benachrichtigungscenter"^].

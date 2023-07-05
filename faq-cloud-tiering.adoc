@@ -493,6 +493,8 @@ Bei einem Netzwerkausfall bleibt die lokale Performance-Tier online und es bleib
 
 Die zugrunde liegende FabricPool-Tiering-Technologie für Lesevorgänge hängt von der Konnektivität mit dem Cloud-Tier ab. Obwohl Tiering für jede Bandbreite arbeitet, wird empfohlen, Intercluster LIFs auf 10-Gbit/s-Ports zu platzieren, um eine ausreichende Performance zu gewährleisten. Es gibt keine Empfehlungen oder Bandbreitenbeschränkungen für den Connector.
 
+Darüber hinaus können Sie die Netzwerkbandbreite drosseln, die bei der Übertragung inaktiver Daten vom Volume zum Objekt-Storage verwendet wird. Die Einstellung _Maximum Transfer Rate_ ist verfügbar, wenn Sie Ihren Cluster für das Tiering konfigurieren, und anschließend auf der Seite *Cluster*.
+
 
 
 === Gibt es Latenzzeiten, wenn ein Benutzer auf Tiered Daten zugreifen versucht?
