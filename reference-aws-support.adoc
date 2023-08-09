@@ -22,9 +22,9 @@ BlueXP Tiering unterstützt mehrere S3 Storage-Klassen und die meisten Regionen.
 
 Wenn Sie das Daten-Tiering auf AWS einrichten, verwendet BlueXP Tiering für Ihre inaktiven Daten automatisch die Storage-Klasse _Standard_. BlueXP Tiering kann eine Lebenszyklusregel anwenden, sodass Daten nach einer bestimmten Anzahl von Tagen von der _Standard_ Storage-Klasse zu einer anderen Storage-Klasse überführt werden. Sie können aus folgenden Speicherklassen wählen:
 
-* Standardzugriff
-* Ein einmaliger Zugriff
-* Intelligentes Tiering (wobei AWS Daten automatisch zwischen zwei Tiers verschiebt: Häufiger Zugriff und unregelmäßiger Zugriff – wenn sich Zugriffsmuster ändern)
+* Standard-infrequent Access (S3 Standard-IA)
+* One Zone-infrequent Access (S3 One Zone-IA)
+* Intelligentes Tiering (S3 Intelligent Tiering)
 * Glacier Instant Retrieval
 
 

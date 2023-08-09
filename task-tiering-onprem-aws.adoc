@@ -188,9 +188,9 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["E
 
 == Bereiten Sie die AWS-Umgebung vor
 
-Wenn Sie Daten-Tiering auf einem neuen Cluster einrichten, werden Sie aufgefordert, einen S3-Bucket zu erstellen oder einen vorhandenen S3-Bucket im AWS-Konto auszuwählen, wo der Connector eingerichtet ist. Das AWS Konto muss über Berechtigungen und einen Zugriffsschlüssel verfügen, den Sie in BlueXP Tiering eingeben können. Das ONTAP-Cluster verwendet den Zugriffsschlüssel für das Tiering von Daten in und aus S3.
+Wenn Sie Daten-Tiering für ein neues Cluster einrichten, werden Sie gefragt, ob der Service einen S3-Bucket erstellen soll oder ob Sie einen vorhandenen S3-Bucket in dem AWS-Konto auswählen möchten, in dem der Connector eingerichtet ist. Das AWS Konto muss über Berechtigungen und einen Zugriffsschlüssel verfügen, den Sie in BlueXP Tiering eingeben können. Das ONTAP-Cluster verwendet den Zugriffsschlüssel für das Tiering von Daten in und aus S3.
 
-Der S3-Bucket muss sich in einem enthalten sein link:reference-aws-support.html#supported-aws-regions["Region, die BlueXP Tiering unterstützt"].
+Standardmäßig wird der Bucket vom Tiering-Service für Sie erstellt. Wenn Sie Ihren eigenen Bucket verwenden möchten, können Sie einen erstellen, bevor Sie den Tiering Activation Wizard starten und dann diesen Bucket im Assistenten auswählen. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Erstellung von S3 Buckets aus BlueXP"^]. Der Bucket muss ausschließlich zur Speicherung inaktiver Daten auf Ihren Volumes verwendet werden – er kann nicht für andere Zwecke verwendet werden. Der S3-Bucket muss sich in einem enthalten sein link:reference-aws-support.html#supported-aws-regions["Region, die BlueXP Tiering unterstützt"].
 
 
 NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere Storage-Klasse zu verwenden, auf die Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Buckets in Ihrem AWS-Konto keine Lebenszyklusregeln auswählen. BlueXP Tiering managt die Lebenszyklusumstellungen.
@@ -201,13 +201,30 @@ NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere 
 
 Sie müssen zwei Berechtigungssätze konfigurieren:
 
-* Berechtigungen für den Connector zum Erstellen und Managen des S3-Buckets.
+* Berechtigungen für den Connector, sodass er den S3-Bucket erstellen und managen kann.
 * Berechtigungen für den On-Premises-ONTAP-Cluster, damit er Daten lesen und in den S3-Bucket schreiben kann
 
 
 .Schritte
-. Bestätigen Sie das https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Diese S3-Berechtigungen"^] Sind Teil der IAM-Rolle, die dem Connector Berechtigungen erteilt. Sie sollten bei der ersten Bereitstellung des Connectors standardmäßig enthalten sein. Falls nicht, müssen Sie die fehlenden Berechtigungen hinzufügen. Siehe https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS Dokumentation: Bearbeiten der IAM-Richtlinien"^].
-. Wenn Sie den Dienst aktivieren, werden Sie vom Tiering-Assistenten aufgefordert, einen Zugriffsschlüssel und einen geheimen Schlüssel einzugeben. Diese Anmeldedaten werden an den ONTAP Cluster weitergeleitet, sodass ONTAP Daten-Tiering in den S3-Bucket durchführen kann. Dazu müssen Sie einen IAM-Benutzer mit den folgenden Berechtigungen erstellen:
+. *Connector-Berechtigungen*:
++
+** Bestätigen Sie das https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Diese S3-Berechtigungen"^] Sind Teil der IAM-Rolle, die dem Connector Berechtigungen erteilt. Sie sollten bei der ersten Bereitstellung des Connectors standardmäßig enthalten sein. Wenn nicht, müssen Sie fehlende Berechtigungen hinzufügen. Siehe https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS Dokumentation: Bearbeiten der IAM-Richtlinien"^] Weitere Anweisungen.
+** Der Standard-Bucket, den BlueXP Tiering erstellt, verfügt über das Präfix „Fabric-Pool“. Wenn Sie ein anderes Präfix für Ihren Bucket verwenden möchten, müssen Sie die Berechtigungen mit dem gewünschten Namen anpassen. In den S3-Berechtigungen wird eine Zeile angezeigt `"Resource": ["arn:aws:s3:::fabric-pool*"]`. Sie müssen „Fabric-Pool“ in das Präfix ändern, das Sie verwenden möchten. Wenn Sie beispielsweise „Tiering-1“ als Präfix für Ihre Buckets verwenden möchten, ändern Sie diese Zeile in `"Resource": ["arn:aws:s3:::tiering-1*"]`.
++
+Wenn Sie für Buckets ein anderes Präfix verwenden möchten, das Sie für zusätzliche Cluster in diesem BlueXP Konto verwenden möchten, können Sie eine weitere Zeile mit dem Präfix für andere Buckets hinzufügen. Beispiel:
+
++
+`"Resource": ["arn:aws:s3:::tiering-1*"]`
+`"Resource": ["arn:aws:s3:::tiering-2*"]`
+
++
+Wenn Sie einen eigenen Bucket erstellen und kein Standardpräfix verwenden, sollten Sie diese Zeile in ändern `"Resource": ["arn:aws:s3:::*"]` So dass jeder Eimer erkannt wird. Dies kann jedoch alle Buckets offenlegen, statt diejenigen, die für die Aufbewahrung inaktiver Daten auf Ihren Volumes vorgesehen sind.
+
+
+
+. *Cluster-Berechtigungen*:
++
+** Wenn Sie den Dienst aktivieren, werden Sie vom Tiering-Assistenten aufgefordert, einen Zugriffsschlüssel und einen geheimen Schlüssel einzugeben. Diese Anmeldedaten werden an den ONTAP Cluster weitergeleitet, sodass ONTAP Daten-Tiering in den S3-Bucket durchführen kann. Dazu müssen Sie einen IAM-Benutzer mit den folgenden Berechtigungen erstellen:
 +
 [source, json]
 ----
@@ -220,6 +237,8 @@ Sie müssen zwei Berechtigungssätze konfigurieren:
 ----
 +
 Siehe https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html["AWS Documentation: Erstellen einer Rolle zum Delegieren von Berechtigungen an einen IAM-Benutzer"^] Entsprechende Details.
+
+
 
 . Erstellen oder suchen Sie den Zugriffsschlüssel.
 +
@@ -309,12 +328,12 @@ image:screenshot_tiering_aws_s3_bucket.png["Ein Screenshot, der die Daten zeigt,
 
 . Füllen Sie die Abschnitte auf der Seite *Tiering Setup* aus:
 +
-.. *S3 Bucket*: Fügen Sie einen neuen S3-Bucket hinzu oder wählen Sie einen vorhandenen S3-Bucket aus, der mit dem definierten Präfix "Fabric-Pool" beginnt, wählen Sie die Bucket-Region aus und klicken Sie auf *Weiter*.
+.. *S3 Bucket*: Fügen Sie einen neuen S3-Bucket hinzu oder wählen Sie einen vorhandenen S3-Bucket aus, wählen Sie die Bucket-Region aus und klicken Sie auf *Weiter*.
 +
 Bei Verwendung eines On-Prem Connectors müssen Sie die AWS Konto-ID eingeben, die den Zugriff auf den vorhandenen S3-Bucket oder den neuen S3-Bucket ermöglicht, der erstellt wird.
 
 +
-Das Präfix _Fabric-Pool_ wird standardmäßig verwendet, da die IAM-Richtlinie für den Connector es der Instanz ermöglicht, S3-Aktionen für Buckets mit dem genauen Präfix auszuführen. Sie könnten beispielsweise den S3-Bucket _Fabric-Pool-AFF1_ benennen, wobei AFF1 der Name des Clusters ist.
+Das Präfix _Fabric-Pool_ wird standardmäßig verwendet, da die IAM-Richtlinie für den Connector es der Instanz ermöglicht, S3-Aktionen für Buckets mit dem genauen Präfix auszuführen. Sie könnten beispielsweise den S3-Bucket _Fabric-Pool-AFF1_ benennen, wobei AFF1 der Name des Clusters ist. Sie können auch das Präfix für die Buckets definieren, die für das Tiering verwendet werden. Siehe <<Richten Sie S3-Berechtigungen ein,S3-Berechtigungen werden eingerichtet>> Um sicherzustellen, dass Sie über AWS-Berechtigungen verfügen, die jedes benutzerdefinierte Präfix erkennen, das Sie verwenden möchten.
 
 .. *Storage-Klasse*: BlueXP Tiering managt die Lebenszyklusübergänge Ihrer Tiering-Daten. Daten beginnen in der Klasse _Standard_. Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in eine andere Klasse zu verschieben.
 +
@@ -351,7 +370,7 @@ Sie können auch die verfügbare Netzwerkbandbreite zum Hochladen inaktiver Date
 ** Wenn Sie mehrere Volumes auswählen möchten, aktivieren Sie das Kontrollkästchen für jedes Volume (image:button_backup_1_volume.png[""]) Und klicken Sie auf *Volumes konfigurieren*.
 ** Um ein einzelnes Volume auszuwählen, klicken Sie auf die Zeile (oder) image:screenshot_edit_icon.gif["Bleistiftsymbol bearbeiten"] Symbol) für das Volume.
 +
-image:screenshot_tiering_tier_volumes.png["Ein Screenshot, in dem die Auswahl eines einzelnen Volumes, mehrerer Volumes oder aller Volumes und die Schaltfläche Ausgewählte Volumes ändern angezeigt werden."]
+image:screenshot_tiering_initial_volumes.png["Ein Screenshot, in dem die Auswahl eines einzelnen Volumes, mehrerer Volumes oder aller Volumes und die Schaltfläche Ausgewählte Volumes ändern angezeigt werden."]
 
 
 
@@ -360,7 +379,7 @@ image:screenshot_tiering_tier_volumes.png["Ein Screenshot, in dem die Auswahl ei
 link:concept-cloud-tiering.html#volume-tiering-policies["Erfahren Sie mehr über Volume Tiering-Richtlinien und Kühltage"].
 
 +
-image:screenshot_tiering_policy_settings.png["Ein Screenshot, der die konfigurierbaren Tiering-Richtlinieneinstellungen anzeigt."]
+image:screenshot_tiering_initial_policy_settings.png["Ein Screenshot, der die konfigurierbaren Tiering-Richtlinieneinstellungen anzeigt."]
 
 
 

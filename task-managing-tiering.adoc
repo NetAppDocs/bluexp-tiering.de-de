@@ -256,3 +256,21 @@ Beachten Sie, dass die Cluster-Management-IP-Adresse auf Grundlage von Informati
 BlueXP erkennt den Cluster und fügt ihn unter Verwendung des Clusternamens als Namen der Arbeitsumgebung in Canvas einer Arbeitsumgebung hinzu.
 
 Sie können den Tiering-Service oder andere Dienste für diesen Cluster im rechten Bereich aktivieren.
+
+
+
+== Suchen Sie nach einem Cluster in allen BlueXP Connectors
+
+Wenn Sie mehrere Connectors zur Verwaltung des gesamten Speichers in Ihrer Umgebung verwenden, befinden sich einige Cluster, auf denen Sie Tiering implementieren möchten, möglicherweise in einem anderen Connector. Wenn Sie sich nicht sicher sind, welcher Connector einen bestimmten Cluster managt, können Sie über alle Connectors hinweg mithilfe von BlueXP Tiering suchen.
+
+.Schritte
+. Klicken Sie in der Menüleiste von BlueXP Tiering auf das Aktionsmenü und wählen Sie *Cluster in allen Connectors suchen*.
++
+image:screenshot_tiering_search for_cluster.png["Ein Screenshot zeigt, wie Sie nach einem Cluster suchen, der sich in einem Ihrer BlueXP Connectors befindet."]
+
+. Geben Sie im angezeigten Suchdialog den Namen des Clusters ein und klicken Sie auf *Suche*.
++
+BlueXP Tiering zeigt den Namen des Connectors an, wenn er den Cluster finden kann.
+
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#switch-between-connectors["Wechseln Sie zum Connector und konfigurieren Sie Tiering für den Cluster"^].
+

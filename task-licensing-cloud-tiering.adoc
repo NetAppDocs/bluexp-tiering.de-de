@@ -152,7 +152,20 @@ Hier sind einige Dinge, die Sie über die beiden Lizenzen wissen müssen:
 
 === Ihre BlueXP Tiering-Lizenzdatei anfordern
 
-Nachdem Sie Ihre BlueXP Tiering-Lizenz erworben haben, aktivieren Sie die Lizenz in BlueXP, indem Sie die BlueXP Tiering-Seriennummer und das NSS-Konto eingeben oder die NF-Lizenzdatei hochladen. Die folgenden Schritte zeigen, wie Sie die Lizenzdatei NLF abrufen können, wenn Sie diese Methode verwenden möchten.
+Nachdem Sie Ihre BlueXP Tiering-Lizenz erworben haben, aktivieren Sie die Lizenz in BlueXP entweder durch Eingabe der BlueXP Tiering-Seriennummer und des NSS-Kontos oder durch Hochladen der NF-Lizenzdatei. Die folgenden Schritte zeigen, wie Sie die Lizenzdatei NLF abrufen können, wenn Sie diese Methode verwenden möchten.
+
+.Bevor Sie beginnen
+Sie müssen die folgenden Informationen haben, bevor Sie beginnen:
+
+* Seriennummer für BlueXP Tiering
++
+Suchen Sie diese Nummer in Ihrem Auftrag, oder wenden Sie sich an das Account Team, um diese Informationen zu erhalten.
+
+* BlueXP Konto-ID
++
+Sie können Ihre BlueXP-Konto-ID finden, indem Sie oben in BlueXP das Dropdown-Menü *Konto* auswählen und dann neben Ihrem Konto auf *Konto verwalten* klicken. Ihre Account-ID wird auf der Registerkarte „Übersicht“ angezeigt.
+
+
 
 .Schritte
 . Melden Sie sich beim an https://mysupport.netapp.com["NetApp Support Website"^] Klicken Sie anschließend auf *Systeme > Softwarelizenzen*.
@@ -160,13 +173,10 @@ Nachdem Sie Ihre BlueXP Tiering-Lizenz erworben haben, aktivieren Sie die Lizenz
 +
 image:screenshot_cloud_tiering_license_step1.gif["Ein Screenshot, der eine Tabelle von Lizenzen zeigt, nachdem Sie nach der Seriennummer suchen."]
 
-. Klicken Sie unter *Lizenzschlüssel* auf *NetApp Lizenzdatei erhalten*.
+. Klicken Sie in der Spalte *Lizenzschlüssel* auf *NetApp Lizenzdatei abrufen*.
 . Geben Sie Ihre BlueXP-Konto-ID ein (dies wird als Mandanten-ID auf der Support-Website bezeichnet) und klicken Sie auf *Absenden*, um die Lizenzdatei herunterzuladen.
 +
 image:screenshot_cloud_tiering_license_step2.gif["Ein Screenshot, in dem das Dialogfeld „Lizenz abrufen“ angezeigt wird, in dem Sie Ihre Mandanten-ID eingeben und dann auf „Senden“ klicken, um die Lizenzdatei herunterzuladen."]
-
-+
-Sie können Ihre BlueXP-Konto-ID finden, indem Sie oben in BlueXP das Dropdown-Menü *Konto* auswählen und dann neben Ihrem Konto auf *Konto verwalten* klicken. Ihre Account-ID wird auf der Registerkarte „Übersicht“ angezeigt.
 
 
 
