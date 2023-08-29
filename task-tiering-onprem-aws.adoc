@@ -193,7 +193,7 @@ Wenn Sie Daten-Tiering für ein neues Cluster einrichten, werden Sie gefragt, ob
 Standardmäßig wird der Bucket vom Tiering-Service für Sie erstellt. Wenn Sie Ihren eigenen Bucket verwenden möchten, können Sie einen erstellen, bevor Sie den Tiering Activation Wizard starten und dann diesen Bucket im Assistenten auswählen. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Erstellung von S3 Buckets aus BlueXP"^]. Der Bucket muss ausschließlich zur Speicherung inaktiver Daten auf Ihren Volumes verwendet werden – er kann nicht für andere Zwecke verwendet werden. Der S3-Bucket muss sich in einem enthalten sein link:reference-aws-support.html#supported-aws-regions["Region, die BlueXP Tiering unterstützt"].
 
 
-NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere Storage-Klasse zu verwenden, auf die Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Buckets in Ihrem AWS-Konto keine Lebenszyklusregeln auswählen. BlueXP Tiering managt die Lebenszyklusumstellungen.
+NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere Storage-Klasse zu verwenden, auf die Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Buckets in Ihrem AWS Konto keine Lifecycle-Regeln auswählen. BlueXP Tiering managt die Lebenszyklusveränderungen.
 
 
 
@@ -335,15 +335,15 @@ Bei Verwendung eines On-Prem Connectors müssen Sie die AWS Konto-ID eingeben, d
 +
 Das Präfix _Fabric-Pool_ wird standardmäßig verwendet, da die IAM-Richtlinie für den Connector es der Instanz ermöglicht, S3-Aktionen für Buckets mit dem genauen Präfix auszuführen. Sie könnten beispielsweise den S3-Bucket _Fabric-Pool-AFF1_ benennen, wobei AFF1 der Name des Clusters ist. Sie können auch das Präfix für die Buckets definieren, die für das Tiering verwendet werden. Siehe <<Richten Sie S3-Berechtigungen ein,S3-Berechtigungen werden eingerichtet>> Um sicherzustellen, dass Sie über AWS-Berechtigungen verfügen, die jedes benutzerdefinierte Präfix erkennen, das Sie verwenden möchten.
 
-.. *Storage-Klasse*: BlueXP Tiering managt die Lebenszyklusübergänge Ihrer Tiering-Daten. Daten beginnen in der Klasse _Standard_. Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in eine andere Klasse zu verschieben.
+.. *Storage-Klasse*: BlueXP Tiering managt die Lifecycle-Übergänge Ihrer Tiering-Daten. Die Daten beginnen in der Klasse _Standard_, aber Sie können eine Regel erstellen, um nach einer bestimmten Anzahl von Tagen eine andere Speicherklasse auf die Daten anzuwenden.
 +
-Wählen Sie die S3-Speicherklasse aus, in die die Tiered-Daten übertragen werden sollen, und die Anzahl der Tage vor dem Verschieben der Daten, und klicken Sie auf *Weiter*. Der Screenshot unten zeigt beispielsweise, dass Tiered Daten nach 45 Tagen im Objekt-Storage von der Klasse _Standard_ in die Klasse _Standard-IA_ verschoben werden.
+Wählen Sie die S3-Speicherklasse aus, in die die Tiered-Daten verschoben werden sollen, und die Anzahl der Tage, bevor die Daten dieser Klasse zugewiesen werden, und klicken Sie auf *Weiter*. Der folgende Screenshot zeigt zum Beispiel, dass nach 45 Tagen im Objektspeicher die Klasse _Standard-IA_ der Klasse _Standard_ zugeordnet ist.
 
 +
 Wenn Sie *Daten in dieser Speicherklasse* speichern, verbleiben die Daten in der Speicherklasse _Standard_ und es werden keine Regeln angewendet. link:reference-aws-support.html["Siehe Unterstützte Speicherklassen"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_aws.png["Ein Screenshot zeigt, wie Sie eine andere Speicherklasse auswählen, in der Daten nach einer bestimmten Anzahl von Tagen verschoben werden."]
+image:screenshot_tiering_lifecycle_selection_aws.png["Ein Screenshot, der zeigt, wie Sie eine andere Speicherklasse auswählen, die Ihren Daten nach einer bestimmten Anzahl von Tagen zugewiesen ist."]
 
 +
 Beachten Sie, dass die Lebenszyklusregel auf alle Objekte im ausgewählten Bucket angewendet wird.

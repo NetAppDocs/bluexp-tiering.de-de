@@ -157,7 +157,7 @@ BlueXP Tiering unterstützt Tiering zu jedem Storage-Konto in einer Region, auf 
 BlueXP Tiering unterstützt nur die Storage-Konten der Typen General Purpose v2 und Premium Block Blob.
 
 
-NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere Zugriffsebene zu verwenden, auf die Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Containers in Ihrem Azure-Konto keine Lebenszyklusregeln auswählen. BlueXP Tiering managt die Lebenszyklusumstellungen.
+NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um eine kostengünstigere Zugriffsebene zu verwenden, auf die Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Containers in Ihrem Azure-Konto keine Lebenszyklusregeln auswählen. BlueXP Tiering managt die Lebenszyklusveränderungen.
 
 
 
@@ -189,15 +189,15 @@ Bei der Verwendung eines On-Prem-Connectors müssen Sie das Azure-Abonnement ein
 +
 Die in diesem Schritt angezeigten Speicherkonten und Container gehören zur Ressourcengruppe, die Sie im vorherigen Schritt ausgewählt haben.
 
-.. *Access Tier Life Cycle*: BlueXP Tiering managt die Lebenszyklusübergänge Ihrer Tiering-Daten. Daten beginnen in der Klasse _Hot_, Sie können jedoch eine Regel erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in die Klasse _Cool_ zu verschieben.
+.. *Access Tier Lifecycle*: BlueXP Tiering managt die Lifecycle-Übergänge Ihrer Tiering-Daten. Die Daten beginnen in der _Hot_-Klasse, aber Sie können eine Regel erstellen, um die _Cool_-Klasse nach einer bestimmten Anzahl von Tagen auf die Daten anzuwenden.
 +
-Wählen Sie die Zugriffsebene, in die Sie die gestaffelten Daten übertragen möchten, und die Anzahl der Tage vor dem Verschieben der Daten aus, und klicken Sie auf *Weiter*. Beispiel: Der Screenshot unten zeigt, dass Tiered Daten nach 45 Tagen im Objekt-Storage von der Klasse _Hot_ in die Klasse _Cool_ verschoben werden.
+Wählen Sie die Zugriffsebene aus, auf die Sie die Tiered-Daten verschieben möchten, und die Anzahl der Tage, bevor die Daten diesem Tier zugewiesen werden, und klicken Sie auf *Weiter*. Der folgende Screenshot zeigt beispielsweise, dass nach 45 Tagen im Objektspeicher Tiering-Daten der Klasse _Cool_ aus der Klasse _Hot_ zugewiesen werden.
 
 +
 Wenn Sie *Daten in dieser Zugriffsebene* aufbewahren, verbleiben die Daten in der Zugriffsebene _Hot_ und es werden keine Regeln angewendet. link:reference-azure-support.html["Siehe Unterstützte Zugriffsebenen"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_azure.png["Ein Screenshot zeigt, wie Sie eine andere Zugriffsebene auswählen, in der Daten nach einer bestimmten Anzahl von Tagen verschoben werden."]
+image:screenshot_tiering_lifecycle_selection_azure.png["Ein Screenshot, der zeigt, wie Sie eine andere Zugriffsebene auswählen, die Ihren Daten nach einer bestimmten Anzahl von Tagen zugewiesen wird."]
 
 +
 Beachten Sie, dass die Lebenszyklusregel auf alle Blob-Container im ausgewählten Speicherkonto angewendet wird.

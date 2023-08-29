@@ -130,7 +130,7 @@ Wenn das Amazon S3 Tiering-Ziel als eine Arbeitsumgebung auf dem Canvas existier
 
 === Wählen Sie das Tiering-Verhalten beim Entfernen des Mirror-Objektspeichers in einer MetroCluster Konfiguration
 
-Wenn Sie den Mirror-Objektspeicher aus einer MetroCluster-Konfiguration entfernen, werden Sie gefragt, ob Sie auch den primären Objektspeicher entfernen möchten. Sie können festlegen, dass der primäre Objektspeicher an das Aggregat angeschlossen ist, oder dass Sie ihn entfernen möchten.
+Beim Entfernen des gespiegelten Objektspeichers aus einer MetroCluster-Konfiguration werden Sie gefragt, ob Sie auch den primären Objektspeicher entfernen möchten. Sie können festlegen, dass der primäre Objektspeicher an das Aggregat angeschlossen ist, oder dass Sie ihn entfernen möchten.
 
 
 

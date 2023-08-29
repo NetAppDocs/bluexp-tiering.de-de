@@ -154,7 +154,7 @@ Es gibt zwei Möglichkeiten:
 NOTE: Ihr Cloud-Provider steht Ihnen auf der Grundlage dieser Datenmenge, die aus der Cloud übertragen wird, möglicherweise die Kosten zur Verfügung.
 
 .Schritte
-Vergewissern Sie sich, dass genügend Speicherplatz auf der Performance-Tier für alle Daten vorhanden ist, die aus der Cloud verschoben werden.
+In der Performance-Tier muss ausreichend Speicherplatz für alle Daten vorhanden sein, die aus der Cloud zurück verschoben werden.
 
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
 . Klicken Sie auf der Seite *Cluster* auf *Tier Volumes* für den Cluster.

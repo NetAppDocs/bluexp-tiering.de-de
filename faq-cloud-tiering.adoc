@@ -282,9 +282,9 @@ BlueXP Tiering unterstützt das Daten-Tiering in die Storage-Klassen _Standard_,
 
 
 
-=== Unterstützt BlueXP Tiering die Verwendung von Lifecycle Management-Richtlinien?
+=== Unterstützt BlueXP Tiering die Nutzung von Lifecycle Management-Richtlinien?
 
-Ja. Sie können das Lifecycle Management aktivieren, damit BlueXP Tiering Daten nach einer bestimmten Anzahl von Tagen von der Standard-Storage-Klasse/Zugriffs-Tier auf eine kostengünstigere Tier verschiebt. Die Lebenszyklus-Regel wird auf alle Objekte im ausgewählten Bucket für Amazon S3 und Google Cloud Storage sowie auf alle Container im ausgewählten Storage-Konto für Azure Blob angewendet.
+Ja. Sie können das Lifecycle Management aktivieren, damit BlueXP Tiering Daten nach einer bestimmten Anzahl von Tagen von der Standard-Storage-Klasse/Zugriffs-Tier auf eine kostengünstigere Tier verschiebt. Die Lebenszyklusregel wird auf alle Objekte im ausgewählten Bucket für Amazon S3 und Google Cloud Storage und auf alle Container im ausgewählten Storage-Konto für Azure Blob angewendet.
 
 
 

@@ -31,7 +31,7 @@ https://bluexp.netapp.com/cloud-tiering-service-tco["Mit dem BlueXP Tiering-TCO-
 BlueXP Tiering bietet Automatisierung, Monitoring, Berichte und eine gemeinsame Managementoberfläche:
 
 * Durch Automatisierung wird das Einrichten und Managen von Daten-Tiering von ONTAP Clustern vor Ort in die Cloud vereinfacht
-* Sie können die Standard-Storage-Klasse/ZugriffTier des Cloud-Providers auswählen oder das Lifecycle-Management verwenden, um ältere Tiering-Daten auf eine kostengünstigere Tier zu verschieben
+* Sie können die Standard-Storage-Klasse bzw. die Zugriffs-Tier des Cloud-Providers wählen oder mithilfe von Lifecycle Management älteren Tiering-Daten eine kostengünstigere Tier zuweisen
 * Sie können Verbindungen zu zusätzlichen Objektspeichern erstellen, die für andere Aggregate in Ihrem Cluster verwendet werden können
 * Über die UI lassen sich Objektspeicher für das Tiering und für die FabricPool-Spiegelung an ein Aggregat ziehen
 * Dank einer einzigen Konsole muss FabricPool über mehrere Cluster hinweg unabhängig gemanagt werden
@@ -159,7 +159,7 @@ BlueXP Tiering funktioniert übergeordnete Aspekte wie folgt:
 . BlueXP konfiguriert ONTAP so, dass er den Objekt-Storage-Provider nutzt, und erkennt die Menge aktiver und inaktiver Daten im Cluster.
 . Sie wählen die zu Tier zupassenden Volumes und die Tiering-Richtlinie für diese Volumes aus.
 . ONTAP beginnt mit dem Tiering inaktiver Daten zum Objektspeicher, sobald die Daten die Schwellenwerte erreicht haben, die als inaktiv eingestuft werden sollen (siehe <<Richtlinien für das Volume-Tiering>>).
-. Wenn Sie auf die abgestuften Daten (nur für einige Anbieter verfügbar) eine Lebenszyklusregel angewendet haben, werden ältere Tiering-Daten nach einer bestimmten Anzahl von Tagen auf eine kostengünstigere Tier verschoben.
+. Wenn Sie eine Lebenszyklusregel auf die Tiering-Daten angewendet haben (nur für einige Anbieter verfügbar), werden ältere Tiering-Daten nach einer bestimmten Anzahl von Tagen einer kostengünstigeren Tier zugewiesen.
 
 
 

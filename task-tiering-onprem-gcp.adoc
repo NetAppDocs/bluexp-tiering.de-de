@@ -147,7 +147,7 @@ Wenn Sie Tiering einrichten, müssen Sie Speicherzugriffsschlüssel für ein Ser
 Die Cloud Storage Buckets müssen in einem angegeben sein link:reference-google-support.html#supported-google-cloud-regions["Region, die BlueXP Tiering unterstützt"].
 
 
-NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um kostengünstigere Storage-Klassen zu verwenden, in denen Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Buckets in Ihrem GCP-Konto keine Lebenszyklusregeln auswählen. BlueXP Tiering managt die Lebenszyklusumstellungen.
+NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um kostengünstigere Storage-Klassen zu verwenden, in denen Ihre Tiering-Daten nach einer bestimmten Anzahl von Tagen verschoben werden, dürfen Sie beim Einrichten des Buckets in Ihrem GCP-Konto keine Lebenszyklusregeln auswählen. BlueXP Tiering managt die Lebenszyklusveränderungen.
 
 .Schritte
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Erstellen Sie ein Servicekonto mit der vordefinierten Rolle „Storage Admin“"^].
@@ -187,15 +187,15 @@ image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Aktivieren-Op
 . Führen Sie die Schritte auf den Seiten *Objektspeicherung erstellen* aus:
 +
 .. *Bucket*: Fügen Sie einen neuen Google Cloud Storage-Bucket hinzu oder wählen Sie einen vorhandenen Bucket aus.
-.. *Lebenszyklus der Storage-Klasse*: BlueXP Tiering managt die Lebenszyklusübergänge Ihrer Tiering-Daten. Daten beginnen in der Klasse _Standard_, aber Sie können Regeln erstellen, um die Daten nach einer bestimmten Anzahl von Tagen in andere Klassen zu verschieben.
+.. *Lebenszyklus der Storage-Klasse*: BlueXP Tiering managt die Lifecycle-Übergänge Ihrer Tiering-Daten. Die Daten beginnen in der Klasse _Standard_, aber Sie können Regeln erstellen, um verschiedene Speicherklassen nach einer bestimmten Anzahl von Tagen anzuwenden.
 +
-Wählen Sie die Google Cloud Speicherklasse aus, in die Sie die Tiered-Daten und die Anzahl der Tage vor dem Verschieben der Daten verschieben möchten, und klicken Sie auf *Weiter*. In der Abbildung unten sehen Sie beispielsweise, dass gestaffelte Daten nach 30 Tagen im Objektspeicher von der Klasse _Standard_ in die Klasse _Nearline_ verschoben werden, und dann nach 60 Tagen im Objektspeicher in die Klasse _Coldline_.
+Wählen Sie die Google Cloud-Storage-Klasse aus, in die Sie die Tiering-Daten verschieben möchten, und die Anzahl der Tage, bevor die Daten dieser Klasse zugewiesen werden, und klicken Sie auf *Weiter*. Der folgende Screenshot zeigt zum Beispiel, dass die Tiering-Daten nach 30 Tagen im Objektspeicher der Klasse _Nearline_ und nach 60 Tagen im Objektspeicher der Klasse _Coldline_ zugeordnet werden.
 
 +
 Wenn Sie sich für *Daten in dieser Speicherklasse* entscheiden, verbleiben die Daten in dieser Speicherklasse. link:reference-google-support.html["Siehe Unterstützte Speicherklassen"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_gcp.png["Ein Screenshot zeigt, wie Sie weitere Speicherklassen auswählen, in denen Daten nach einer bestimmten Anzahl von Tagen verschoben werden."]
+image:screenshot_tiering_lifecycle_selection_gcp.png["Ein Screenshot zeigt, wie Sie zusätzliche Speicherklassen auswählen, die Ihren Daten nach einer bestimmten Anzahl von Tagen zugewiesen werden."]
 
 +
 Beachten Sie, dass die Lebenszyklusregel auf alle Objekte im ausgewählten Bucket angewendet wird.
