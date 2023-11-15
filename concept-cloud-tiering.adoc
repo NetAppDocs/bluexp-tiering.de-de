@@ -125,9 +125,9 @@ link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-paygo-subscription["
 
 === Jahresvertrag
 
-BlueXP Tiering bietet einen Jahresvertrag für das Tiering inaktiver Daten zu Amazon S3. Und ist in 1-, 2- oder 3-Jahres-Laufzeiten erhältlich.
+BlueXP Tiering umfasst einen Jahresvertrag für das Tiering inaktiver Daten zu Amazon S3 oder Azure. Und ist in 1-, 2- oder 3-Jahres-Laufzeiten erhältlich.
 
-Jahresverträge werden derzeit nicht unterstützt, wenn Tiering zu Azure oder GCP.
+Jahresverträge werden derzeit nicht unterstützt, wenn Tiering in Google Cloud durchgeführt wird.
 
 
 

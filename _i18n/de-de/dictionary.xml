@@ -440,17 +440,12 @@
   <block id="de865f0ebc8f66fc8e1331d7e2a7f1d4" category="list-text"><block ref="2efc8cc4b2027ed3eb0bfad94737c839" category="inline-link-macro-rx"></block>.</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">Ein paar Notizen, bevor Sie weitere lesen:</block>
   <block id="a70c9916d691b1eb3e72bf59caa27ce2" category="section-title">Abonnieren im AWS Marketplace</block>
-  <block id="f1b10f6f612755bd0b4bd43376cb6834" category="list-text">Melden Sie sich beim an<block ref="d668c832ccb70eb717d6736e1082df78" category="inline-link-rx"></block>, Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.</block>
   <block id="03909f0465e674709c33e446a2657166" category="paragraph">Das folgende Video zeigt den Prozess:</block>
   <block id="8feab303f9a851219461fc3a5bccb103" category="section-title">Abonnieren im Azure Marketplace</block>
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">Melden Sie sich beim an<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>, Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.</block>
-  <block id="d96cb6abed792dbbfc1aebbc934cb55d" category="section-title">Abonnieren im GCP Marketplace</block>
-  <block id="e4db414e6112e54da73cbeaaacf47826" category="list-text">Melden Sie sich beim an<block ref="92655de6fae7d07ed3897ce19d51b88d" category="inline-link-rx"></block>, Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.</block>
   <block id="66145e361f72b54aa011f59d543dfb08" category="section-title">Verwenden Sie einen Jahresvertrag</block>
   <block id="2351127acb653fd60dafc73c8efcb79d" category="inline-link">AWS Marketplace Seite</block>
-  <block id="66930a908819d6fce6483de6c770d313" category="paragraph">Beim Tiering inaktiver Daten zu AWS können Sie einen jährlichen Vertrag von abonnieren<block ref="7e9391e5068ba3345180f0de3723960c" category="inline-link-rx"></block>. Und ist in 1-, 2- oder 3-Jahres-Laufzeiten erhältlich.</block>
   <block id="54b98a81c2ba2da3e9c721b03a4585b5" category="inline-link">Verbinden Sie das Abonnement mit Ihren AWS Zugangsdaten</block>
-  <block id="29f6791775c21cd38fbdcb5b18589d37" category="paragraph">Jahresverträge werden derzeit nicht unterstützt, wenn Tiering zu Azure oder GCP.</block>
   <block id="7bd914491d17c534e3612cd97579060e" category="list-text">Mailto:ng-cloud-tiering@netapp.com?Subject=Lizenzierung[E-Mail senden, um eine Lizenz zu erwerben].</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">Klicken Sie rechts unten auf das Chat-Symbol von BlueXP, um eine Lizenz anzufordern.</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">Weitere Informationen finden Sie hier</block>
@@ -1030,7 +1025,6 @@
   <block id="9335e172ddfade48320b47cd34c682a8" category="paragraph">BlueXP Tiering bietet nutzungsbasierte Lizenzierung in einem Pay-as-you-go-Modell. Wenn Sie sich über den Markt Ihres Cloud-Providers abonnieren, zahlen Sie pro GB für Daten mit Tier. Sie erhalten keine Vorabzahlung. Die Abrechnung erfolgt von Ihrem Cloud-Provider über Ihre monatliche Abrechnung.</block>
   <block id="793e8e21e4c6d6e9102d21e5ceeb9ef6" category="paragraph">Ihr Pay-as-you-go-Abonnement wird während der kostenlosen Testversion nicht in Rechnung gestellt, oder wenn Ihre BlueXP Tiering-BYOL-Lizenz nicht überschritten wurde.</block>
   <block id="a48331bea4b593b755f99fa927d65638" category="paragraph"><block ref="4a6532d8b81197880664db7ef07b3202" category="inline-link-macro-rx"></block>.</block>
-  <block id="a05ea6f9f4f0a8968aa8c0288bad4b53" category="paragraph">BlueXP Tiering bietet einen Jahresvertrag für das Tiering inaktiver Daten zu Amazon S3. Und ist in 1-, 2- oder 3-Jahres-Laufzeiten erhältlich.</block>
   <block id="49de8995cf3b9508af67fbbd5e085640" category="inline-link-macro">So verwenden Sie eine BlueXP Tiering-BYOL-Lizenz</block>
   <block id="a42e9abff9358e2d7f140d2a5cca181b" category="inline-link-macro">Erfahren Sie mehr darüber, wie sich die BlueXP Tiering-Lizenz von der FabricPool Lizenz unterscheidet</block>
   <block id="73bd12c72df2f49e3c020653025ff48b" category="admonition">Ab August 2021 wurde die alte *FabricPool* Lizenz durch die *Cloud Tiering* Lizenz ersetzt. <block ref="e6f9c79a0a8d34aafe89d9b302bb60e6" category="inline-link-macro-rx"></block>.</block>
@@ -1092,8 +1086,6 @@
   <block id="c174dc6f5adc76b760a64752a5683812" category="paragraph">Dank Pay-as-you-go-Abonnements über den Marketplace Ihres Cloud-Providers können Sie die Nutzung von Cloud Volumes ONTAP Systemen und vielen Cloud-Datenservices, wie z. B. BlueXP Tiering, lizenzieren.</block>
   <block id="1febaf5111f6d0a8a13d54e09b64c6b8" category="paragraph">Abonnieren Sie BlueXP Tiering über AWS Marketplace, um ein Pay-as-you-go-Abonnement für Daten-Tiering von ONTAP Clustern zu AWS S3 einzurichten.</block>
   <block id="1ca8ff1356ad77544b7267aaa0b19042" category="paragraph">Abonnieren Sie BlueXP Tiering über den Azure Marketplace, um ein Pay-as-you-go-Abonnement für Daten-Tiering von ONTAP Clustern zu Azure Blob Storage einzurichten.</block>
-  <block id="de1cdae44076062eb7f546c81cfb6990" category="paragraph">Abonnieren Sie BlueXP Tiering über GCP Marketplace, um ein Pay-as-you-go-Abonnement für Daten-Tiering von ONTAP Clustern auf Google Cloud Storage einzurichten.</block>
-  <block id="67731652b48fdb7846ca466471556450" category="paragraph">Bezahlen Sie für BlueXP Tiering jährlich durch den Erwerb eines Jahresvertrags.</block>
   <block id="93f26f7b1e47a3f6bebd49a7fa7dd4b6" category="section-title">Verwenden Sie eine BlueXP Tiering BYOL-Lizenz</block>
   <block id="c2319a35daf2868e6d5793e8fa613108" category="paragraph">Wenn Sie keine BlueXP Tiering-Lizenz besitzen, kontaktieren Sie uns, um eine zu kaufen:</block>
   <block id="feace567e2626d7786ec5e18354a5177" category="section-title">BlueXP Tiering BYOL-Lizenzierung ab 2021</block>
@@ -1265,7 +1257,6 @@
   <block id="0e3e175aa7efdfc360dab27c51b6fc80" category="admonition">Cloud Volumes ONTAP Systeme sind schreibgeschützt aus BlueXP Tiering.<block ref="f5b25cbfd89581108090437b49ead269" category="inline-link-rx"></block>.</block>
   <block id="994f1fa9f6b6f6276b10a9c8a8f18a8c" category="list-text">BlueXP Backup und Recovery wirkt sich auf ähnliche Weise auf Volumes aus, die über eine Tiering-Richtlinie festgelegt wurden.<block ref="2db919f88216e9376af16eec91019e18" category="inline-link-rx"></block>.</block>
   <block id="5f6fdb8f4b29baeb552fcdad9078be66" category="list-text">Wenn Sie bereits ein Abonnement für BlueXP (PAYGO) auf dem Marketplace Ihres Cloud-Providers abonniert haben, werden Sie BlueXP Tiering auch für lokale ONTAP Systeme automatisch abonnieren. Auf der Registerkarte BlueXP Tiering *On-Premises Dashboard* sehen Sie ein aktives Abonnement. Sie müssen sich nicht erneut anmelden. Das Digital Wallet von BlueXP enthält ein aktives Abonnement.</block>
-  <block id="7e1d9a12a6617957d93e562480c58a19" category="paragraph">Wenn Sie diese Option verwenden möchten, richten Sie Ihr Abonnement auf der Marketplace-Seite ein und dann<block ref="3e7d826ab39799649c48f6e2f8f11222" category="inline-link-rx"></block>.</block>
   <block id="1ba2cc4758ef6d9270d73cfc36a18caa" category="paragraph">Wenn Sie optional eine nicht zugewiesene Node-basierte Lizenz für Cloud Volumes ONTAP haben, die Sie nicht verwenden werden, können Sie sie in eine BlueXP Tiering-Lizenz mit derselben Dollar-Äquivalenz und demselben Ablaufdatum konvertieren.<block ref="f4c32a82791cf9fc58c736c0aed05092" category="inline-link-rx"></block>.</block>
   <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">Wenn Ihr NetApp Support Site Konto nicht in der Dropdown-Liste verfügbar ist,<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>.</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -1436,4 +1427,17 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Unterstützung für Fileservices von Cloud-Providern</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Wenn Sie technischen Support für BlueXP und seine Storage-Lösungen und -Services erhalten möchten, nutzen Sie die unten beschriebenen Support-Optionen.</block>
+  <block id="120c551b91db0cd715347530ec78eefa" category="list-text">Melden Sie sich beim an<block ref="60fa25c896f0169de9e5a75989c9f27f" category="inline-link-rx"></block>, Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.</block>
+  <block id="4df3a4b719debe027add38476f2fd8fd" category="section-title">Abonnieren über den Google Cloud Marketplace</block>
+  <block id="725a72912ce0fc328960741c96d6166c" category="paragraph">Abonnieren Sie BlueXP Tiering über Google Cloud Marketplace, um ein Pay-as-you-go-Abonnement für Daten-Tiering von ONTAP Clustern auf Google Cloud Storage einzurichten.</block>
+  <block id="98ad2c075d2fb10da4cf15c985c3f43f" category="inline-link">Google Cloud Marketplace</block>
+  <block id="6b141e3757b598fe4797872cf41433a3" category="list-text">Melden Sie sich beim an<block ref="82ddec44156571798c68c5bde2400da5" category="inline-link-rx"></block>, Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.</block>
+  <block id="5bb5fe9a2717870250d6e9535cfc3ddf" category="paragraph">Bezahlen Sie für BlueXP Tiering jährlich durch den Erwerb eines Jahresvertrags. Jahresverträge sind mit Laufzeiten von 1, 2 oder 3 Jahren erhältlich.</block>
+  <block id="b32259fac98434133e04f9d5edeccc2f" category="paragraph">Wenn Sie inaktive Daten mit Tiering in AWS verlagern, können Sie einen Jahresvertrag des abonnieren<block ref="85c21eb306ec4bcbda7252ca6117fc5c" category="inline-link-rx"></block>. Wenn Sie diese Option verwenden möchten, richten Sie Ihr Abonnement auf der Marketplace-Seite ein und dann<block ref="3e7d826ab39799649c48f6e2f8f11222" category="inline-link-rx"></block>.</block>
+  <block id="bd0202b4a5e368ede75c41822527f8dd" category="inline-link">Azure Marketplace Seite</block>
+  <block id="f201c550f444b5128aeb063bf930d1e2" category="inline-link">Ordnen Sie das Abonnement Ihren Azure-Zugangsdaten zu</block>
+  <block id="56623ade00abb157c138588791032ca9" category="paragraph">Wenn Sie inaktive Daten mit Tiering in Azure verschieben, können Sie einen Jahresvertrag des abonnieren<block ref="d5a65c1c4876b0fa6968c9e08ffea7e8" category="inline-link-rx"></block>. Wenn Sie diese Option verwenden möchten, richten Sie Ihr Abonnement auf der Marketplace-Seite ein und dann<block ref="81924c3896adc46721210987cc1f149c" category="inline-link-rx"></block>.</block>
+  <block id="77d720d97cc99bdd67ce50e58655dc3f" category="paragraph">Jährliche Verträge werden derzeit beim Tiering in Google Cloud nicht unterstützt.</block>
+  <block id="74369b8ae005333b4dd61fb93f495946" category="paragraph">BlueXP Tiering umfasst einen Jahresvertrag für das Tiering inaktiver Daten zu Amazon S3 oder Azure. Und ist in 1-, 2- oder 3-Jahres-Laufzeiten erhältlich.</block>
+  <block id="8a2304319d2e68c914c95280f8d1b529" category="paragraph">Jahresverträge werden derzeit nicht unterstützt, wenn Tiering in Google Cloud durchgeführt wird.</block>
 </blocks>
