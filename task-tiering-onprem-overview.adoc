@@ -5,15 +5,12 @@ keywords: overview, tiering overview, tiered clusters, clusters enabled for tier
 summary: BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von jedem Ihrer On-Premises-Cluster. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen. 
 ---
 = Erhalten Sie einen Überblick über Daten-Tiering von Ihren Clustern
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
