@@ -20,7 +20,7 @@ BlueXP Tiering unterstützt zwei Zugriffs-Tiers und die meisten Regionen.
 
 == Unterstützte Azure Blob-Zugriffsebenen
 
-Beim Einrichten des Daten-Tiering auf Azure verwendet BlueXP Tiering für Ihre inaktiven Daten automatisch die Hot-Access-Tier. BlueXP Tiering kann eine Lebenszyklusregel anwenden, sodass die Daten nach einer bestimmten Anzahl von Tagen von der _Hot_ Zugriffs-Tier auf die _Cool_ Zugriffs-Tier verschoben werden.
+Wenn Sie aus Ihren lokalen ONTAP Systemen ein Daten-Tiering auf Azure einrichten, verwendet BlueXP Tiering für Ihre inaktiven Daten automatisch die Hot-Access-Tier. BlueXP Tiering kann eine Lebenszyklusregel anwenden, sodass die Daten nach einer bestimmten Anzahl von Tagen von der _Hot_ Zugriffs-Tier auf die _Cool_ Zugriffs-Tier verschoben werden.
 
 Wenn Sie die Zugriffsebene _Cool_ nicht wählen, verbleiben die Daten in der Zugriffsebene _Hot_ und es werden keine Regeln angewendet.
 
