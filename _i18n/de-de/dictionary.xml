@@ -1416,4 +1416,26 @@
   <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">Wenn Sie aus Ihren lokalen ONTAP Systemen das Daten-Tiering auf AWS einrichten, verwendet BlueXP Tiering für Ihre inaktiven Daten automatisch die Storage-Klasse „_Standard_“. BlueXP Tiering kann eine Lebenszyklusregel anwenden, sodass Daten nach einer bestimmten Anzahl von Tagen von der _Standard_ Storage-Klasse zu einer anderen Storage-Klasse überführt werden. Sie können aus folgenden Speicherklassen wählen:</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp verwendet Microsoft Entra ID als Identitätsanbieter für Authentifizierungsservices, die speziell auf Support und Lizenzierung zugeschnitten sind.</block>
   <block id="36a7f0d732c9746e546a6bf227b6a550" category="summary">BlueXP Tiering erweitert Ihr Datacenter auf die Cloud durch das automatische Tiering inaktiver Daten von lokalen ONTAP Clustern auf Objekt-Storage.</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Was ist neu</block>
+  <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">Tiering von On-Premises-ONTAP-Daten in die Cloud</block>
+  <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Tiering zu Azure Blob</block>
+  <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Tiering in Google Cloud</block>
+  <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">Tier zu generischem S3</block>
+  <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">Tiering-Einstellungen verwalten</block>
+  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">Ändern Sie die Tiering-Richtlinie eines Volumes</block>
+  <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">Tiering-Informationen für ein Cluster prüfen</block>
+  <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">Tiering von Daten aus zusätzlichen Volumes</block>
+  <block id="e1c9950bf8922ee7b7ee2dc803696a6a" category="sidebar">Ändern Sie die Bandbreite, um inaktive Daten in den Objektspeicher hochzuladen</block>
+  <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">Verschieben Sie Daten aus der Cloud zurück in die Performance-Tier</block>
+  <block id="b19237098460d786516168b98687becc" category="sidebar">Management von Tiering-Einstellungen auf Aggregaten</block>
+  <block id="44e298753e2ff93996d0e8ffa928a922" category="sidebar">Fügen Sie einen neuen Objektspeicher für ein Cluster hinzu</block>
+  <block id="f479e40bc5b0a3dc9ce1b1c43ebdec89" category="sidebar">Fügen Sie zum Spiegeln einem Aggregat einen zweiten Objektspeicher hinzu</block>
+  <block id="07ed437d90cdfd3243fc6c8fa8ddacff" category="sidebar">Tauschen Sie den primären Objektspeicher und den gespiegelten Objektspeicher aus</block>
+  <block id="500c3424a2151541a2d7783c7e308bb5" category="sidebar">Entfernen Sie einen Spiegelobjektspeicher</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs und Community</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
+  <block id="10fd54f4214c20c0fb0c8174413e67e6" category="sidebar">BlueXP Tiering-Blog</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
+  <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Andere Ressourcen</block>
+  <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">Anwendungsfälle für BlueXP</block>
 </blocks>

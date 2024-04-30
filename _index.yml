@@ -1,0 +1,66 @@
+---
+indexpage:
+  title: BlueXP Tiering-Dokumentation
+  summary: BlueXP Tiering erweitert Ihr Datacenter auf die Cloud durch das automatische
+    Tiering inaktiver Daten von lokalen ONTAP Clustern auf Objekt-Storage.
+  keywords: bluexp, ontap, cloud tiering, documentation
+  lead: BlueXP Tiering erweitert Ihr Datacenter auf die Cloud durch das automatische
+    Tiering inaktiver Daten von lokalen ONTAP Clustern auf Objekt-Storage.
+  tiles:
+  - title: Los geht's
+    links:
+    - title: Weitere Informationen zu BlueXP Tiering
+      url: concept-cloud-tiering.html
+    - title: Was ist neu
+      url: whats-new.html
+    - title: Lizenzierung einrichten
+      url: task-licensing-cloud-tiering.html
+  - title: Tiering von On-Premises-ONTAP-Daten in die Cloud
+    links:
+    - title: Tiering zu Amazon S3
+      url: task-tiering-onprem-aws.html
+    - title: Tiering zu Azure Blob
+      url: task-tiering-onprem-azure.html
+    - title: Tiering in Google Cloud
+      url: task-tiering-onprem-gcp.html
+    - title: Tiering zu StorageGRID
+      url: task-tiering-onprem-storagegrid.html
+    - title: Tier zu generischem S3
+      url: task-tiering-onprem-s3-compat.html
+  - title: Tiering-Einstellungen verwalten
+    links:
+    - title: Ändern Sie die Tiering-Richtlinie eines Volumes
+      url: task-managing-tiering.html#changing-a-volumes-tiering-policy
+    - title: Tiering-Informationen für ein Cluster prüfen
+      url: task-managing-tiering.html#reviewing-tiering-info-for-a-cluster
+    - title: Tiering von Daten aus zusätzlichen Volumes
+      url: task-managing-tiering.html#tiering-data-from-additional-volumes
+    - title: Ändern Sie die Bandbreite, um inaktive Daten in den Objektspeicher hochzuladen
+      url: task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage
+    - title: Verschieben Sie Daten aus der Cloud zurück in die Performance-Tier
+      url: task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier
+    - title: Management von Tiering-Einstellungen auf Aggregaten
+      url: task-managing-tiering.html#managing-tiering-settings-on-aggregates
+  - title: Objekt-Storage managen
+    links:
+    - title: Fügen Sie einen neuen Objektspeicher für ein Cluster hinzu
+      url: task-managing-object-storage.html#adding-a-new-object-store
+    - title: Fügen Sie zum Spiegeln einem Aggregat einen zweiten Objektspeicher hinzu
+      url: task-managing-object-storage.html#attaching-a-second-object-store-to-an-aggregate-for-mirroring
+    - title: Tauschen Sie den primären Objektspeicher und den gespiegelten Objektspeicher
+        aus
+      url: task-managing-object-storage.html#swapping-the-primary-and-mirror-object-store
+    - title: Entfernen Sie einen Spiegelobjektspeicher
+      url: task-managing-object-storage.html#removing-a-mirror-object-store-from-an-aggregate
+  - title: Blogs und Community
+    links:
+    - title: NetApp Community
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP Tiering-Blog
+      url: https://bluexp.netapp.com/blog/topic/cloud-tiering
+    - title: Cloud-Webinare
+      url: https://bluexp.netapp.com/events
+  - title: Andere Ressourcen
+    links:
+    - title: Anwendungsfälle für BlueXP
+      url: https://bluexp.netapp.com/cloud-tiering
