@@ -211,7 +211,7 @@ Sie müssen zwei Berechtigungssätze konfigurieren:
 ** Bestätigen Sie das https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Diese S3-Berechtigungen"^] Sind Teil der IAM-Rolle, die dem Connector Berechtigungen erteilt. Sie sollten bei der ersten Bereitstellung des Connectors standardmäßig enthalten sein. Wenn nicht, müssen Sie fehlende Berechtigungen hinzufügen. Siehe https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS Dokumentation: Bearbeiten der IAM-Richtlinien"^] Weitere Anweisungen.
 ** Der Standard-Bucket, den BlueXP Tiering erstellt, verfügt über das Präfix „Fabric-Pool“. Wenn Sie ein anderes Präfix für Ihren Bucket verwenden möchten, müssen Sie die Berechtigungen mit dem gewünschten Namen anpassen. In den S3-Berechtigungen wird eine Zeile angezeigt `"Resource": ["arn:aws:s3:::fabric-pool*"]`. Sie müssen „Fabric-Pool“ in das Präfix ändern, das Sie verwenden möchten. Wenn Sie beispielsweise „Tiering-1“ als Präfix für Ihre Buckets verwenden möchten, ändern Sie diese Zeile in `"Resource": ["arn:aws:s3:::tiering-1*"]`.
 +
-Wenn Sie für Buckets ein anderes Präfix verwenden möchten, das Sie für zusätzliche Cluster in diesem BlueXP Konto verwenden möchten, können Sie eine weitere Zeile mit dem Präfix für andere Buckets hinzufügen. Beispiel:
+Wenn Sie ein anderes Präfix für Buckets verwenden möchten, das Sie für zusätzliche Cluster in derselben BlueXP -Organisation verwenden möchten, können Sie eine weitere Zeile mit dem Präfix für andere Buckets hinzufügen. Beispiel:
 
 +
 `"Resource": ["arn:aws:s3:::tiering-1*"]`

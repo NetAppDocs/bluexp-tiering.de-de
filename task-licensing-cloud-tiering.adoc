@@ -19,7 +19,7 @@ Mit der Einrichtung von Tiering von Ihrem ersten Cluster beginnen Sie eine koste
 Ein paar Notizen, bevor Sie weitere lesen:
 
 * Wenn Sie bereits ein Abonnement für BlueXP (PAYGO) auf dem Marketplace Ihres Cloud-Providers abonniert haben, werden Sie BlueXP Tiering auch für lokale ONTAP Systeme automatisch abonnieren. Auf der Registerkarte BlueXP Tiering *On-Premises Dashboard* sehen Sie ein aktives Abonnement. Sie müssen sich nicht erneut anmelden. Das Digital Wallet von BlueXP enthält ein aktives Abonnement.
-* Die BYOL BlueXP Tiering-Lizenz (ehemals als „Cloud Tiering“-Lizenz bezeichnet) ist eine Floating_ Lizenz, die Sie über mehrere lokale ONTAP-Cluster in Ihrem BlueXP Konto hinweg verwenden können. Das ist anders (und viel einfacher) als in der Vergangenheit, wo Sie für jeden Cluster eine _FabricPool_ Lizenz gekauft haben.
+* Die BYOL BlueXP  Tiering-Lizenz (ehemals als „Cloud Tiering“-Lizenz bezeichnet) ist eine Floating_ Lizenz, die Sie über mehrere lokale ONTAP-Cluster in Ihrer BlueXP -Organisation hinweg verwenden können. Das ist anders (und viel einfacher) als in der Vergangenheit, wo Sie für jeden Cluster eine _FabricPool_ Lizenz gekauft haben.
 * Beim Tiering von Daten in StorageGRID fallen keine Gebühren an. Daher ist keine BYOL-Lizenz oder eine PAYGO-Registrierung erforderlich. Diese Tiered Daten zählen nicht auf die in Ihrer Lizenz erworbene Kapazität.
 
 
@@ -109,7 +109,7 @@ Jährliche Verträge werden derzeit beim Tiering in Google Cloud nicht unterstü
 
 == Verwenden Sie eine BlueXP Tiering BYOL-Lizenz
 
-Mit den Bring-Your-Own-License-Lizenzen von NetApp erhalten Sie Vertragsbedingungen mit 1, 2 oder 3 Jahren. Die BYOL *BlueXP Tiering*-Lizenz (ehemals als „Cloud Tiering“-Lizenz bezeichnet) ist eine Floating_-Lizenz, die Sie über mehrere lokale ONTAP-Cluster in Ihrem BlueXP Konto hinweg verwenden können. Die in Ihrer BlueXP Tiering-Lizenz definierte Gesamtkapazität wird von allen* Ihrer On-Premises-Cluster gemeinsam genutzt, wodurch die erstmalige Lizenzierung und Verlängerung vereinfacht werden. Die Mindestkapazität für eine Tiering-BYOL-Lizenz beträgt 10 tib.
+Mit den Bring-Your-Own-License-Lizenzen von NetApp erhalten Sie Vertragsbedingungen mit 1, 2 oder 3 Jahren. Die BYOL *BlueXP  Tiering*-Lizenz (vormals bekannt als „Cloud Tiering“-Lizenz) ist eine Floating_-Lizenz, die Sie über mehrere lokale ONTAP-Cluster in Ihrer BlueXP -Organisation hinweg verwenden können. Die in Ihrer BlueXP Tiering-Lizenz definierte Gesamtkapazität wird von allen* Ihrer On-Premises-Cluster gemeinsam genutzt, wodurch die erstmalige Lizenzierung und Verlängerung vereinfacht werden. Die Mindestkapazität für eine Tiering-BYOL-Lizenz beträgt 10 tib.
 
 Wenn Sie keine BlueXP Tiering-Lizenz besitzen, kontaktieren Sie uns, um eine zu kaufen:
 
@@ -163,26 +163,37 @@ Hier sind einige Dinge, die Sie über die beiden Lizenzen wissen müssen:
 Nachdem Sie Ihre BlueXP Tiering-Lizenz erworben haben, aktivieren Sie die Lizenz in BlueXP entweder durch Eingabe der BlueXP Tiering-Seriennummer und des NSS-Kontos oder durch Hochladen der NF-Lizenzdatei. Die folgenden Schritte zeigen, wie Sie die Lizenzdatei NLF abrufen können, wenn Sie diese Methode verwenden möchten.
 
 .Bevor Sie beginnen
-Sie müssen die folgenden Informationen haben, bevor Sie beginnen:
-
-* Seriennummer für BlueXP Tiering
-+
-Suchen Sie diese Nummer in Ihrem Auftrag, oder wenden Sie sich an das Account Team, um diese Informationen zu erhalten.
-
-* BlueXP Konto-ID
-+
-Sie können Ihre BlueXP-Konto-ID finden, indem Sie oben in BlueXP das Dropdown-Menü *Konto* auswählen und dann neben Ihrem Konto auf *Konto verwalten* klicken. Ihre Account-ID wird auf der Registerkarte „Übersicht“ angezeigt.
-
-
+Sie benötigen dafür die Seriennummer Ihres BlueXP  Tiering. Suchen Sie diese Nummer in Ihrem Auftrag, oder wenden Sie sich an das Account Team, um diese Informationen zu erhalten.
 
 .Schritte
+. Finden Sie Ihre BlueXP  Konto-ID:
++
+.. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+.. Suchen Sie auf der Seite Organisation nach Ihrer Account-ID, und kopieren Sie diese.
++
+Wenn keine Konto-ID aufgeführt ist und Sie nur eine Organisations-ID haben, müssen Sie die ersten acht Zeichen der Organisations-ID kopieren und an _Account-_ anhängen
+
++
+Nehmen wir beispielsweise an, dies ist Ihre Unternehmens-ID:
+
++
+Ea10e1c6-80cc-4219-8e99-3c3e6b161ba5
+
++
+Ihre Konto-ID lautet wie folgt:
+
++
+Account-ea10e1c6
+
+
+
 . Melden Sie sich beim an https://mysupport.netapp.com["NetApp Support Website"^] Klicken Sie anschließend auf *Systeme > Softwarelizenzen*.
 . Geben Sie die Seriennummer Ihrer BlueXP Tiering Lizenz ein.
 +
 image:screenshot_cloud_tiering_license_step1.gif["Ein Screenshot, der eine Tabelle von Lizenzen zeigt, nachdem Sie nach der Seriennummer suchen."]
 
 . Klicken Sie in der Spalte *Lizenzschlüssel* auf *NetApp Lizenzdatei abrufen*.
-. Geben Sie Ihre BlueXP-Konto-ID ein (dies wird als Mandanten-ID auf der Support-Website bezeichnet) und klicken Sie auf *Absenden*, um die Lizenzdatei herunterzuladen.
+. Geben Sie Ihre BlueXP -Konto-ID ein (dies wird auf der Support-Website als Mandanten-ID bezeichnet) und klicken Sie auf *Absenden*, um die Lizenzdatei herunterzuladen.
 +
 image:screenshot_cloud_tiering_license_step2.gif["Ein Screenshot, in dem das Dialogfeld „Lizenz abrufen“ angezeigt wird, in dem Sie Ihre Mandanten-ID eingeben und dann auf „Senden“ klicken, um die Lizenzdatei herunterzuladen."]
 
@@ -192,7 +203,7 @@ image:screenshot_cloud_tiering_license_step2.gif["Ein Screenshot, in dem das Dia
 
 === Fügen Sie BlueXP Tiering BYOL-Lizenzen zu Ihrem Konto hinzu
 
-Nachdem Sie eine BlueXP Tiering-Lizenz für Ihr BlueXP Konto erworben haben, müssen Sie die Lizenz zu BlueXP hinzufügen, um den BlueXP Tiering Service zu nutzen.
+Nach dem Kauf einer BlueXP  Tiering-Lizenz müssen Sie die Lizenz zu BlueXP  hinzufügen, um den BlueXP  Tiering Service zu verwenden.
 
 .Schritte
 . Klicken Sie auf *Governance > Digital Wallet > Data Services Licenses*.
