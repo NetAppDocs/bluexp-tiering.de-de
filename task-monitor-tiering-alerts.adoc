@@ -20,9 +20,10 @@ Das Benachrichtigungscenter verfolgt den Fortschritt von Tiering-Vorfällen, sod
 
 Derzeit gibt es ein Tiering-Ereignis, das als Benachrichtigung angezeigt wird:
 
-* Führen Sie das Tiering zusätzlicher Daten von Cluster <name> auf Objekt-Storage durch, um Ihre Storage-Effizienz zu steigern
-
+Führen Sie das Tiering zusätzlicher Daten von Cluster <name> auf Objekt-Storage durch, um Ihre Storage-Effizienz zu steigern
 
 Diese Mitteilung ist eine „Empfehlung“, mit der Sie Ihre Systeme effizienter gestalten und Storage-Kosten einsparen können. Es zeigt, dass ein Cluster weniger als 20 % seiner kalten Daten Tiering ermöglicht - einschließlich Clustern, die keine Daten per Tiering verschieben. Sie enthält einen Link zum https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP Tiering-Rechner für Gesamtbetriebskosten und Einsparungen"^] Zur Berechnung Ihrer Kosteneinsparungen.
+
+BlueXP  sendet keine E-Mail für diese Benachrichtigung.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Erfahren Sie mehr über das Benachrichtigungscenter"^].

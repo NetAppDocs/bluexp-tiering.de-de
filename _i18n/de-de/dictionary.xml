@@ -1445,4 +1445,5 @@
   <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">Installieren und Einrichten eines Connectors vor Ort</block>
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">In Ihrer BlueXP  Organisation ist keine BlueXP  Tiering Lizenz erforderlich. Auch ist für das Tiering von Daten auf StorageGRID keine FabricPool Lizenz auf dem ONTAP Cluster erforderlich.</block>
+  <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP  sendet keine E-Mail für diese Benachrichtigung.</block>
 </blocks>
