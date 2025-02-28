@@ -130,9 +130,9 @@ Ja. BlueXP Tiering ermöglicht die Nutzung einer BYOL-Lizenz, eines PAYGO-Abonne
 
 
 
-=== Was geschieht, wenn ich das BYOL-Kapazitätslimit erreicht habe?
+=== Was geschieht, wenn ich das BYOL-Kapazitätslimit erreicht habe oder meine BYOL-Lizenz abläuft?
 
-Wenn Sie das BYOL-Kapazitätslimit erreichen, wird das Tiering neuer, weniger häufig genutzter Daten angehalten. Alle zuvor gestuften Daten bleiben zugänglich, was bedeutet, dass Sie diese Daten abrufen und verwenden können. Beim Abrufen werden diese Daten aus der Cloud zurück in die Performance-Tier verschoben.
+Wenn Sie das BYOL-Kapazitätslimit erreichen oder Ihre BYOL-Lizenz abläuft, wird das Tiering neuer selten genutzter Daten angehalten, wobei das Tiering neuer selten genutzter Daten endet. Alle zuvor gestuften Daten bleiben zugänglich, was bedeutet, dass Sie diese Daten abrufen und verwenden können. Beim Abrufen werden diese Daten aus der Cloud zurück in die Performance-Tier verschoben.
 
 Wenn Sie jedoch über ein PAYGO Marketplace-Abonnement für die _BlueXP – Deploy & Manage Cloud Data Services_ verfügen, werden neue, kalte Daten weiterhin auf Objekt-Storage verschoben, und Sie zahlen für diese Gebühren auf Nutzungsbasis.
 

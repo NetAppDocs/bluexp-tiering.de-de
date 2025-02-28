@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering, license 
 summary: Mit der Einrichtung von Tiering von Ihrem ersten Cluster beginnen Sie eine kostenlose 30-Tage-Testversion von BlueXP Tiering. Nach Ablauf der kostenlosen Testversion müssen Sie für BlueXP Tiering über ein Pay-as-you-go- oder ein Jahresabonnement von Ihrem Cloud-Provider auf dem Marketplace von, eine BYOL-Lizenz von NetApp oder eine Kombination beider Optionen zahlen. 
 ---
 = Lizenzierung für BlueXP Tiering einrichten
@@ -38,6 +38,8 @@ Wenn die kostenlose Testversion endet und Sie keine Lizenz abonniert oder hinzug
 == Verwenden Sie ein BlueXP Tiering PAYGO-Abonnement
 
 Dank Pay-as-you-go-Abonnements über den Marketplace Ihres Cloud-Providers können Sie die Nutzung von Cloud Volumes ONTAP Systemen und vielen Cloud-Datenservices, wie z. B. BlueXP Tiering, lizenzieren.
+
+Nach dem Abonnement von BlueXP  Tiering können Sie Ihre Abonnements in einer Digital Wallet verwalten. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html#view-your-subscriptions["Erfahren Sie, wie Sie das Digital Wallet nutzen."^]
 
 
 
@@ -122,7 +124,7 @@ Wenn Sie keine BlueXP Tiering-Lizenz besitzen, kontaktieren Sie uns, um eine zu 
 
 Wenn Sie optional eine nicht zugewiesene Node-basierte Lizenz für Cloud Volumes ONTAP haben, die Sie nicht verwenden werden, können Sie sie in eine BlueXP Tiering-Lizenz mit derselben Dollar-Äquivalenz und demselben Ablaufdatum konvertieren. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Weitere Informationen finden Sie hier"^].
 
-Über die Digital-Wallet-Seite von BlueXP können Sie die Tiering-BYOL-Lizenzen für BlueXP managen. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren.
+Über die Digital-Wallet-Seite von BlueXP können Sie die Tiering-BYOL-Lizenzen für BlueXP managen. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Erfahren Sie, wie Sie das Digital Wallet nutzen."^]
 
 
 

@@ -43,7 +43,7 @@ Nach Ablauf der kostenlosen Testversion können Sie für BlueXP Tiering über ei
 
 [role="quick-margin-list"]
 * Für die Anmeldung über den GCP Marketplace: https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Rufen Sie das BlueXP Marketplace Angebot auf"^]Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.
-* Für die Zahlung mit einer BlueXP Tiering-BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Licensing[Wsetzen Sie sich mit uns in Verbindung] und dann link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Erweitern Sie Ihr Konto über das Digital Wallet von BlueXP"].
+* Für die Zahlung mit einer BlueXP  Tiering BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Lizenzierung[Kontaktieren Sie uns, wenn Sie eine kaufen müssen], und dann link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Erweitern Sie Ihr Konto über das Digital Wallet von BlueXP"^].
 
 
 
