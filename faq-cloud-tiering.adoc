@@ -168,6 +168,12 @@ Wenn Sie eine Schätzung erhalten möchten, fügen Sie einfach Ihren ONTAP Clust
 
 
 
+=== Wie wird Tiering berechnet, wenn ich einen ONTAP MetroCluster verwende?
+
+Bei Verwendung in MetroCluster Umgebungen wird das Tiering der lizenzierten Kapazität gleichermaßen auf gespiegelte Buckets angewendet. Wenn Sie beispielsweise eine Lizenz für 100 TiB Tiering besitzen, können beide Buckets auf ein Tiering mit bis zu 100 TiB verteilt werden. Für gespiegelte Buckets fallen keine zusätzlichen Gebühren an. Wenn in MetroCluster Umgebungen ein Tiering aus nicht gespiegelten Aggregaten durchgeführt wird, wird die BlueXP  Tiering-Lizenz normal angewendet und die Gesamtkapazität in beide Buckets verschoben. Wenn Sie beispielsweise eine Lizenz für 100 TiB Tiering haben, können beide Buckets bis 50 TB Tiered werden.
+
+
+
 == ONTAP
 
 Die nachfolgenden Fragen betreffen ONTAP.

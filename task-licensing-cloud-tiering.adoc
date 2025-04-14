@@ -208,7 +208,7 @@ Da Daten für Tiering-Spiegelkonfigurationen auf zwei unterschiedliche Objekt-St
 Konfigurieren Sie Tiering jetzt nicht.
 
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Sie erwerben eine BlueXP Tiering-Lizenz"] Für die Kapazität, die für das neue Cluster oder die Cluster benötigt wird.
-. In BlueXP link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Erweitern Sie das Digital Wallet von BlueXP um die Lizenz"].
+. In BlueXP  <<licenses,Erweitern Sie das Digital Wallet von BlueXP um die Lizenz>>[fügen Sie die Lizenz zum BlueXP  Digital Wallet hinzu].
 . Durch BlueXP Tiering link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Ermitteln Sie die neuen Cluster"].
 . Klicken Sie auf der Seite Cluster auf image:screenshot_horizontal_more_button.gif["Weitere Symbole"] Wählen Sie für den Cluster die Option *Lizenz bereitstellen* aus.
 +
