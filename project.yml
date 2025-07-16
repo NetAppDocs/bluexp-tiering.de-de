@@ -19,7 +19,7 @@ sidebar:
     entries:
     - title: Weitere Informationen zu BlueXP Tiering
       url: "/concept-cloud-tiering.html"
-    - title: Tiering von On-Premises-Daten in die Cloud –
+    - title: Verlagern Sie lokale Daten in die Cloud
       entries:
       - title: Tiering zu Amazon S3
         url: "/task-tiering-onprem-aws.html"

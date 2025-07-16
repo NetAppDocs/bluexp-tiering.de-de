@@ -25,8 +25,8 @@ Am besten sollte dieser Check durchgeführt werden, wenn der Cluster unter 50 % 
 
 .Schritte für ein Cluster, das nicht für das Tiering eingerichtet wurde
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Cloud Performance Test*.
-. Überprüfen Sie die Details und klicken Sie auf *Weiter*.
+. Wählen Sie auf der Seite *Cluster* das Menüsymbol für einen Cluster und dann *Cloud-Leistungstest* aus.
+. Überprüfen Sie die Details und wählen Sie *Weiter*.
 . Befolgen Sie die Anweisungen, um die erforderlichen Informationen bereitzustellen.
 +
 Die Informationen, die Sie bereitstellen müssen, entsprechen denen, wenn Sie Tiering auf dem Cluster einrichten.
@@ -36,7 +36,7 @@ Die Informationen, die Sie bereitstellen müssen, entsprechen denen, wenn Sie Ti
 
 .Schritte für einen Cluster, der für das Tiering eingerichtet wurde
 . Wählen Sie im linken Navigationsmenü die Option *Mobilität > Tiering* aus.
-. Klicken Sie auf der Seite *Cluster* auf das Menüsymbol für einen Cluster und wählen Sie *Cloud Performance Test*.
+. Wählen Sie auf der Seite *Cluster* das Menüsymbol für einen Cluster und dann *Cloud-Leistungstest* aus.
 . Wählen Sie einen Knoten aus der Dropdown-Liste aus.
 . Die Ergebnisse anzeigen oder die Leistung erneut prüfen.
 

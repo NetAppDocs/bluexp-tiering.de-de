@@ -106,7 +106,7 @@ Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.neta
 
 === Per Drag-and-Drop Tiering zu weiteren Zielen aktivieren
 
-Wenn Azure Blob, Google Cloud Storage oder StorageGRID Tiering-Ziel als eine Arbeitsumgebung auf dem Canvas existiert, können Sie Ihre On-Prem ONTAP Arbeitsumgebung auf das Ziel ziehen, den Tiering Setup-Assistenten zu starten.
+Wenn das Azure Blob-, Google Cloud Storage- oder StorageGRID -Tiering-Ziel als Arbeitsumgebung auf dem Canvas vorhanden ist, können Sie Ihre lokale ONTAP Arbeitsumgebung auf das Ziel ziehen, um den Tiering-Setup-Assistenten zu starten.
 
 
 
@@ -124,7 +124,7 @@ https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["Anfor
 
 === Tiering zu Amazon S3 durch Drag-and-Drop
 
-Wenn das Amazon S3 Tiering-Ziel als eine Arbeitsumgebung auf dem Canvas existiert, können Sie Ihre On-Prem ONTAP-Arbeitsumgebung auf das Ziel ziehen, um den Tiering Setup-Assistenten zu starten.
+Wenn das Amazon S3-Tiering-Ziel als Arbeitsumgebung auf dem Canvas vorhanden ist, können Sie Ihre lokale ONTAP Arbeitsumgebung auf das Ziel ziehen, um den Tiering-Setup-Assistenten zu starten.
 
 
 

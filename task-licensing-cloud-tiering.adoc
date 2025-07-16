@@ -18,26 +18,26 @@ Mit der Einrichtung von Tiering von Ihrem ersten Cluster beginnen Sie eine koste
 
 Ein paar Notizen, bevor Sie weitere lesen:
 
-* Wenn Sie bereits ein Abonnement für BlueXP (PAYGO) auf dem Marketplace Ihres Cloud-Providers abonniert haben, werden Sie BlueXP Tiering auch für lokale ONTAP Systeme automatisch abonnieren. Auf der Registerkarte BlueXP Tiering *On-Premises Dashboard* sehen Sie ein aktives Abonnement. Sie müssen sich nicht erneut anmelden. Das Digital Wallet von BlueXP enthält ein aktives Abonnement.
+* Wenn Sie NetApp Intelligent Services (PAYGO) bereits im Marketplace Ihres Cloud-Anbieters abonniert haben, ist automatisch auch das Tiering für lokale ONTAP -Systeme aktiviert. Ein aktives Abonnement wird im Tiering-Tab „On-Premises Dashboard“ angezeigt. Sie müssen sich nicht erneut anmelden. Ein aktives Abonnement wird auch in der digitalen Geldbörse angezeigt.
 * Die BYOL BlueXP  Tiering-Lizenz (ehemals als „Cloud Tiering“-Lizenz bezeichnet) ist eine Floating_ Lizenz, die Sie über mehrere lokale ONTAP-Cluster in Ihrer BlueXP -Organisation hinweg verwenden können. Das ist anders (und viel einfacher) als in der Vergangenheit, wo Sie für jeden Cluster eine _FabricPool_ Lizenz gekauft haben.
 * Beim Tiering von Daten in StorageGRID fallen keine Gebühren an. Daher ist keine BYOL-Lizenz oder eine PAYGO-Registrierung erforderlich. Diese Tiered Daten zählen nicht auf die in Ihrer Lizenz erworbene Kapazität.
 
 
-link:concept-cloud-tiering.html#pricing-and-licenses["Erfahren Sie mehr über die Funktionsweise der Lizenzierung für BlueXP Tiering"].
+link:concept-cloud-tiering.html#pricing-and-licenses["Erfahren Sie mehr darüber, wie die Lizenzierung für das Tiering funktioniert"].
 
 
 
 == 30 Tage kostenlos testen mit unserer
 
-Wenn Sie keine BlueXP Tiering-Lizenz haben, beginnt eine kostenlose 30-Tage-Testversion von BlueXP Tiering bei der Einrichtung des Tiering auf den ersten Cluster. Nach Ablauf der 30-Tage-Testsoftware müssen Sie für BlueXP Tiering über ein Pay-as-you-go-Abonnement, ein Jahresabonnement, eine BYOL-Lizenz oder eine Kombination daraus zahlen.
+Wenn Sie keine Tiering-Lizenz besitzen, können Sie die Tiering-Lizenz 30 Tage lang kostenlos testen, sobald Sie die Tiering-Lizenz für Ihren ersten Cluster eingerichtet haben. Nach Ablauf der 30-tägigen Testversion müssen Sie für die Tiering-Lizenz ein nutzungsbasiertes Abonnement, ein Jahresabonnement, eine BYOL-Lizenz oder eine Kombination aus beidem erwerben.
 
 Wenn die kostenlose Testversion endet und Sie keine Lizenz abonniert oder hinzugefügt haben, werden selten genutzte Daten von ONTAP nicht mehr in den Objekt-Storage verschoben. Alle zuvor gestuften Daten bleiben zugänglich, was bedeutet, dass Sie diese Daten abrufen und verwenden können. Beim Abrufen werden diese Daten aus der Cloud zurück in die Performance-Tier verschoben.
 
 
 
-== Verwenden Sie ein BlueXP Tiering PAYGO-Abonnement
+== Verwenden Sie ein PAYGO-Abonnement für NetApp Intelligent Services
 
-Dank Pay-as-you-go-Abonnements über den Marketplace Ihres Cloud-Providers können Sie die Nutzung von Cloud Volumes ONTAP Systemen und vielen Cloud-Datenservices, wie z. B. BlueXP Tiering, lizenzieren.
+Mit Pay-as-you-go-Abonnements vom Marktplatz Ihres Cloud-Anbieters können Sie die Nutzung von Cloud Volumes ONTAP Systemen und NetApp Intelligent Services, wie z. B. Tiering, lizenzieren.
 
 Nach dem Abonnement von BlueXP  Tiering können Sie Ihre Abonnements in einer Digital Wallet verwalten. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html#view-your-subscriptions["Erfahren Sie, wie Sie das Digital Wallet nutzen."^]
 
@@ -49,8 +49,8 @@ Abonnieren Sie BlueXP Tiering über AWS Marketplace, um ein Pay-as-you-go-Abonne
 
 [[subscribe-aws]]
 .Schritte
-. Klicken Sie in BlueXP auf *Mobilität > Tiering > On-Premises-Dashboard*.
-. Klicken Sie im Abschnitt _Marketplace Subscriptions_ unter Amazon Web Services auf *Abonnieren* und dann auf *Weiter*.
+. Wählen Sie in BlueXP*Mobilität > Tiering > On-Premises-Dashboard*.
+. Wählen Sie im Abschnitt _Marketplace-Abonnements_ unter Amazon Web Services die Option *Abonnieren* und dann *Weiter* aus.
 . Melden Sie sich beim an https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS Marketplace"^], Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.
 +
 Das folgende Video zeigt den Prozess:
@@ -68,8 +68,8 @@ Abonnieren Sie BlueXP Tiering über den Azure Marketplace, um ein Pay-as-you-go-
 
 [[subscribe-azure]]
 .Schritte
-. Klicken Sie in BlueXP auf *Mobilität > Tiering > On-Premises-Dashboard*.
-. Klicken Sie im Abschnitt _Marketplace Subscriptions_ unter Microsoft Azure auf *Abonnieren* und dann auf *Weiter*.
+. Wählen Sie in BlueXP*Mobilität > Tiering > On-Premises-Dashboard*.
+. Wählen Sie im Abschnitt _Marketplace-Abonnements_ unter Microsoft Azure die Option *Abonnieren* und dann *Weiter* aus.
 . Melden Sie sich beim an https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.
 +
 Das folgende Video zeigt den Prozess:
@@ -87,8 +87,8 @@ Abonnieren Sie BlueXP Tiering über Google Cloud Marketplace, um ein Pay-as-you-
 
 [[subscribe-gcp]]
 .Schritte
-. Klicken Sie in BlueXP auf *Mobilität > Tiering > On-Premises-Dashboard*.
-. Klicken Sie im Abschnitt _Marketplace Subscriptions_ unter Google Cloud auf *Abonnieren* und dann auf *Weiter*.
+. Wählen Sie in BlueXP*Mobilität > Tiering > On-Premises-Dashboard*.
+. Wählen Sie im Abschnitt _Marketplace-Abonnements_ unter Google Cloud die Option *Abonnieren* und dann *Weiter* aus.
 . Melden Sie sich beim an https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^], Und melden Sie sich dann wieder auf der BlueXP Website, um die Registrierung abzuschließen.
 +
 Das folgende Video zeigt den Prozess:
@@ -102,7 +102,7 @@ video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 == Verwenden Sie einen Jahresvertrag
 
-Bezahlen Sie für BlueXP Tiering jährlich durch den Erwerb eines Jahresvertrags. Jahresverträge sind mit Laufzeiten von 1, 2 oder 3 Jahren erhältlich.
+Bezahlen Sie jährlich für die Staffelung, indem Sie einen Jahresvertrag erwerben. Jahresverträge sind mit Laufzeiten von 1, 2 oder 3 Jahren erhältlich.
 
 Wenn Sie inaktive Daten mit Tiering in AWS verlagern, können Sie einen Jahresvertrag des abonnieren https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["AWS Marketplace Seite"^]. Wenn Sie diese Option verwenden möchten, richten Sie Ihr Abonnement auf der Marketplace-Seite ein und dann https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Verbinden Sie das Abonnement mit Ihren AWS Zugangsdaten"^].
 
@@ -114,17 +114,17 @@ Jährliche Verträge werden derzeit beim Tiering in Google Cloud nicht unterstü
 
 == Verwenden Sie eine BlueXP Tiering BYOL-Lizenz
 
-Mit den Bring-Your-Own-License-Lizenzen von NetApp erhalten Sie Vertragsbedingungen mit 1, 2 oder 3 Jahren. Die BYOL *BlueXP  Tiering*-Lizenz (vormals bekannt als „Cloud Tiering“-Lizenz) ist eine Floating_-Lizenz, die Sie über mehrere lokale ONTAP-Cluster in Ihrer BlueXP -Organisation hinweg verwenden können. Die in Ihrer BlueXP Tiering-Lizenz definierte Gesamtkapazität wird von allen* Ihrer On-Premises-Cluster gemeinsam genutzt, wodurch die erstmalige Lizenzierung und Verlängerung vereinfacht werden. Die Mindestkapazität für eine Tiering-BYOL-Lizenz beträgt 10 tib.
+Mit den Bring-Your-Own-License-Lizenzen von NetApp erhalten Sie Vertragsbedingungen mit 1, 2 oder 3 Jahren. Die BYOL *BlueXP  Tiering*-Lizenz (vormals bekannt als „Cloud Tiering“-Lizenz) ist eine Floating_-Lizenz, die Sie über mehrere lokale ONTAP-Cluster in Ihrer BlueXP -Organisation hinweg verwenden können. Die in Ihrer BlueXP tiering Lizenz definierte Gesamtkapazität wird unter *allen* Ihren Clustern vor Ort geteilt, was die Erstlizenzierung und -verlängerung vereinfacht. Die Mindestkapazität für eine Tiering-BYOL-Lizenz beträgt 10 tib.
 
 Wenn Sie keine BlueXP Tiering-Lizenz besitzen, kontaktieren Sie uns, um eine zu kaufen:
 
-* Mailto:ng-cloud-tiering@netapp.com?Subject=Lizenzierung[E-Mail senden, um eine Lizenz zu erwerben].
-* Klicken Sie rechts unten auf das Chat-Symbol von BlueXP, um eine Lizenz anzufordern.
+* Kontaktieren Sie Ihren NetApp Vertriebsmitarbeiter
+* Wenden Sie sich an den NetApp Support.
 
 
 Wenn Sie optional eine nicht zugewiesene Node-basierte Lizenz für Cloud Volumes ONTAP haben, die Sie nicht verwenden werden, können Sie sie in eine BlueXP Tiering-Lizenz mit derselben Dollar-Äquivalenz und demselben Ablaufdatum konvertieren. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Weitere Informationen finden Sie hier"^].
 
-Über die Digital-Wallet-Seite von BlueXP können Sie die Tiering-BYOL-Lizenzen für BlueXP managen. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Erfahren Sie, wie Sie das Digital Wallet nutzen."^]
+Sie verwenden die digitale Wallet-Seite, um Ihre Lizenzen zu verwalten. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Erfahren Sie, wie Sie das Digital Wallet nutzen."^]
 
 
 
@@ -210,11 +210,11 @@ Konfigurieren Sie Tiering jetzt nicht.
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Sie erwerben eine BlueXP Tiering-Lizenz"] Für die Kapazität, die für das neue Cluster oder die Cluster benötigt wird.
 . In BlueXP  <<licenses,Erweitern Sie das Digital Wallet von BlueXP um die Lizenz>>[fügen Sie die Lizenz zum BlueXP  Digital Wallet hinzu].
 . Durch BlueXP Tiering link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Ermitteln Sie die neuen Cluster"].
-. Klicken Sie auf der Seite Cluster auf image:screenshot_horizontal_more_button.gif["Weitere Symbole"] Wählen Sie für den Cluster die Option *Lizenz bereitstellen* aus.
+. Wählen Sie auf der Seite „Cluster“ image:screenshot_horizontal_more_button.gif["Weitere Symbole"] für den Cluster und wählen Sie *Lizenz bereitstellen*.
 +
 image:screenshot_tiering_deploy_license.png["Ein Screenshot, der zeigt, wie eine Tiering-Lizenz auf einem ONTAP Cluster bereitgestellt wird"]
 
-. Klicken Sie im Dialogfeld „_Deploy License_“ auf *Bereitstellen*.
+. Wählen Sie im Dialogfeld „Lizenz bereitstellen“ die Option „Bereitstellen“ aus.
 +
 Die untergeordnete Lizenz wird auf dem ONTAP Cluster bereitgestellt.
 

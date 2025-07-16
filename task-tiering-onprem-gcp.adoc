@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-gcp.html 
 keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, google, gcp, google cloud storage 
-summary: Durch das Tiering inaktiver Daten in Google Cloud Storage können Sie Speicherplatz auf Ihren ONTAP-Clustern vor Ort freigeben. 
+summary: Geben Sie Speicherplatz auf Ihren lokalen ONTAP Clustern frei, indem Sie inaktive Daten in Google Cloud Storage auslagern. 
 ---
 = Tiering von Daten aus lokalen ONTAP Clustern in Google Cloud Storage
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Durch das Tiering inaktiver Daten in Google Cloud Storage können Sie S
 
 
 [role="lead"]
-Durch das Tiering inaktiver Daten in Google Cloud Storage können Sie Speicherplatz auf Ihren ONTAP-Clustern vor Ort freigeben.
+Geben Sie Speicherplatz auf Ihren lokalen ONTAP Clustern frei, indem Sie inaktive Daten in Google Cloud Storage auslagern.
 
 
 
@@ -27,7 +27,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 Sie benötigen Folgendes:
 
 [role="quick-margin-list"]
-* Ein lokaler ONTAP-Cluster, der ONTAP 9.6 oder höher ausführt und über eine HTTPS-Verbindung zu Google Cloud Storage verfügt. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+* Ein lokaler ONTAP Cluster, auf dem ONTAP 9.6 oder höher ausgeführt wird und der über eine HTTPS-Verbindung zu Google Cloud Storage verfügt.  https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^] .
 * Ein Servicekonto mit der vordefinierten Storage-Administratorrolle und Speicherzugriffsschlüsseln.
 * In einer Google Cloud Platform VPC wurde ein Connector installiert.
 * Networking für den Connector, der eine HTTPS-ausgehende Verbindung zum ONTAP Cluster in Ihrem Datacenter, zu Google Cloud Storage und zum BlueXP Tiering Service ermöglicht.
@@ -35,14 +35,14 @@ Sie benötigen Folgendes:
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Tiering einrichten
 [role="quick-margin-para"]
-Wählen Sie in BlueXP eine lokale Arbeitsumgebung aus, klicken Sie für den Tiering-Service auf *Aktivieren* und folgen Sie den Anweisungen, um Daten auf Google Cloud Storage zu verschieben.
+Wählen Sie in BlueXP eine lokale Arbeitsumgebung aus, wählen Sie *Aktivieren* für den Tiering-Dienst und folgen Sie den Anweisungen, um die Daten in Google Cloud Storage zu verschieben.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Lizenzierung einrichten
 [role="quick-margin-para"]
 Nach Ablauf der kostenlosen Testversion können Sie für BlueXP Tiering über ein Pay-as-you-go-Abonnement, eine ONTAP BlueXP Tiering-BYOL-Lizenz oder eine Kombination aus beiden Optionen bezahlen:
 
 [role="quick-margin-list"]
-* Für die Anmeldung über den GCP Marketplace: https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Rufen Sie das BlueXP Marketplace Angebot auf"^]Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.
+* Um sich beim GCP Marketplace anzumelden,  https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Rufen Sie das BlueXP Marketplace Angebot auf"^] , wählen Sie *Abonnieren* und folgen Sie dann den Anweisungen.
 * Für die Zahlung mit einer BlueXP  Tiering BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Lizenzierung[Kontaktieren Sie uns, wenn Sie eine kaufen müssen], und dann link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Erweitern Sie Ihr Konto über das Digital Wallet von BlueXP"^].
 
 
@@ -105,7 +105,7 @@ NOTE: BlueXP Tiering unterstützt FlexGroup Volumes. Setup funktioniert wie jede
 
 === Ermitteln eines ONTAP-Clusters
 
-Bevor Sie mit dem Tiering selten genutzter Daten beginnen können, müssen Sie eine lokale ONTAP-Arbeitsumgebung in BlueXP schaffen.
+Sie müssen eine lokale ONTAP Arbeitsumgebung in BlueXP erstellen, bevor Sie mit der Tiering-Verteilung kalter Daten beginnen können.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 
@@ -153,8 +153,8 @@ NOTE: Wenn Sie BlueXP Tiering konfigurieren möchten, um kostengünstigere Stora
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Erstellen Sie ein Servicekonto mit der vordefinierten Rolle „Storage Admin“"^].
 . Gehen Sie zu https://console.cloud.google.com/storage/settings["GCP-Speichereinstellungen"^] Außerdem Zugriffsschlüssel für das Servicekonto erstellen:
 +
-.. Wählen Sie ein Projekt aus, und klicken Sie auf *Interoperabilität*. Falls Sie dies noch nicht getan haben, klicken Sie auf *Interoperabilitätszugriff aktivieren*.
-.. Klicken Sie unter *Zugriffsschlüssel für Servicekonten* auf *Schlüssel für ein Servicekonto erstellen*, wählen Sie das gerade erstellte Servicekonto aus und klicken Sie auf *Schlüssel erstellen*.
+.. Wählen Sie ein Projekt aus, und wählen Sie *Interoperabilität*. Wenn Sie dies noch nicht getan haben, wählen Sie *Zugriff auf Interoperabilität aktivieren*.
+.. Wählen Sie unter *Zugriffsschlüssel für Dienstkonten* die Option *Schlüssel für ein Dienstkonto erstellen* aus, wählen Sie das gerade erstellte Dienstkonto aus und wählen Sie *Schlüssel erstellen*.
 +
 Sie müssen die Schlüssel später eingeben, wenn Sie BlueXP Tiering einrichten.
 
@@ -174,22 +174,22 @@ Nach der Vorbereitung Ihrer Google Cloud Umgebung können Sie vom ersten Cluster
 
 
 .Schritte
-. Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.
+. Wählen Sie die lokale ONTAP Arbeitsumgebung aus.
 . Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.
 +
 Wenn das Tiering-Ziel von Google Cloud Storage als Arbeitsumgebung auf dem Canvas existiert, können Sie den Cluster auf die Google Cloud Storage-Arbeitsumgebung ziehen, um den Setup-Assistenten zu starten.
 
 +
-image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Aktivieren-Option auf der rechten Seite des Bildschirms zeigt, nachdem Sie eine lokale ONTAP-Arbeitsumgebung ausgewählt haben."]
+image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Option „Aktivieren“ zeigt, die auf der rechten Seite des Bildschirms angezeigt wird, nachdem Sie eine lokale ONTAP Arbeitsumgebung ausgewählt haben."]
 
 . *Objekt-Speichername definieren*: Geben Sie einen Namen für diesen Objekt-Speicher ein. Er muss von jedem anderen Objekt-Storage, den Sie mit Aggregaten auf diesem Cluster verwenden können, eindeutig sein.
-. *Anbieter auswählen*: Wählen Sie *Google Cloud* und klicken Sie auf *Weiter*.
+. *Anbieter auswählen*: Wählen Sie *Google Cloud* und dann *Weiter*.
 . Führen Sie die Schritte auf den Seiten *Objektspeicherung erstellen* aus:
 +
 .. *Bucket*: Fügen Sie einen neuen Google Cloud Storage-Bucket hinzu oder wählen Sie einen vorhandenen Bucket aus.
 .. *Lebenszyklus der Storage-Klasse*: BlueXP Tiering managt die Lifecycle-Übergänge Ihrer Tiering-Daten. Die Daten beginnen in der Klasse _Standard_, aber Sie können Regeln erstellen, um verschiedene Speicherklassen nach einer bestimmten Anzahl von Tagen anzuwenden.
 +
-Wählen Sie die Google Cloud-Storage-Klasse aus, in die Sie die Tiering-Daten verschieben möchten, und die Anzahl der Tage, bevor die Daten dieser Klasse zugewiesen werden, und klicken Sie auf *Weiter*. Der folgende Screenshot zeigt zum Beispiel, dass die Tiering-Daten nach 30 Tagen im Objektspeicher der Klasse _Nearline_ und nach 60 Tagen im Objektspeicher der Klasse _Coldline_ zugeordnet werden.
+Wählen Sie die Google Cloud-Speicherklasse aus, in die Sie die mehrstufigen Daten übertragen möchten, sowie die Anzahl der Tage, bevor die Daten dieser Klasse zugewiesen werden, und wählen Sie *Weiter* aus. Der folgende Screenshot zeigt zum Beispiel, dass die Tiering-Daten nach 30 Tagen im Objektspeicher der Klasse _Nearline_ und nach 60 Tagen im Objektspeicher der Klasse _Coldline_ zugeordnet werden.
 
 +
 Wenn Sie sich für *Daten in dieser Speicherklasse* entscheiden, verbleiben die Daten in dieser Speicherklasse. link:reference-google-support.html["Siehe Unterstützte Speicherklassen"^].
@@ -213,15 +213,15 @@ Sie können auch die verfügbare Netzwerkbandbreite zum Hochladen inaktiver Date
 . Klicken Sie auf *Weiter*, um die Volumes auszuwählen, die Sie abstufen möchten.
 . Wählen Sie auf der Seite „_Tier Volumes_“ die Volumes aus, für die Sie Tiering konfigurieren möchten, und starten Sie die Seite „Tiering Policy“:
 +
-** Um alle Volumes auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_backup_all_volumes.png[""]) Und klicken Sie auf *Volumes konfigurieren*.
-** Wenn Sie mehrere Volumes auswählen möchten, aktivieren Sie das Kontrollkästchen für jedes Volume (image:button_backup_1_volume.png[""]) Und klicken Sie auf *Volumes konfigurieren*.
-** Um ein einzelnes Volume auszuwählen, klicken Sie auf die Zeile (oder) image:screenshot_edit_icon.gif["Bleistiftsymbol bearbeiten"] Symbol) für das Volume.
+** Um alle Bände auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile ( image:button_backup_all_volumes.png[""] ) und wählen Sie *Volumes konfigurieren*.
+** Um mehrere Volumes auszuwählen, aktivieren Sie das Kontrollkästchen für jedes Volume ( image:button_backup_1_volume.png[""] ) und wählen Sie *Volumes konfigurieren*.
+** Um ein einzelnes Volume auszuwählen, wählen Sie die Zeile (oder image:screenshot_edit_icon.gif["Bleistiftsymbol bearbeiten"] Symbol) für das Volume.
 +
 image:screenshot_tiering_initial_volumes.png["Ein Screenshot, in dem die Auswahl eines einzelnen Volumes, mehrerer Volumes oder aller Volumes und die Schaltfläche Ausgewählte Volumes ändern angezeigt werden."]
 
 
 
-. Wählen Sie im Dialogfeld _Tiering Policy_ eine Tiering Policy aus, passen Sie optional die Kühltage für die ausgewählten Volumes an und klicken Sie auf *Apply*.
+. Wählen Sie im Dialogfeld „Tiering-Richtlinie“ eine Tiering-Richtlinie aus, passen Sie optional die Kühltage für die ausgewählten Volumes an und wählen Sie „Übernehmen“ aus.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["Erfahren Sie mehr über Volume Tiering-Richtlinien und Kühltage"].
 

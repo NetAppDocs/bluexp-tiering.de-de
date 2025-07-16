@@ -15,7 +15,7 @@ indexpage:
       url: whats-new.html
     - title: Lizenzierung einrichten
       url: task-licensing-cloud-tiering.html
-  - title: Tiering von On-Premises-ONTAP-Daten in die Cloud
+  - title: Tiering von lokalen ONTAP -Daten in die Cloud
     links:
     - title: Tiering zu Amazon S3
       url: task-tiering-onprem-aws.html

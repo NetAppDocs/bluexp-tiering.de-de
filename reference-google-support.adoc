@@ -20,7 +20,7 @@ BlueXP Tiering unterstützt mehrere Google Cloud Storage-Klassen und die meisten
 
 == Unterstützte GCP-Storage-Klassen
 
-Wenn Sie aus Ihren lokalen ONTAP Systemen das Daten-Tiering auf GCP einrichten, verwendet BlueXP Tiering für Ihre inaktiven Daten automatisch die Storage-Klasse „_Standard_“. BlueXP Tiering kann eine Lebenszyklusregel anwenden, sodass Daten nach einer bestimmten Anzahl von Tagen von der _Standard_ Storage-Klasse zu anderen Storage-Klassen überführt werden. Sie können aus folgenden Speicherklassen wählen:
+Wenn Sie Daten-Tiering von Ihren lokalen ONTAP Systemen in Google Cloud Storage einrichten, wird für Ihre inaktiven Daten automatisch die Speicherklasse „Standard“ verwendet. Tiering kann eine Lebenszyklusregel anwenden, sodass die Daten nach einer bestimmten Anzahl von Tagen von der Speicherklasse „Standard“ in andere Speicherklassen übergehen. Sie können aus folgenden Speicherklassen wählen:
 
 * Nearline
 * Coldline
@@ -29,7 +29,7 @@ Wenn Sie aus Ihren lokalen ONTAP Systemen das Daten-Tiering auf GCP einrichten, 
 
 Wenn Sie keine andere Storage-Klasse wählen, verbleiben die Daten in der Storage-Klasse _Standard_, und es werden keine Regeln angewendet.
 
-Wenn Sie eine Tiering-Lebenszyklusregel für BlueXP konfigurieren, dürfen Sie beim Einrichten des Buckets in Ihrem Google-Konto keine Lebenszyklusregeln konfigurieren.
+Wenn Sie eine Tiering-Lebenszyklusregel konfigurieren, dürfen Sie beim Einrichten des Buckets in Ihrem Google-Konto keine Lebenszyklusregeln konfigurieren.
 
 https://cloud.google.com/storage/docs/storage-classes["Weitere Informationen zu Google Cloud Storage Classes"^].
 
@@ -37,7 +37,7 @@ https://cloud.google.com/storage/docs/storage-classes["Weitere Informationen zu 
 
 == Unterstützte Google Cloud Regionen
 
-BlueXP Tiering unterstützt folgende Regionen.
+Tiering unterstützt die folgenden Regionen.
 
 
 

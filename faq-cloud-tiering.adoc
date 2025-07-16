@@ -144,7 +144,7 @@ Nein, das tut es nicht.
 
 
 
-=== Ist die Rehydrierung von On-Premises-Systemen von den Kosten für den ausgehenden Datenverkehr abhängig, die von Cloud-Providern in Rechnung gestellt werden?
+=== Unterliegt die Rehydrierung von lokalen Systemen den von den Cloud-Anbietern erhobenen Ausstiegskosten?
 
 Ja. Alle aus der Public Cloud geledenen Lesevorgänge sind von den Kosten für den ausgehenden Datenverkehr abhängig.
 
@@ -156,7 +156,7 @@ Die beste Schätzung, wie viel ein Cloud-Provider für das Hosting Ihrer Daten i
 
 
 
-=== Fallen zusätzliche Kosten für Cloud-Provider für das Lesen/Abrufen von Daten vom Objekt-Storage in den On-Premises-Storage an?
+=== Fallen bei den Cloud-Anbietern zusätzliche Gebühren für das Lesen/Abrufen von Daten aus dem Objektspeicher in den lokalen Speicher an?
 
 Ja. Prüfen https://aws.amazon.com/s3/pricing/["Amazon S3-Preise"], https://azure.microsoft.com/en-us/pricing/details/storage/blobs/["Preise Für Block-Blob"], und https://cloud.google.com/storage/pricing["Preise Für Cloud Storage"] Für zusätzliche Preise, die beim Lesen/Abrufen von Daten anfallen.
 
@@ -170,7 +170,7 @@ Wenn Sie eine Schätzung erhalten möchten, fügen Sie einfach Ihren ONTAP Clust
 
 === Wie wird Tiering berechnet, wenn ich einen ONTAP MetroCluster verwende?
 
-Bei Verwendung in MetroCluster Umgebungen wird das Tiering der lizenzierten Kapazität gleichermaßen auf gespiegelte Buckets angewendet. Wenn Sie beispielsweise eine Lizenz für 100 TiB Tiering besitzen, können beide Buckets auf ein Tiering mit bis zu 100 TiB verteilt werden. Für gespiegelte Buckets fallen keine zusätzlichen Gebühren an. Wenn in MetroCluster Umgebungen ein Tiering aus nicht gespiegelten Aggregaten durchgeführt wird, wird die BlueXP  Tiering-Lizenz normal angewendet und die Gesamtkapazität in beide Buckets verschoben. Wenn Sie beispielsweise eine Lizenz für 100 TiB Tiering haben, können beide Buckets bis 50 TB Tiered werden.
+Bei Verwendung in MetroCluster -Umgebungen wird die Gesamt-Tiering-Lizenz auf die Nutzung beider Cluster angewendet. Wenn Sie beispielsweise eine Lizenz für 100 TiB Tiering besitzen, trägt die genutzte Tiering-Kapazität jedes Clusters zur Gesamtkapazität von 100 TiB bei.
 
 
 
@@ -326,7 +326,7 @@ Wenn das Zielaggregat auf ONTAP demselben Cloud-Tier wie das Quellaggregat basie
 
 
 
-=== Wie kann ich meine gestaffelten Daten zurück in den lokalen Performance-Tier verschieben?
+=== Wie kann ich meine gestaffelten Daten vor Ort wieder auf die Leistungsstufe bringen?
 
 Zurückgeschriebene Daten werden im Allgemeinen von Lesezugriffen durchgeführt und hängen vom Typ der Tiering-Richtlinie ab. Vor ONTAP 9.8 kann das Schreiben des gesamten Volumes mit einem Vorgang _Volume Move_ durchgeführt werden. Ab ONTAP 9.8 hat die Tiering UI die Möglichkeit, *alle Daten zurück zu holen* oder *aktives Dateisystem*. link:task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier["So verschieben Sie Daten zurück auf die Performance-Tier"].
 

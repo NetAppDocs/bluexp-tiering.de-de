@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-azure.html 
 keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, azure, blob, azure blob 
-summary: Durch das Tiering inaktiver Daten in Azure Blob Storage entsteht freier Speicherplatz auf ONTAP Clustern vor Ort. 
+summary: Geben Sie Speicherplatz auf Ihren lokalen ONTAP Clustern frei, indem Sie inaktive Daten in den Azure Blob-Speicher auslagern. 
 ---
 = Tiering von Daten von lokalen ONTAP Clustern zu Azure Blob Storage
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Durch das Tiering inaktiver Daten in Azure Blob Storage entsteht freier
 
 
 [role="lead"]
-Durch das Tiering inaktiver Daten in Azure Blob Storage entsteht freier Speicherplatz auf ONTAP Clustern vor Ort.
+Geben Sie Speicherplatz auf Ihren lokalen ONTAP Clustern frei, indem Sie inaktive Daten in den Azure Blob-Speicher auslagern.
 
 
 
@@ -27,21 +27,21 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 Sie benötigen Folgendes:
 
 [role="quick-margin-list"]
-* Ein ONTAP-Cluster vor Ort, der ONTAP 9.4 oder höher ausführt und über eine HTTPS-Verbindung zum Azure Blob-Storage verfügt. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
+* Ein lokaler ONTAP Cluster, auf dem ONTAP 9.4 oder höher ausgeführt wird und der über eine HTTPS-Verbindung zum Azure Blob-Speicher verfügt.  https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^] .
 * Ein Connector, der in einer Azure vnet oder vor Ort installiert ist.
 * Networking eines Connectors, der eine HTTPS-ausgehende Verbindung zum ONTAP Cluster in Ihrem Datacenter, zum Azure Storage und zum BlueXP Tiering Service ermöglicht.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Tiering einrichten
 [role="quick-margin-para"]
-Wählen Sie in BlueXP eine lokale ONTAP-Arbeitsumgebung aus, klicken Sie für den Tiering Service auf *Aktivieren* und folgen Sie den Aufforderungen zum Tiering von Daten auf Azure Blob Storage.
+Wählen Sie in BlueXP eine lokale ONTAP Arbeitsumgebung aus, wählen Sie *Aktivieren* für den Tiering-Dienst und folgen Sie den Anweisungen zum Tiering der Daten in den Azure Blob-Speicher.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Lizenzierung einrichten
 [role="quick-margin-para"]
 Nach Ablauf der kostenlosen Testversion können Sie für BlueXP Tiering über ein Pay-as-you-go-Abonnement, eine ONTAP BlueXP Tiering-BYOL-Lizenz oder eine Kombination aus beiden Optionen bezahlen:
 
 [role="quick-margin-list"]
-* Für eine Anmeldung über den Azure Marketplace: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Rufen Sie das BlueXP Marketplace Angebot auf"^]Klicken Sie auf *Abonnieren*, und folgen Sie dann den Anweisungen.
+* Um ein Abonnement über den Azure Marketplace abzuschließen,  https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Rufen Sie das BlueXP Marketplace Angebot auf"^] , wählen Sie *Abonnieren* und folgen Sie dann den Anweisungen.
 * Für die Zahlung mit einer BlueXP  Tiering BYOL-Lizenz mailto:ng-cloud-tiering@netapp.com?subject=Lizenzierung[Kontaktieren Sie uns, wenn Sie eine kaufen müssen], und dann link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Erweitern Sie Ihr Konto über das Digital Wallet von BlueXP"].
 
 
@@ -104,7 +104,7 @@ NOTE: BlueXP Tiering unterstützt FlexGroup Volumes ab ONTAP 9.5. Setup funktion
 
 === Ermitteln eines ONTAP-Clusters
 
-Bevor Sie mit dem Tiering selten genutzter Daten beginnen können, müssen Sie eine lokale ONTAP-Arbeitsumgebung in BlueXP schaffen.
+Sie müssen eine lokale ONTAP Arbeitsumgebung in BlueXP erstellen, bevor Sie mit der Tiering-Verteilung kalter Daten beginnen können.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ein Cluster"^].
 
@@ -131,7 +131,7 @@ Wenn Sie den Connector mit einer früheren Version von BlueXP erstellt haben, m�
 
 === Vorbereiten der Vernetzung für den Connector
 
-Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindungen verfügt. Ein Connector kann lokal oder in Azure installiert werden.
+Stellen Sie sicher, dass der Connector über die erforderlichen Netzwerkverbindungen verfügt. Ein Connector kann vor Ort oder in Azure installiert werden.
 
 .Schritte
 . Stellen Sie sicher, dass das Netzwerk, in dem der Connector installiert ist, folgende Verbindungen ermöglicht:
@@ -169,29 +169,29 @@ Starten Sie nach der Vorbereitung der Azure Umgebung das Tiering inaktiver Daten
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Eine Arbeitsumgebung vor Ort"^].
 
 .Schritte
-. Wählen Sie die lokale ONTAP-Arbeitsumgebung aus.
+. Wählen Sie die lokale ONTAP Arbeitsumgebung aus.
 . Klicken Sie im rechten Fenster auf *enable* für den Tiering-Dienst.
 +
 Wenn das Tiering-Ziel für Azure Blob als eine Arbeitsumgebung auf dem Canvas existiert, können Sie das Cluster auf die Azure Blob Arbeitsumgebung ziehen, um den Setup-Assistenten zu starten.
 
 +
-image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Aktivieren-Option auf der rechten Seite des Bildschirms zeigt, nachdem Sie eine lokale ONTAP-Arbeitsumgebung ausgewählt haben."]
+image:screenshot_setup_tiering_onprem.png["Ein Screenshot, der die Option „Aktivieren“ zeigt, die auf der rechten Seite des Bildschirms angezeigt wird, nachdem Sie eine lokale ONTAP Arbeitsumgebung ausgewählt haben."]
 
 . *Objekt-Speichername definieren*: Geben Sie einen Namen für diesen Objekt-Speicher ein. Er muss von jedem anderen Objekt-Storage, den Sie mit Aggregaten auf diesem Cluster verwenden können, eindeutig sein.
-. *Anbieter auswählen*: Wählen Sie *Microsoft Azure* und klicken Sie auf *Weiter*.
+. *Anbieter auswählen*: Wählen Sie *Microsoft Azure* und dann *Weiter*.
 . Führen Sie die Schritte auf den Seiten *Objektspeicherung erstellen* aus:
 +
-.. *Ressourcengruppe*: Wählen Sie eine Ressourcengruppe aus, in der ein vorhandener Container verwaltet wird oder wo Sie einen neuen Container für Tiered-Daten erstellen möchten, und klicken Sie auf *Weiter*.
+.. *Ressourcengruppe*: Wählen Sie eine Ressourcengruppe aus, in der ein vorhandener Container verwaltet wird oder in der Sie einen neuen Container für mehrstufige Daten erstellen möchten, und wählen Sie *Weiter* aus.
 +
-Bei der Verwendung eines On-Prem-Connectors müssen Sie das Azure-Abonnement eingeben, das den Zugriff auf die Ressourcengruppe ermöglicht.
+Wenn Sie einen lokalen Connector verwenden, müssen Sie das Azure-Abonnement eingeben, das Zugriff auf die Ressourcengruppe bietet.
 
-.. *Azure Container*: Wählen Sie das Optionsfeld, um entweder einen neuen Blob-Container zu einem Speicherkonto hinzuzufügen oder einen bestehenden Container zu verwenden. Wählen Sie dann das Speicherkonto aus und wählen Sie den vorhandenen Container aus, oder geben Sie den Namen für den neuen Container ein. Klicken Sie dann auf *Weiter*.
+.. *Azure Container*: Wählen Sie das Optionsfeld, um entweder einen neuen Blob-Container zu einem Speicherkonto hinzuzufügen oder einen bestehenden Container zu verwenden. Wählen Sie dann das Speicherkonto aus und wählen Sie den vorhandenen Container aus, oder geben Sie den Namen für den neuen Container ein. Wählen Sie dann *Weiter*.
 +
 Die in diesem Schritt angezeigten Speicherkonten und Container gehören zur Ressourcengruppe, die Sie im vorherigen Schritt ausgewählt haben.
 
 .. *Access Tier Lifecycle*: BlueXP Tiering managt die Lifecycle-Übergänge Ihrer Tiering-Daten. Die Daten beginnen in der _Hot_-Klasse, aber Sie können eine Regel erstellen, um die _Cool_-Klasse nach einer bestimmten Anzahl von Tagen auf die Daten anzuwenden.
 +
-Wählen Sie die Zugriffsebene aus, auf die Sie die Tiered-Daten verschieben möchten, und die Anzahl der Tage, bevor die Daten diesem Tier zugewiesen werden, und klicken Sie auf *Weiter*. Der folgende Screenshot zeigt beispielsweise, dass nach 45 Tagen im Objektspeicher Tiering-Daten der Klasse _Cool_ aus der Klasse _Hot_ zugewiesen werden.
+Wählen Sie die Zugriffsebene aus, auf die Sie die abgestuften Daten übertragen möchten, und die Anzahl der Tage, bevor die Daten dieser Ebene zugewiesen werden, und wählen Sie *Weiter* aus. Der folgende Screenshot zeigt beispielsweise, dass nach 45 Tagen im Objektspeicher Tiering-Daten der Klasse _Cool_ aus der Klasse _Hot_ zugewiesen werden.
 
 +
 Wenn Sie *Daten in dieser Zugriffsebene* aufbewahren, verbleiben die Daten in der Zugriffsebene _Hot_ und es werden keine Regeln angewendet. link:reference-azure-support.html["Siehe Unterstützte Zugriffsebenen"^].
@@ -202,7 +202,7 @@ image:screenshot_tiering_lifecycle_selection_azure.png["Ein Screenshot, der zeig
 +
 Beachten Sie, dass die Lebenszyklusregel auf alle Blob-Container im ausgewählten Speicherkonto angewendet wird.
 
-.. *Clusternetzwerk*: Wählen Sie den IPspace aus, den ONTAP verwenden soll, um eine Verbindung zum Objekt-Storage herzustellen, und klicken Sie auf *Weiter*.
+.. *Cluster-Netzwerk*: Wählen Sie den IP-Bereich aus, den ONTAP für die Verbindung mit dem Objektspeicher verwenden soll, und wählen Sie *Weiter*.
 +
 Durch Auswahl des passenden IPspaces wird sichergestellt, dass BlueXP Tiering eine Verbindung von ONTAP zu dem Objekt-Storage Ihres Cloud-Providers herstellen kann.
 
@@ -213,15 +213,15 @@ Sie können auch die verfügbare Netzwerkbandbreite zum Hochladen inaktiver Date
 
 . Wählen Sie auf der Seite „_Tier Volumes_“ die Volumes aus, für die Sie Tiering konfigurieren möchten, und starten Sie die Seite „Tiering Policy“:
 +
-** Um alle Volumes auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_backup_all_volumes.png[""]) Und klicken Sie auf *Volumes konfigurieren*.
-** Wenn Sie mehrere Volumes auswählen möchten, aktivieren Sie das Kontrollkästchen für jedes Volume (image:button_backup_1_volume.png[""]) Und klicken Sie auf *Volumes konfigurieren*.
-** Um ein einzelnes Volume auszuwählen, klicken Sie auf die Zeile (oder) image:screenshot_edit_icon.gif["Bleistiftsymbol bearbeiten"] Symbol) für das Volume.
+** Um alle Bände auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile ( image:button_backup_all_volumes.png[""] ) und wählen Sie *Volumes konfigurieren*.
+** Um mehrere Volumes auszuwählen, aktivieren Sie das Kontrollkästchen für jedes Volume ( image:button_backup_1_volume.png[""] ) und wählen Sie *Volumes konfigurieren*.
+** Um ein einzelnes Volume auszuwählen, wählen Sie die Zeile (oder image:screenshot_edit_icon.gif["Bleistiftsymbol bearbeiten"] Symbol) für das Volume.
 +
 image:screenshot_tiering_initial_volumes.png["Ein Screenshot, in dem die Auswahl eines einzelnen Volumes, mehrerer Volumes oder aller Volumes und die Schaltfläche Ausgewählte Volumes ändern angezeigt werden."]
 
 
 
-. Wählen Sie im Dialogfeld _Tiering Policy_ eine Tiering Policy aus, passen Sie optional die Kühltage für die ausgewählten Volumes an und klicken Sie auf *Apply*.
+. Wählen Sie im Dialogfeld „Tiering-Richtlinie“ eine Tiering-Richtlinie aus, passen Sie optional die Kühltage für die ausgewählten Volumes an und wählen Sie „Übernehmen“ aus.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["Erfahren Sie mehr über Volume Tiering-Richtlinien und Kühltage"].
 

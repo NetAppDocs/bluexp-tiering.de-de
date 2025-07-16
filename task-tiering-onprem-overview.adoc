@@ -14,13 +14,13 @@ summary: BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von je
 
 
 [role="lead"]
-BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von jedem Ihrer On-Premises-Cluster. Diese Übersicht liefert einen klaren Überblick über Ihre Umgebung und ermöglicht Ihnen die richtigen Maßnahmen.
+BlueXP Tiering bietet eine aggregierte Ansicht des Daten-Tiering von jedem Ihrer On-Premises-Cluster.
 
-Klicken Sie einfach auf *Tiering > On-Premises Dashboard*. BlueXP Tiering bietet folgende Details zu Ihrer Umgebung.
+Wählen Sie *Tiering > On-Premises-Dashboard*. Das Dashboard enthält die folgenden Details.
 
 image:screenshot_tiering_onprem_dashboard.png["Ein Screenshot der On-Premises-Dashboard-Seite."]
 
-Erkannte Cluster:: Die Anzahl der lokalen Cluster, die durch BlueXP Tiering ermittelt wurden. Das Diagramm bietet eine Übersicht über den Tiering-Status dieser Cluster.
+Erkannte Cluster:: Die Anzahl der erkannten lokalen Cluster. Das Diagramm bietet eine Übersicht über den Tiering-Status dieser Cluster.
 +
 --
 * High Tiering – Cluster, die über 20 % ihrer kalten Daten Tiering
